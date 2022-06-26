@@ -1,0 +1,36 @@
+// Vitepress css styles
+
+.VPHome
+  @apply lg:px-12 lg:pt-10
+
+.Layout
+  min-height: 0px!important
+
+.VPNavBarExtra
+  display: none!important
+
+// Custom styles
+
+.page_title
+  @apply text-center text-3xl md:text-4xl font-medium tracking-wide
+
+.page_content
+  @apply container py-6 lg:max-w-screen-md lg:px-10 xl:max-w-screen-lg xl:px-24
+
+.vp-doc .article_title 
+  @apply py-6 text-center text-3xl md:text-4xl font-medium tracking-wide
+
+.vp-doc .article_date
+  @apply py-2 text-center py-2 font-light
+
+.card
+  @apply flex items-center p-4 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg text-center shadow-xl rounded-md
+
+.index_about_card
+  @apply flex-col lg:flex-row
+
+ul.dashed > li
+  text-indent: -5px
+
+ul.dashed > li:before
+  content: "-"
