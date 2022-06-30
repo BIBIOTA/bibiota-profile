@@ -38,6 +38,13 @@ export default {
     return {
       icons: [
         {
+          src: 'github.png',
+          href: 'https://github.com/BIBIOTA',
+          alt: 'github',
+          path: './github.svg',
+          size: 32,
+        },
+        {
           src: 'medium.png',
           href: 'https://medium.com/@s11110153',
           alt: 'medium',
