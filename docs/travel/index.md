@@ -1,9 +1,9 @@
 ---
-layout: home
+layout: page
 ---
 
-<Articles />
+<TravelArticleList />
 
 <script setup>
-import Articles from '@theme/Articles.vue'
+import TravelArticleList from '@theme/TravelArticleList.vue'
 </script>

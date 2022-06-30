@@ -1,8 +1,5 @@
 <template>
  <div>
-    <!-- TODO: Fixed watch route -->
-    <!-- <Header :theme="theme" /> -->
-
     <div class="flex justify-center">
       <Layout class=".page_content" />
     </div>
@@ -11,7 +8,6 @@
  </div>
 </template>
 <script>
-import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
 import DefaultTheme from 'vitepress/theme';
 import { useData } from 'vitepress'
@@ -26,7 +22,6 @@ export default {
     }
   },
   components: {
-    Header,
     Layout,
     Footer,
   },

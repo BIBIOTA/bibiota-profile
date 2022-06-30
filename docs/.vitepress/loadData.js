@@ -19,7 +19,7 @@
  }
 
  exports.getTravelPosts = function getTravelPosts(asFeed = false) {
-   return getTravelPosts('travel', asFeed)
+   return loadDataFromDirectory('travel', asFeed)
  }
  
  exports.getRunningPosts = function getRunningPosts(asFeed = false) {

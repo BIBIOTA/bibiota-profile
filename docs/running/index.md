@@ -1,9 +1,9 @@
 ---
-layout: home
+layout: page
 ---
 
-<Articles />
+<RunningArticleList />
 
 <script setup>
-import Articles from '@theme/Articles.vue'
+import RunningArticleList from '@theme/RunningArticleList.vue'
 </script>

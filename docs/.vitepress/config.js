@@ -1,4 +1,4 @@
-import { getTechPosts } from './loadData'
+import { getTechPosts, getTravelPosts, getRunningPosts } from './loadData'
 
 export default {
   title: "BiBiOTA's blog",
@@ -7,9 +7,11 @@ export default {
   },
   themeConfig: {
     techPosts: getTechPosts(),
+    travelPosts: getTravelPosts(),
+    runningPosts: getRunningPosts(),
     title: "BiBiOTA's blog",
     nav: [
-      { text: 'Tech', link: '/tech/' },
+      { text: 'Tech', link: '/tech/'  },
       { text: 'Travel', link: '/travel/' },
       { text: 'Running', link: '/running/' }
     ]

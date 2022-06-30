@@ -9,7 +9,7 @@ export default {
   Layout: Layout,
 
   // this is a Vue 3 functional component
-  NotFound: () => 'custom 404',
+  NotFound: () => 'Not Found',
 
   enhanceApp({ app, router, siteData }) {
     // app is the Vue 3 app instance from `createApp()`.

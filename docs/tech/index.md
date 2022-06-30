@@ -1,9 +1,9 @@
 ---
-layout: home
+layout: page
 ---
 
-<Articles />
+<TechArticleList />
 
 <script setup>
-import Articles from '@theme/Articles.vue'
+import TechArticleList from '@theme/TechArticleList.vue'
 </script>

@@ -9,6 +9,9 @@
 .VPNavBarExtra
   display: none!important
 
+.VPDoc .aside
+  display: none!important
+
 // Custom styles
 
 .page_title
@@ -16,6 +19,17 @@
 
 .page_content
   @apply container py-6 lg:max-w-screen-md lg:px-10 xl:max-w-screen-lg xl:px-24
+
+.article_box
+  @apply max-w-sm m-2 text-center shadow-xl
+  width: 300px
+
+.article_box img
+  width: 300px
+  height: 200px
+
+.article_box .article_title
+  @apply py-2 font-medium h-16
 
 .vp-doc .article_title 
   @apply py-6 text-center text-3xl md:text-4xl font-medium tracking-wide
