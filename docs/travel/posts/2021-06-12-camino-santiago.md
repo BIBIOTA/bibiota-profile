@@ -79,7 +79,9 @@ tags:
 
 ![IMG_20190828_135045.jpeg](https://pic.pimg.tw/bibibackpaker/1623503924-164309758-g_n.jpg "IMG_20190828_135045.jpeg")
 
-\*朝聖者證書和朝聖護照，左下的證書為完走後能夠免費申請的，旁邊那張為另外付費3歐元，有詳細記載起點和距離的證書。
+<p align="center" class="text-sm text-gray-500">
+*朝聖者證書和朝聖護照，左下的證書為完走後能夠免費申請的，旁邊那張為另外付費3歐元，有詳細記載起點和距離的證書。
+</p>
 
 我自己選擇走的是北方之路。起點是法國靠近西班牙的邊境城市Hendaye，在西班牙Irún拿到朝聖者證書，中途在Oviedo改走原始之路。
 
@@ -87,7 +89,9 @@ tags:
 
 ![截圖 2021-06-12 上午11.35.14.png](https://pic.pimg.tw/bibibackpaker/1623503890-831242980-g_n.png "截圖 2021-06-12 上午11.35.14.png")
 
-\*我的google地圖紀錄
+<p align="center" class="text-sm text-gray-500">
+*我的google地圖紀錄
+</p>
 
 許多人第一次走通常會選擇法國之路，除了中途城鎮跟城鎮間距離短，補給取得相對容易，加上大多數電影、紀錄片和宣傳都是這條路，也因此是最多人走的一條路線。
 
@@ -105,7 +109,9 @@ tags:
 
 ![IMG_20190719_145214.jpeg](https://pic.pimg.tw/bibibackpaker/1623503896-99309479-g_n.jpg "IMG_20190719_145214.jpeg")
 
-\*San Sebastián-西班牙夏天熱門的渡假勝地，如果你選擇從Irún出發通常第一天會選擇在這裡停留，也有人選擇從這裡開始走朝聖之路。
+<p align="center" class="text-sm text-gray-500">
+*San Sebastián-西班牙夏天熱門的渡假勝地，如果你選擇從Irún出發通常第一天會選擇在這裡停留，也有人選擇從這裡開始走朝聖之路。
+</p>
 
 走在朝聖之路上和以前在台灣徒步環島最大的不同，
 
@@ -158,21 +164,29 @@ tags:
 
 ![IMG_20190725_210529.jpeg](https://pic.pimg.tw/bibibackpaker/1623503904-2239467416-g_n.jpg "IMG_20190725_210529.jpeg")
 
-\*Albergue Tu Camino de Ontón (北方之路, Ontón)-住過的庇護所裡面晚餐最好吃，好吃到令人難忘的，住宿費用8歐元，用餐費用自由捐獻。
+<p align="center" class="text-sm text-gray-500">
+*Albergue Tu Camino de Ontón (北方之路, Ontón)-住過的庇護所裡面晚餐最好吃，好吃到令人難忘的，住宿費用8歐元，用餐費用自由捐獻。
+</p>
 
 ![PANO_20190728_214041.jpeg](https://pic.pimg.tw/bibibackpaker/1623503937-4105365491-g_n.jpg "PANO_20190728_214041.jpeg")
 
-\*Albergue de Güemes (北方之路, Güemes)-北方之路上最大的一間私人庇護所，可以容納100人。由一位老先生和多位志願服務者經營，我抵達那晚有超過70個朝聖者同時一起用餐，非常難忘的經驗，住宿費用自由捐獻。
+<p align="center" class="text-sm text-gray-500">
+*Albergue de Güemes (北方之路, Güemes)-北方之路上最大的一間私人庇護所，可以容納100人。由一位老先生和多位志願服務者經營，我抵達那晚有超過70個朝聖者同時一起用餐，非常難忘的經驗，住宿費用自由捐獻。
+</p>
 
 ![IMG_20190729_215647.jpeg](https://pic.pimg.tw/bibibackpaker/1623503908-506459852-g_n.jpg "IMG_20190729_215647.jpeg")
 
-\*Albergue de peregrinos La Santa Cruz(北方之路,Santa Cruz de Bazana)-住宿費用自由捐獻。親切的女主人，除了提供美味的晚餐外，她會告訴妳隔天的路要怎麼走。
+<p align="center" class="text-sm text-gray-500">
+*Albergue de peregrinos La Santa Cruz(北方之路,Santa Cruz de Bazana)-住宿費用自由捐獻。親切的女主人，除了提供美味的晚餐外，她會告訴妳隔天的路要怎麼走。
+</p>
 
 (搭西班牙的鐵路一站過河能省下7公里路程，她說西班牙的鐵路服務很爛沒有站務員不會有人跟你收錢XD 最後真的是這樣。)
 
 ![IMG_20190727_153719.jpeg](https://pic.pimg.tw/bibibackpaker/1623503907-3883438386-g_n.jpg "IMG_20190727_153719.jpeg")
 
-\*El Albergue Hostel (北方之路, Santoña )-由於這一晚的體驗太差我一定要講一下ＸＤ
+<p align="center" class="text-sm text-gray-500">
+*El Albergue Hostel (北方之路, Santoña )-由於這一晚的體驗太差我一定要講一下ＸＤ
+</p>
 
 公立的青年旅社附帶提供朝聖者住宿，費用7歐元。如果在床位滿的情況下會未告知直接把你帶到帳篷跟其他朝聖者睡(帳篷不分男女！)
 
@@ -191,15 +205,21 @@ tags:
 
 ![IMG_20190719_070309.jpeg](https://pic.pimg.tw/bibibackpaker/1623503895-1714409978-g_n.jpg "IMG_20190719_070309.jpeg")
 
-\*上路第一天的日出
+<p align="center" class="text-sm text-gray-500">
+*上路第一天的日出
+</p>
 
 ![IMG_20190729_073036.jpeg](https://pic.pimg.tw/bibibackpaker/1623503907-820456171-g_n.jpg "IMG_20190729_073036.jpeg")
 
-\*北方之路的日出
+<p align="center" class="text-sm text-gray-500">
+*北方之路的日出
+</p>
 
 ![IMG_20190822_075516.jpeg](https://pic.pimg.tw/bibibackpaker/1623503917-647246092-g_n.jpg "IMG_20190822_075516.jpeg")
 
-\*原始之路的日出
+<p align="center" class="text-sm text-gray-500">
+*原始之路的日出
+</p>
 
 選擇北方之路的另外一個理由，是我想要在中途改走原始之路。
 
@@ -221,23 +241,33 @@ tags:
 
 ![IMG_20190820_100217.jpeg](https://pic.pimg.tw/bibibackpaker/1623503916-2035120589-g_n.jpg "IMG_20190820_100217.jpeg")
 
-\*Camino Primitivo 原始之路
+<p align="center" class="text-sm text-gray-500">
+*Camino Primitivo 原始之路
+</p>
 
 ![IMG_20190820_131002.jpeg](https://pic.pimg.tw/bibibackpaker/1623503919-1426164440-g_n.jpg "IMG_20190820_131002.jpeg")
 
-\*Camino Primitivo 原始之路
+<p align="center" class="text-sm text-gray-500">
+*Camino Primitivo 原始之路
+</p>
 
 ![IMG_20190821_102805.jpeg](https://pic.pimg.tw/bibibackpaker/1623503919-2313322211-g_n.jpg "IMG_20190821_102805.jpeg")
 
-\*Camino Primitivo 原始之路
+<p align="center" class="text-sm text-gray-500">
+*Camino Primitivo 原始之路
+</p>
 
 ![IMG_20190824_182358.jpeg](https://pic.pimg.tw/bibibackpaker/1623503920-3477983606-g_n.jpg "IMG_20190824_182358.jpeg")
 
-\*Lugo-原始之路距離Santiago最後100公里的古城，擁有西歐保存狀態最好的羅馬帝國時代城牆遺跡，很推薦在城牆上面走一圈。
+<p align="center" class="text-sm text-gray-500">
+*Lugo-原始之路距離Santiago最後100公里的古城，擁有西歐保存狀態最好的羅馬帝國時代城牆遺跡，很推薦在城牆上面走一圈。
+</p>
 
 ![IMG_20190828_093942.jpeg](https://pic.pimg.tw/bibibackpaker/1623503923-1134786163-g_n.jpg "IMG_20190828_093942.jpeg")
 
-\*最後10公里的朝聖者遊行
+<p align="center" class="text-sm text-gray-500">
+*最後10公里的朝聖者遊行
+</p>
 
 整段北方之路+原始之路花了一個月半的時間，
 
