@@ -9,9 +9,13 @@ tags:
   - 西班牙
 ---
 
-2019年，我同時走了兩條世界僅有的「巡禮路」世界遺產-西班牙聖雅各之路和日本熊野古道。
+<script setup>
+  import ArticleTitle from '@theme/components/ArticleTitle.vue'
+</script>
 
-![IMG_20190719_065426 (2).jpeg](https://pic.pimg.tw/bibibackpaker/1623503800-56094824-g_n.jpg "IMG_20190719_065426 (2).jpeg")![IMG_20191217_122135.jpeg](https://pic.pimg.tw/bibibackpaker/1623503934-4179098295-g_n.jpg "IMG_20191217_122135.jpeg")
+<ArticleTitle />
+
+2019年，我同時走了兩條世界僅有的「巡禮路」世界遺產-西班牙聖雅各之路和日本熊野古道。
 
 就在剛走完熊野古道的時候，中國武漢剛爆發第一波的疫情，
 
