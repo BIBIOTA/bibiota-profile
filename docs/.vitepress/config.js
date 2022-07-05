@@ -8,7 +8,7 @@ export default {
   themeConfig: {
     techPosts: getTechPosts(),
     travelPosts: getTravelPosts(),
-    runningPosts: getRunningPosts(),
+    // runningPosts: getRunningPosts(),
     title: "BiBiOTA's blog",
     nav: [
       { text: 'Tech', link: '/tech/'  },
