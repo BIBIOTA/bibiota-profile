@@ -8,11 +8,14 @@
         <figure>
           <img :src="article.avatar" alt="">
         </figure>
-        <div class="py-2 font-medium">
-          {{ article.title }}
-        </div>
-        <div class="py-2 font-light">
-          {{ moment(article.date.time).format('YYYY-MM-DD') }}
+        <div>
+          <div
+            v-html="article.title"
+            class="flex justify-center items-center py-2 px-2 font-medium h-16"
+          />
+          <div class="py-2 font-light">
+            {{ moment(article.date.time).format('YYYY-MM-DD') }}
+          </div>
         </div>
       </a>
     </div>
