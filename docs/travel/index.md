@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Travel Articles
+description: BiBiOTA的旅行文章
 ---
 
 <TravelArticleList />

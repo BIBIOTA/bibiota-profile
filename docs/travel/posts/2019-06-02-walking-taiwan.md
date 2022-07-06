@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: 時速4公里的旅行－徒步環島44天
+description: 每個台灣人一生中大概都會有一次的環島旅行。但是我不知道從哪天起就瘋了，會想要用走路環島。
 date: 2019-06-02
 avatar: /./2019-06-02/cover.jpeg
 tags:

@@ -10,6 +10,7 @@
  * Note : this file is located in a `utils` subfolder of the `.vitepress` folder, change the path to conform to your setup.
  */
 
+ require('dotenv').config()
  const fs = require('fs')
  const path = require('path')
  const matter = require('gray-matter')
@@ -24,6 +25,40 @@
  
  exports.getRunningPosts = function getRunningPosts(asFeed = false) {
    return loadDataFromDirectory('running', asFeed)
+ }
+
+ exports.getTitle = () => {
+  return getTitle();
+ }
+
+ exports.getDescription = () => {
+  return getDescription();
+ }
+
+ exports.getMetaData = function getMetaData() {
+  const url = process.env.VUE_APP_SITE_URL;
+  const title = getTitle();
+  const description = getDescription(); 
+  return [
+    // Twitter
+    ['meta', { name: 'twitter:title', content: title }],
+    ['meta', { name: 'twitter:description', content: description }],
+    // Open Graph
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'zh-tw' }],
+    ['meta', { property: 'og:site', content: url }],
+    ['meta', { property: 'og:site_name', content: title }],
+    ['meta', { property: 'og:title', content: title }],
+    ['meta', { property: 'og:description', content: description }],      
+  ];
+ }
+
+ function getTitle() {
+  return "BiBiOTA's blog"
+ }
+
+ function getDescription() {
+  return "BiBiOTA's blog. About Engineering, Travel, Running."
  }
  
  function loadDataFromDirectory(directory, asFeed) {

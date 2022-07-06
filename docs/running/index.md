@@ -1,5 +1,7 @@
 ---
 layout: page
+title: Running Articles
+description: BiBiOTA的跑步文章
 ---
 
 <RunningArticleList />

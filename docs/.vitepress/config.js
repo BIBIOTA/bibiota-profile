@@ -1,10 +1,19 @@
-import { getTechPosts, getTravelPosts, getRunningPosts } from './loadData'
+import {
+  getTechPosts,
+  getTravelPosts,
+  getRunningPosts,
+  getMetaData,
+  getTitle,
+  getDescription,
+} from './loadData'
 
 export default {
-  title: "BiBiOTA's blog",
+  title: getTitle(),
+  description: getDescription(),
   locales: {
     '/': { lang: 'zh-TW' }
   },
+  head: getMetaData(),
   themeConfig: {
     techPosts: getTechPosts(),
     travelPosts: getTravelPosts(),
