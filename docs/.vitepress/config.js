@@ -13,7 +13,7 @@ export default {
     nav: [
       { text: 'Tech', link: '/tech/'  },
       { text: 'Travel', link: '/travel/' },
-      { text: 'Running', link: '/running/' }
+      // { text: 'Running', link: '/running/' }
     ]
   },
   bundlerConfig: {
