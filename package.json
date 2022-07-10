@@ -21,6 +21,7 @@
     "dotenv": "^16.0.1",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
+    "medium-zoom": "^1.0.6",
     "moment": "^2.29.3",
     "path": "^0.12.7",
     "sass": "^1.53.0"

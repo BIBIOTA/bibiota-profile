@@ -28,7 +28,7 @@ tags:
 
 但是我不知道從哪天起就瘋了，會想要用走路環島。
 
-![DSC_5106[1].JPG](https://pic.pimg.tw/bibibackpaker/1560683311-2363760310_n.jpg "DSC_5106[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560683311-2363760310_n.jpg" alt="DSC_5106[1].JPG" />
 
 有天，在網路上看到有人說:『在環遊世界前，要先在台灣環島一次」。
 
@@ -48,7 +48,7 @@ tags:
 
 因為:『如果現在不走，以後也許體力跟時間都沒辦法允許我去走了。』
 
-![DSC_5166[1].JPG](https://pic.pimg.tw/bibibackpaker/1560685727-3984455510_n.jpg "DSC_5166[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560685727-3984455510_n.jpg" alt="DSC_5166[1].JPG" />
 
 徒步環島和過去的旅行方式不同，每天要徒步10~40公里，沿途的風景很多時候也不是像太魯閣峽谷或是合歡山公路一樣，
 
@@ -64,7 +64,7 @@ tags:
 
 剛上路的頭幾天，每天都覺得過得比當兵時候的任何一天都更痛苦。
 
-![DSC_5110[1].JPG](https://pic.pimg.tw/bibibackpaker/1560685886-2816785586_n.jpg "DSC_5110[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560685886-2816785586_n.jpg" alt="DSC_5110[1].JPG" />
 
 第一天:
 
@@ -84,7 +84,7 @@ tags:
 
 「我到底是發什麼神經決定要走路環島呢？」
 
-![DSC_5116[1].JPG](https://pic.pimg.tw/bibibackpaker/1560685947-1056748659_n.jpg "DSC_5116[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560685947-1056748659_n.jpg" alt="DSC_5116[1].JPG" />
 
 帶著這樣的疑惑，第二天我還是繼續走了下去，
 
@@ -94,7 +94,7 @@ tags:
 
 ￼到後來我才發現，我帶了很多不必要的東西，行李超過十公斤，之後在路上寄了一些東西回去。
 
-![DSC_5185[1].JPG](https://pic.pimg.tw/bibibackpaker/1560686719-2767886212_n.jpg "DSC_5185[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560686719-2767886212_n.jpg" alt="DSC_5185[1].JPG" />
 
 走了一個星期，雙腳開始出現水泡，漸漸的會影響到行進的速度。從苗栗撐了好幾天到彰化，終於痛到會走不下去，
 
@@ -108,13 +108,13 @@ tags:
 
 但是我回答:『路在前面，還是要繼續往前！』
 
-![DSC_5395[1].JPG](https://pic.pimg.tw/bibibackpaker/1560688108-3369510964_n.jpg "DSC_5395[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560688108-3369510964_n.jpg" alt="DSC_5395[1].JPG" />
 
 重新上路以後，水泡還是會無可避免地出現，不過也讓我發現最大的原因是因為穿上新鞋就出發還沒合腳，還有不夠厚的襪子。
 
 前面的慘痛經驗也讓我學會自己處理水泡，畢竟不是每個地方都有診所可以給醫生看。
 
-![DSC_5241[1].JPG](https://pic.pimg.tw/bibibackpaker/1560688413-3752466140_n.jpg "DSC_5241[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560688413-3752466140_n.jpg" alt="DSC_5241[1].JPG" />
 
 十月和十一月還是秋老虎的天氣，常常白天氣溫都超過三十度。
 
@@ -122,13 +122,13 @@ tags:
 
 走了一整天後擤鼻涕的時候鼻屎也是黑的。
 
-![DSC_5390[1].JPG](https://pic.pimg.tw/bibibackpaker/1560688259-3226462917_n.jpg "DSC_5390[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560688259-3226462917_n.jpg" alt="DSC_5390[1].JPG" />
 
 有時候一整天都是下雨天。  
 在墾丁龍磐草原，遇到颱風等級的暴風雨。  
 站都站不穩還會被風吹到路中央，我只記得一直努力不讓自己被風吹走。
 
-![DSC_5711[1].JPG](https://pic.pimg.tw/bibibackpaker/1560689218-2181286474_n.jpg "DSC_5711[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560689218-2181286474_n.jpg" alt="DSC_5711[1].JPG" />
 
 一路上靠著帳棚睡過許多地方。
 
@@ -139,7 +139,7 @@ tags:
 印象深刻的是住在舊火車站的時候要在廁所洗冷水澡，隔壁的早餐店老闆娘怕我在廁所洗冷水澡會感冒，  
 自己燒了一桶柴水讓我可以用熱水洗澡，雖然那時人在外面過夜，但突然心裡感到很溫暖讓我很想念家。
 
-![PhotoGrid_1560694297280[1].jpg](https://pic.pimg.tw/bibibackpaker/1560694362-81770144_m.jpg "PhotoGrid_1560694297280[1].jpg")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560694362-81770144_m.jpg" alt="PhotoGrid_1560694297280[1].jpg" />
 
 徒步環島也讓我發覺台灣很小，人與人之間的緣分也很奇妙。  
 在台中豐原的時候找不到可以借宿的地方，  
@@ -154,7 +154,7 @@ tags:
 在台東遇到正在騎單車環島的新加坡大姊，  
 明明一個在騎車一個在走路但我們在不同地方遇到了三次。
 
-![DSC_5742[1].JPG](https://pic.pimg.tw/bibibackpaker/1560691971-3803342966_n.jpg "DSC_5742[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560691971-3803342966_n.jpg" alt="DSC_5742[1].JPG" />
 
 徒步的時速大約只有4公里，所以在徒步環島的路上，會有更多人與人的故事。
 
@@ -164,7 +164,7 @@ tags:
 
 所以我覺得徒步環島不是屬於自己一個人的旅行，每一步都是帶著大家的支持前進的。
 
-![PhotoGrid_1560694222203[1].jpg](https://pic.pimg.tw/bibibackpaker/1560694412-2176089054_m.jpg "PhotoGrid_1560694222203[1].jpg")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560694412-2176089054_m.jpg" alt="PhotoGrid_1560694222203[1].jpg" />
 
 44天的環島旅程 939公里的徒步  
 經過台灣好幾個鄉鎮城市、太平洋海岸線旁的公路、晨曦的花東縱谷稻田。  
@@ -180,7 +180,7 @@ tags:
 
 每天吃在地的美食也是環島的樂趣之一。
 
-![PhotoGrid_1560694622278[1].jpg](https://pic.pimg.tw/bibibackpaker/1560694666-3600393501_m.jpg "PhotoGrid_1560694622278[1].jpg")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560694666-3600393501_m.jpg" alt="PhotoGrid_1560694622278[1].jpg" />
 
 環島回來過後，還是喜歡徒步旅行，
 
@@ -206,4 +206,4 @@ Camino de Santiago
 
 Buen Camino！ 
 
-![DSC_5955[1].JPG](https://pic.pimg.tw/bibibackpaker/1560694782-223986658_l.jpg "DSC_5955[1].JPG")
+<ZoomImg src="https://pic.pimg.tw/bibibackpaker/1560694782-223986658_l.jpg" alt="DSC_5955[1].JPG" />
