@@ -12,9 +12,12 @@ tags:
 
 <script setup>
   import ArticleTitle from '@theme/components/ArticleTitle.vue'
+  import ScrollToTopBtn from '@theme/components/ScrollToTopBtn.vue'
 </script>
 
 <ArticleTitle />
+
+<ScrollToTopBtn />
 
 2019年，我同時走了兩條世界僅有的「巡禮路」世界遺產-西班牙聖雅各之路和日本熊野古道。
 

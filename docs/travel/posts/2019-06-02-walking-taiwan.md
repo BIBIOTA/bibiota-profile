@@ -12,9 +12,12 @@ tags:
 
 <script setup>
   import ArticleTitle from '@theme/components/ArticleTitle.vue'
+  import ScrollToTopBtn from '@theme/components/ScrollToTopBtn.vue'
 </script>
 
 <ArticleTitle />
+
+<ScrollToTopBtn />
 
 每個台灣人一生中大概都會有一次的環島旅行。
 
