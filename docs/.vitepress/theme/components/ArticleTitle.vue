@@ -11,7 +11,7 @@
     </div>
     <div class="p-2">
       <figure>
-        <img class="mx-auto" :src="frontmatter.avatar" :alt="frontmatter.title">
+        <ZoomImg :src="frontmatter.avatar" :alt="frontmatter.title" />
       </figure>
     </div>
   </div>
