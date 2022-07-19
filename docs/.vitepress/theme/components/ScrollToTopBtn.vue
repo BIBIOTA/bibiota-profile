@@ -12,10 +12,14 @@
 <script>
 export default {
   created () {
-    window.addEventListener('scroll', this.handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', this.handleScroll)
+    }
   },
   destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
   },
   data () {
     return {
@@ -24,13 +28,17 @@ export default {
   },
   methods: {
     scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (typeof window !== 'undefined') {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     },
     handleScroll () {
-      if (window.scrollY > 2000) {
-        this.isShow = true;
-      } else {
-        this.isShow = false;
+      if (typeof window !== 'undefined') {
+        if (window.scrollY > 2000) {
+          this.isShow = true;
+        } else {
+          this.isShow = false;
+        }
       }
     },
   },
