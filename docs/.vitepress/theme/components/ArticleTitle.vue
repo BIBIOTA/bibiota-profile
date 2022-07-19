@@ -11,13 +11,13 @@
     </div>
     <div class="p-2">
       <figure>
-        <ZoomImg :src="frontmatter.avatar" :alt="frontmatter.title" />
+        <ZoomImg :src="withBase(frontmatter.avatar)" :alt="frontmatter.title" />
       </figure>
     </div>
   </div>
 </template>
 <script>
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import moment from 'moment'
 
 export default {
@@ -27,6 +27,9 @@ export default {
       frontmatter,
       moment,
     }
+  },
+  methods: {
+    withBase,
   },
 }
 </script>
