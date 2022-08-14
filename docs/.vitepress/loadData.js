@@ -36,7 +36,7 @@
  }
 
  exports.getMetaData = function getMetaData() {
-  const url = process.env.VUE_APP_SITE_URL;
+  const url = process.env.VITE_APP_SITE_URL;
   const title = getTitle();
   const description = getDescription(); 
   return [

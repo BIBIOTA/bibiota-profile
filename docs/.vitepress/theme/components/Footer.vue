@@ -15,7 +15,41 @@
               Tailwind  CSS
             </a>
         </div>
+        <div v-if="trafficCounts">
+          今日瀏覽人次: {{ trafficCounts.count }}, 總瀏覽人次: {{ trafficCounts.totalCount }}
+        </div>
       </div>
     </div>
   </footer>
 </template>
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    const trafficCounts = null;
+    return {
+      trafficCounts,
+    };
+  },
+  methods: {
+    async getTrafficCounts() {
+      const trafficCounts = await axios.post(import.meta.env.VITE_APP_API_URL + '/traffic').then((res) => {
+        const { data, status } = res.data;
+        if (status) {
+          return data;
+        }
+        return null;
+      }).catch(() => {
+        return null;
+      });
+
+      return trafficCounts;
+    },
+  },
+  async created() {
+    this.trafficCounts = await this.getTrafficCounts();
+  },
+};
+
+</script>
