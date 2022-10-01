@@ -5,7 +5,7 @@
       v-for="(article, i) in articles" :key="`article_${i}`"
     >
       <a :href="article.href">
-        <figure>
+        <figure class="flex items-center min-h-256">
           <img :src="article.avatar" alt="">
         </figure>
         <div>
@@ -38,3 +38,7 @@ export default {
   },
 }
 </script>
+<style lang="sass">
+  .min-h-256
+    min-height: 256px
+</style>
