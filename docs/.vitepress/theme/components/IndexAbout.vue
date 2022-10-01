@@ -58,6 +58,13 @@ export default {
           path: './linkedin.svg',
           size: 32,
         },
+        {
+          src: 'telegram.png',
+          href: 'https://t.me/BiBiOTA',
+          alt: 'telegram',
+          path: './telegram.svg',
+          size: 32,
+        },
       ],
     }
   },
