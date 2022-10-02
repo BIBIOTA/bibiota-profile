@@ -8,6 +8,19 @@ tags:
   - 徒步環島
   - 旅行
   - 台灣
+head:
+  - - meta
+    - property: og:title
+      content: 時速4公里的旅行－徒步環島44天
+  - - meta
+    - property: og:description
+      content: 每個台灣人一生中大概都會有一次的環島旅行。但是我不知道從哪天起就瘋了，會想要用走路環島。
+  - - meta
+    - name: twitter:title
+      content: 時速4公里的旅行－徒步環島44天
+  - - meta
+    - name: twitter:description
+      content: 每個台灣人一生中大概都會有一次的環島旅行。但是我不知道從哪天起就瘋了，會想要用走路環島。
 ---
 
 <script setup>

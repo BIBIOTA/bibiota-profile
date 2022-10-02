@@ -8,6 +8,19 @@ tags:
   - 機票
   - 便宜機票
   - bug機票
+head:
+  - - meta
+    - property: og:title
+      content: 關於機票這回事 - 那些我找到的便宜機票和方法
+  - - meta
+    - property: og:description
+      content: 窮遊海外必先學習買機票
+  - - meta
+    - name: twitter:title
+      content: 關於機票這回事 - 那些我找到的便宜機票和方法
+  - - meta
+    - name: twitter:description
+      content: 窮遊海外必先學習買機票
 ---
 
 <script setup>

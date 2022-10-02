@@ -8,6 +8,19 @@ tags:
   - 朝聖之路
   - 旅行
   - 熊野古道
+head:
+  - - meta
+    - property: og:title
+      content: 疫情前的巡禮...徒步西班牙聖雅各日本熊野雙朝聖-熊野古道篇
+  - - meta
+    - property: og:description
+      content: 2019年，我同時走了兩條世界僅有的「巡禮路」世界遺產-西班牙聖雅各之路和日本熊野古道。
+  - - meta
+    - name: twitter:title
+      content: 疫情前的巡禮...徒步西班牙聖雅各日本熊野雙朝聖-熊野古道篇
+  - - meta
+    - name: twitter:description
+      content: 2019年，我同時走了兩條世界僅有的「巡禮路」世界遺產-西班牙聖雅各之路和日本熊野古道。
 ---
 
 <script setup>

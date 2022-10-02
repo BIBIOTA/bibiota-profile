@@ -8,6 +8,19 @@ tags:
   - JavaScript
   - Nodejs
   - Cheerio
+head:
+  - - meta
+    - property: og:title
+      content: JavaScript爬蟲筆記 - 使用cheerio取得路跑賽事資料
+  - - meta
+    - property: og:description
+      content: 用JavaScript爬蟲
+  - - meta
+    - name: twitter:title
+      content: JavaScript爬蟲筆記 - 使用cheerio取得路跑賽事資料
+  - - meta
+    - name: twitter:description
+      content: 用JavaScript爬蟲
 ---
 
 <script setup>

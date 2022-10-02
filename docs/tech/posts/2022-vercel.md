@@ -8,6 +8,19 @@ tags:
   - Vercel
   - Vue.js
   - Cloud service
+head:
+  - - meta
+    - property: og:title
+      content: 部署 Side Project - 免費仔的雲端部署筆記(Vercel)
+  - - meta
+    - property: og:description
+      content: 部署部落格到Velcel的流程
+  - - meta
+    - name: twitter:title
+      content: 部署 Side Project - 免費仔的雲端部署筆記(Vercel)
+  - - meta
+    - name: twitter:description
+      content: 部署部落格到Velcel的流程
 ---
 
 <script setup>
