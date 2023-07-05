@@ -16,11 +16,14 @@
       <ul class="dashed">
         <li class="text-left font-light">
           從飯店櫃檯轉職網頁開發的後端工程師。<br />
-          擁有一年的後端開發經驗，喜歡學習新知、研究任何網頁相關的技術。<br />
-          同時也是熱愛健行、跑步的旅人。曾在台灣徒步環島、西班牙徒步朝聖之路、跑過一場全程馬拉松。
+          擁有 {{carrerCaculateYear}} 年的後端開發經驗，擅長使用 PHP、Node.js。
+          <br />
+          喜歡學習、研究任何軟體開發相關的技術，同時也熱愛健行、旅行、跑步。
+          <br />
+          曾在台灣徒步環島、西班牙徒步朝聖之路。
         </li>
       </ul>
-      <div class="flex justify-end">
+      <div class="flex justify-end pt-4">
         <svg v-for="(icon, i) in icons" :key="`icon_${i}`" class="mx-2" :style="`width: ${icon.size}px; height: ${icon.size}px`">
           <a :href="icon.href" target="_blank">
             <image :style="`width: ${icon.size}px; height: ${icon.size}px`" :xlink:href="withBase(icon.path)" :src="icon.src" :alt="icon.alt" />
@@ -58,18 +61,20 @@ export default {
           path: './linkedin.svg',
           size: 32,
         },
-        {
-          src: 'telegram.png',
-          href: 'https://t.me/BiBiOTA',
-          alt: 'telegram',
-          path: './telegram.svg',
-          size: 32,
-        },
       ],
     }
   },
   methods: {
     withBase,
+  },
+  computed: {
+    carrerCaculateYear() {
+      const start = new Date('2021-01-01');
+      const now = new Date();
+      const diff = now.getTime() - start.getTime();
+      const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+      return years;
+    }
   },
 }
 </script>
