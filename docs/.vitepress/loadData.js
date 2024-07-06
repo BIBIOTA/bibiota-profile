@@ -54,11 +54,11 @@
  }
 
  function getTitle() {
-  return "BiBiOTA's blog"
+  return "BiBiOTA's profile"
  }
 
  function getDescription() {
-  return "BiBiOTA's blog. About Engineering, Travel, Running."
+  return "BiBiOTA's profile page."
  }
  
  function loadDataFromDirectory(directory, asFeed) {

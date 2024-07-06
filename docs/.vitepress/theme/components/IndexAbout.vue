@@ -10,26 +10,36 @@
       </figure>
     </div>
     <div class="flex flex-col justify-around lg:w-2/3 md:w-2/3 sm:1/2 p-5">
-      <h1 class="text-2xl md:text-3xl font-medium whitespace-nowrap pb-4">
-        BiBiOTA - Backend Engineer
+      <h1 class="text-2xl md:text-3xl font-medium whitespace-nowrap pb-2">
+        BiBiOTA
       </h1>
+      <h2 class="pb-4">
+        Backend Engineer | Backpacker | Runner
+      </h2>
       <ul class="dashed">
         <li class="text-left font-light">
-          從飯店櫃檯轉職網頁開發的後端工程師。<br />
-          擁有 {{carrerCaculateYear}} 年的後端開發經驗，擅長使用 PHP、Node.js。
+          擁有 {{carrerCaculateYear}} 年開發經驗的後端工程師。 <br />
+          熟悉 Laravel、Express.js、Nest.js 等框架，並有 Docker、CI/CD 等經驗。
           <br />
-          喜歡學習、研究任何軟體開發相關的技術，同時也熱愛健行、旅行、跑步。
+          除了程式開發，也熱愛健行、背包旅行、跑馬拉松。
           <br />
-          曾在台灣徒步環島、西班牙徒步朝聖之路。
+          更多關於我的資訊，歡迎到以下連結：
         </li>
       </ul>
-      <div class="flex justify-end pt-4">
+      <div class="flex justify-end pt-4 pb-4">
         <svg v-for="(icon, i) in icons" :key="`icon_${i}`" class="mx-2" :style="`width: ${icon.size}px; height: ${icon.size}px`">
           <a :href="icon.href" target="_blank">
             <image :style="`width: ${icon.size}px; height: ${icon.size}px`" :xlink:href="withBase(icon.path)" :src="icon.src" :alt="icon.alt" />
           </a>
         </svg>
       </div>
+      <ul>
+        <li class="text-right font-light">
+          - 不定期在 Medium 分享技術與數位遊牧文章。
+          <br />
+          - 不定期在背包客棧分享旅遊文章。
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -61,6 +71,18 @@ export default {
           path: './linkedin.svg',
           size: 32,
         },
+        {
+          src: 'instagram.png',
+          href: 'https://www.instagram.com/bibi_ota/',
+          path: './instagram.svg',
+          size: 32,
+        },
+        {
+          src: 'backpacker.png',
+          href: 'https://www.backpackers.com.tw/forum/member.php?u=1090694',
+          path: './backpacker.svg',
+          size: 32,
+        }
       ],
     }
   },

@@ -1,7 +1,7 @@
 {
-  "name": "bibiota-blog",
+  "name": "bibiota-profile",
   "version": "1.0.0",
-  "description": "BiBiOTA's blog",
+  "description": "BiBiOTA's profile",
   "main": "index.js",
   "author": "BiBiOTA",
   "license": "MIT",

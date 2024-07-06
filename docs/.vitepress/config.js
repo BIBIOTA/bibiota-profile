@@ -18,10 +18,10 @@ export default {
     techPosts: getTechPosts(),
     travelPosts: getTravelPosts(),
     // runningPosts: getRunningPosts(),
-    title: "BiBiOTA's blog",
+    title: "BiBiOTA's profile",
     nav: [
-      { text: 'Tech', link: '/tech/'  },
-      { text: 'Travel', link: '/travel/' },
+      // { text: 'Tech', link: '/tech/'  },
+      // { text: 'Travel', link: '/travel/' },
       // { text: 'Running', link: '/running/' }
     ]
   },
