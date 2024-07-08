@@ -18,7 +18,7 @@ export default {
     techPosts: getTechPosts(),
     travelPosts: getTravelPosts(),
     // runningPosts: getRunningPosts(),
-    title: "BiBiOTA's profile",
+    title: "Yuki Ota's profile",
     nav: [
       // { text: 'Tech', link: '/tech/'  },
       // { text: 'Travel', link: '/travel/' },

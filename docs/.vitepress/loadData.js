@@ -54,11 +54,11 @@
  }
 
  function getTitle() {
-  return "BiBiOTA's profile"
+  return "Yuki Ota's profile"
  }
 
  function getDescription() {
-  return "BiBiOTA's profile page."
+  return "Yuki Ota's profile page."
  }
  
  function loadDataFromDirectory(directory, asFeed) {

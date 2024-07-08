@@ -11,7 +11,7 @@
     </div>
     <div class="flex flex-col justify-around lg:w-2/3 md:w-2/3 sm:1/2 p-5">
       <h1 class="text-2xl md:text-3xl font-medium whitespace-nowrap pb-2">
-        BiBiOTA
+        YUKI OTA
       </h1>
       <h2 class="pb-4">
         Backend Engineer | Backpacker | Runner
