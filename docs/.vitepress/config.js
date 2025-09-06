@@ -20,21 +20,23 @@ export default {
     // runningPosts: getRunningPosts(),
     title: "Yuki Ota's profile",
     nav: [
+      { text: 'Resume', link: '/resume'  },
       // { text: 'Tech', link: '/tech/'  },
       // { text: 'Travel', link: '/travel/' },
       // { text: 'Running', link: '/running/' }
     ]
   },
-  bundlerConfig: {
-    viteOptions: {
-      css: {
-        postcss: {
-            plugins: [
-              require('tailwindcss'),
-              require('autoprefixer'),
-            ]
-        }
-      },
+  vite: {
+    css: {
+      postcss: {
+          plugins: [
+            require('tailwindcss'),
+            require('autoprefixer'),
+          ]
+      }
+    },
+    define: {
+      __VUE_PROD_DEVTOOLS__: false
     }
   },
   theme: './theme/index.js',

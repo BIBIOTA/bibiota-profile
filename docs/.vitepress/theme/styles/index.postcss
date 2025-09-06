@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 隱藏 resume 頁面的 VitePress 自動產生標題 */
+.vp-doc._resume h1#resume,
+.vp-doc h1[id="resume"] {
+  display: none !important;
+}
