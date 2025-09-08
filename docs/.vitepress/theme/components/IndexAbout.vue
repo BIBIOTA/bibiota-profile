@@ -14,18 +14,11 @@
         YUKI OTA
       </h1>
       <h2 class="pb-4">
-        Backend Engineer | Backpacker | Runner
+        Backend Engineer | Backpacker | Hiker | Runner 
       </h2>
-      <ul class="dashed">
-        <li class="text-left font-light">
-          擁有 {{carrerCaculateYear}} 年開發經驗的後端工程師。 <br />
-          熟悉 Laravel、Express.js、Nest.js 等框架，並有 Docker、CI/CD 等經驗。
-          <br />
-          除了程式開發，也熱愛健行、背包旅行、跑馬拉松。
-          <br />
-          更多關於我的資訊，歡迎到以下連結：
-        </li>
-      </ul>
+      <div class="whitespace-nowrap">
+        更多關於我的資訊，歡迎到以下連結，或查看「<a class="text-indigo-600" href="/resume">Resume</a>」
+      </div>
       <div class="flex justify-end pt-4 pb-4">
         <svg v-for="(icon, i) in icons" :key="`icon_${i}`" class="mx-2" :style="`width: ${icon.size}px; height: ${icon.size}px`">
           <a :href="icon.href" target="_blank">
@@ -33,13 +26,6 @@
           </a>
         </svg>
       </div>
-      <ul>
-        <li class="text-right font-light">
-          - 不定期在 Medium 分享技術與數位遊牧文章。
-          <br />
-          - 不定期在背包客棧分享旅遊文章。
-        </li>
-      </ul>
     </div>
   </div>
 </template>
@@ -79,8 +65,14 @@ export default {
         },
         {
           src: 'backpacker.png',
-          href: 'https://www.backpackers.com.tw/forum/member.php?u=1090694',
-          path: './backpacker.svg',
+          href: 'https://www.backpackers.com.tw/forum/search.php?searchid=34321337',
+          path: './backpacker.png',
+          size: 32,
+        },
+        {
+          src: 'strava.png',
+          href: 'https://www.strava.com/athletes/28179653',
+          path: './strava.png',
           size: 32,
         }
       ],
