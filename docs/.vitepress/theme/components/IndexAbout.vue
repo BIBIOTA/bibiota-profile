@@ -10,16 +10,16 @@
       </figure>
     </div>
     <div class="flex flex-col justify-around lg:w-2/3 md:w-2/3 sm:1/2 p-5">
-      <h1 class="text-2xl md:text-3xl font-medium whitespace-nowrap pb-2">
+      <h1 class="text-2xl md:text-3xl font-medium pb-2 text-center md:text-left">
         YUKI OTA
       </h1>
-      <h2 class="pb-4">
+      <h2 class="pb-4 text-sm md:text-base lg:text-lg text-center md:text-left">
         Backend Engineer | Backpacker | Hiker | Runner 
       </h2>
-      <div class="whitespace-nowrap">
+      <div class="text-sm md:text-base text-center md:text-left">
         更多關於我的資訊，歡迎到以下連結，或查看「<a class="text-indigo-600" href="/resume">Resume</a>」
       </div>
-      <div class="flex justify-end pt-4 pb-4">
+      <div class="flex justify-center md:justify-end pt-4 pb-4">
         <svg v-for="(icon, i) in icons" :key="`icon_${i}`" class="mx-2" :style="`width: ${icon.size}px; height: ${icon.size}px`">
           <a :href="icon.href" target="_blank">
             <image :style="`width: ${icon.size}px; height: ${icon.size}px`" :xlink:href="withBase(icon.path)" :src="icon.src" :alt="icon.alt" />
