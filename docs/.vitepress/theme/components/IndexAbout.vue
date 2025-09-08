@@ -9,7 +9,7 @@
         >
       </figure>
     </div>
-    <div class="flex flex-col justify-around lg:w-2/3 md:w-2/3 sm:1/2 p-5">
+    <div class="flex flex-col justify-around lg:w-2/3 md:w-2/3 sm:1/2 p-3 sm:p-5">
       <h1 class="text-2xl md:text-3xl font-medium pb-2 text-center md:text-left">
         YUKI OTA
       </h1>
