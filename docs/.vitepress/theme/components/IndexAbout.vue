@@ -65,7 +65,7 @@ export default {
         },
         {
           src: 'backpacker.png',
-          href: 'https://www.backpackers.com.tw/forum/search.php?searchid=34321337',
+          href: 'https://www.backpackers.com.tw/forum/member.php?u=1090694',
           path: './backpacker.png',
           size: 32,
         },
