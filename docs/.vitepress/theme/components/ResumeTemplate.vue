@@ -17,9 +17,11 @@
                   </div>
                 </div>
                 <div class="flex-1">
-                  <h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                    <span>{{ personalData.name }}</span>
-                    <span class="text-lg text-gray-600 font-normal">- {{ personalData.title }}</span>
+                  <h1 class="text-2xl font-bold text-gray-900">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                      <span>{{ personalData.name }}</span>
+                      <span class="text-lg text-gray-600 font-normal">- {{ personalData.title }}</span>
+                    </div>
                   </h1>
                   <div class="flex flex-wrap gap-3 mt-2 text-xs text-gray-600">
                     <span>📧 {{ personalData.email }}</span>
@@ -91,7 +93,7 @@
                 </div>
               </section>
 
-              <div class="grid grid-cols-2 gap-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <section>
                   <h2 class="text-lg font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
                     {{ t('sections.education') }}
