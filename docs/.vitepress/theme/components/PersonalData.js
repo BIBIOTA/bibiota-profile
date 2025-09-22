@@ -18,9 +18,9 @@ export const personalDataRaw = {
   },
   website: 'https://me.bibiota.com',
   summary: {
-    'zh-TW': '擁有 4 年開發經驗的網頁後端工程師，擅長於完善開發流程、導入自動化工具、協助團隊導入及使用AI工具。',
-    en: 'Web backend engineer with 4 years of development experience, specializing in improving development processes, implementing automation tools, and assisting teams in adopting and using AI tools.',
-    ja: '4年間の開発経験を持つWebバックエンドエンジニア。開発プロセスの改善、自動化ツールの導入、チームへのAIツール導入と活用支援を得意とする。',
+    'zh-TW': '擁有四年開發經驗的非本科網頁後端工程師。轉職初期，僅用半年時間學會了前後端框架、容器化技術。投入職場後，也能夠迅速熟悉各種專案與技術，成為公司即戰力。目前專職於後端，主要擔任公司特定產品線的負責人，主導技術規劃、開發、維護、優化等工作，同時熱衷分享知識、導入自動化工具、協助團隊使用AI工具。',
+    en: 'Backend engineer with 4 years experience from non-technical background. Learned frontend/backend frameworks and containerization in 6 months during career transition. Quickly adapts to diverse projects and technologies, becoming an immediate asset. Currently specializes in backend development, leading specific product lines and handling technical planning, development, maintenance, and optimization while promoting knowledge sharing, automation tools, and AI adoption.',
+    ja: '非IT系出身で4年間の開発経験を持つWebバックエンドエンジニア。転職初期、わずか6ヶ月でフロントエンド・バックエンドフレームワーク、コンテナ化技術を習得。実務に入ってからも、様々なプロジェクトや技術に迅速に適応し、即戦力として貢献してまいりました。現在はバックエンドに専念し、特定プロダクトラインの責任者として技術企画、開発、保守、最適化を主導しながら、知識共有、自動化ツールの導入、チームのAIツール活用支援に積極的に取り組んでいる。',
   },
 
   skills: [
@@ -31,7 +31,7 @@ export const personalDataRaw = {
     'GraphQL/REST API',
     'Docker',
     'CI/CD Pipeline',
-    'Issues & Logs Tracking',
+    'Issue & Log Tracking',
     'System Analysis',
     'Scrum Master',
   ],
@@ -69,8 +69,8 @@ export const personalDataRaw = {
       },
       level: {
         'zh-TW': '普通 - TOEIC 710',
-        en: 'Intermediate - TOEIC 710',
-        ja: '中級 - TOEIC 710',
+        en: 'Conversational - TOEIC 710',
+        ja: '日常会話レベル - TOEIC 710',
       },
     },
   ],
@@ -99,9 +99,9 @@ export const personalDataRaw = {
   experience: [
     {
       position: {
-        'zh-TW': '後端工程師',
-        en: 'Backend Engineer',
-        ja: 'バックエンドエンジニア',
+        'zh-TW': '後端工程師 (PHP / Laravel, Vue.js)',
+        en: 'Backend Engineer (PHP / Laravel, Vue.js)',
+        ja: 'バックエンドエンジニア (PHP / Laravel, Vue.js)',
       },
       company: {
         'zh-TW': 'AsiaYo',
@@ -121,59 +121,64 @@ export const personalDataRaw = {
       current: true,
       responsibilities: [
         {
-          'zh-TW': '旅遊電商客戶端服務開發。',
-          en: 'Development of travel e-commerce services',
-          ja: '旅行ECサイトのカスタマー向けサービス開発',
+          'zh-TW': '旅遊電商後端服務開發，包括： 客端、後台、旅宿端、B2B系統以及部分後台前端頁面開發。',
+            en: 'Travel EC backend service development, including: customer, admin, accommodation, B2B, and admin frontend pages development.',
+            ja: 'トラベルECにおける、顧客向け、管理者向け、宿泊施設向け、B2B向けシステムおよび一部の管理者向けページのフロントエンド開発。',
         },
         {
-          'zh-TW': '後台系統及後台前端頁面開發。',
-          en: 'CMS system and admin frontend page development',
-          ja: 'CMSシステムと管理画面フロントエンド開発',
+          'zh-TW': '負責多個產品線的系統分析、新需求可行性及開發時程評估 (2024.11~)。',
+          en: 'Conduct system analysis, feasibility assessments, and development timeline evaluations for multiple product lines (Nov. 2024 - Present).',
+          ja: '複数のプロダクトラインにおけるシステム分析、新要件の実現可能性評価、および開発スケジュールの策定を担当 (2024.11~)。',
         },
         {
-          'zh-TW': '第三方API串接 (B2B、供應商庫存、CRM、金流)',
-          en: 'Third-party API integration (B2B, supplier inventory, CRM, payment flow)',
-          ja: 'サードパーティAPI連携（B2B、サプライヤー在庫、CRM、決済フロー）',
-        },
-        {
-          'zh-TW': '系統分析、新需求可行性及開發時程評估。',
-          en: 'System analysis, feasibility assessment of new requirements and development timeline evaluation',
-          ja: 'システム分析、新要件の実現可能性と開発スケジュール評価',
-        },
-        {
-          'zh-TW': '負責1.5個產品線的專案時程、工作分配、人員管理(3~6後端人員)。',
-          en: 'Responsible for project timeline, work allocation, and personnel management (3-6 backend people) for 1.5 product lines',
-          ja: '1.5つのプロダクトラインのプロジェクトスケジュール、作業配分、人員管理（3〜6名）を担当',
-        },
+          'zh-TW': '管理2~3位負責產品線後端 (2024.11~)。',
+          en: 'Lead and manage a team of 2-3 backend engineers responsible for specific product lines (Nov. 2024 - Present).',
+          ja: 'プロダクトラインのバックエンドエンジニア2〜3名のマネジメントを担当 (2024.11~)。',
+        }
       ],
       achievements: [
         {
-          'zh-TW': '後端系統版本升級(PHP 7.1 ~ PHP 8.2、Laravel 6 ~ Laravel 11.x)。',
-          en: 'Backend system version upgrade (PHP 7.1 to PHP 8.2, Laravel 6 to Laravel 11.x)',
-          ja: 'バックエンドシステムバージョンアップ（PHP 7.1からPHP 8.2、Laravel 6からLaravel 11.x）',
+          'zh-TW': '本地開發環境優化、偵錯機制改善、完善開發文件、協助團隊導入AI工具。提升開發效率及產品穩定性 (2022~)。',
+          en: 'Enhanced development efficiency and product stability by optimizing the local environment, improving the debugging mechanism, creating documentation, and assisting the team in adopting AI tools (2022~).',
+          ja: 'ローカル開発環境の最適化、デバッグ機能の改善、開発ドキュメントの最適化、チームへのAIツール導入を支援し、開発効率とシステム安定性の向上に貢献（2022～）。',
         },
         {
-          'zh-TW': '開發體驗優化(本地開發環境優化、偵錯機制改善、完善開發文件、協助團隊導入AI工具）。',
-          en: 'Development experience optimization (local development environment optimization, debugging mechanism improvement, improved development documentation, assisting team in implementing AI tools)',
-          ja: '開発体験の最適化（ローカル開発環境の最適化、デバッグ機能の改善、開発ドキュメントの最適化、チームへのAIツール導入支援）',
+          'zh-TW': '導入自動化腳本及工具，提升開發體驗 (2022~)。',
+          en: 'Improved the overall development experience by implementing automated scripts and tools (2022~).',
+          ja: '自動化スクリプトとツールの導入。開発体験の向上（2022～）。',
         },
         {
-          'zh-TW': '完善自動化工作流程(導入自動化腳本及工具)。',
-          en: 'Improved automated workflow (implemented automated scripts and tools)',
-          ja: '自動化ワークフローの改善（自動化スクリプトとツールの導入）',
+          'zh-TW': '協助擴充產品線，從訂房平台擴大到提供團體旅遊、郵輪、高鐵票、旅遊行程等服務 (2023~)。',
+          en: 'Assisted product line expansion, from hotel booking platform to group tours, cruises, high-speed rail tickets, and travel packages (2023~).',
+          ja: 'プロダクトライン拡張を支援、ホテル予約プラットフォームから団体旅行、クルーズ、高速鉄道チケット、旅行パッケージまで拡大（2023～）。',
         },
         {
-          'zh-TW': '協助公司轉型擴充產品線，從原先的訂房網站擴大到提供B2B軟體、團體旅遊、郵輪、高鐵票預訂等服務。',
-          en: 'Assisted company transformation and product line expansion, from original hotel booking website to B2B software, group tours, cruise, and high-speed rail ticket booking services',
-          ja: '会社の変革とプロダクトライン拡張を支援、元のホテル予約サイトからB2Bソフトウェア、団体旅行、クルーズ、高速鉄道チケット予約サービスまで拡大',
+          'zh-TW': '獨自完成後端系統版本升級(PHP 7.1 ~ PHP 8.2、Laravel 6 ~ Laravel 11.x) (2022~2024)。',
+          en: 'Independently managed and executed the backend system upgrade from PHP 7.1 to 8.2 and Laravel 6 to 11.x (2022-2024).',
+          ja: '独自でシステムバージョンアップを実現（PHP 7.1からPHP 8.2、Laravel 6からLaravel 11.x）（2022～2024）',
         },
+        {
+          'zh-TW': '完成提供給公司與合作旅行社的第三方CRM服務串接，增加公司產品收入(2024)。',
+          en: 'Successfully integrated a 3rd party CRM service for the company and partner travel agencies, resulting in increased product revenue (2024).',
+          ja: '自社および提携旅行会社向けのサードパーティCRMサービス連携を主導し、プロダクト収益の増加に貢献（2024）。',
+        },
+        {
+          'zh-TW': '實現部分舊有頁面前後端分離，成功降低後端維運成本及提升開發效率 (2022~)。',
+          en: 'Achieved partial frontend/backend separation, successfully reducing operational costs and improving development efficiency (2022~).',
+          ja: '一部ページのフロントエンド/バックエンドの分離を実現し、バックエンド運用コストの削減と開発効率の向上を実現（2022～）。',
+        },
+        {
+          'zh-TW': '獨自完成Legacy PHP服務轉移到現有Laravel服務，減少公司維運成本及提升開發效率 (2022)。',
+          en: 'Successfully migrated a legacy PHP service to Laravel service, reducing operational costs and boosting development efficiency (2022).',
+          ja: 'レガシーPHPで構築されたサービスを既存のLaravelフレームワークへ移行し、運用コストの削減と開発効率の向上を実現（2022）。',
+        }
       ],
     },
     {
       position: {
-        'zh-TW': '網頁工程師',
-        en: 'Web Engineer',
-        ja: 'Web エンジニア',
+        'zh-TW': '網頁工程師 (PHP / Laravel, Node.js / NestJs, Vue.js, jQuery)',
+        en: 'Web Engineer (PHP / Laravel, Node.js / NestJs, Vue.js, jQuery)',
+        ja: 'Web エンジニア (PHP / Laravel, Node.js / NestJs, Vue.js, jQuery)',
       },
       company: {
         'zh-TW': '怎漾設計創意有限公司',
@@ -194,20 +199,15 @@ export const personalDataRaw = {
       responsibilities: [
         {
           'zh-TW': '網站前後端開發(預約系統、電商平台、品牌形象網站、活動頁面、後台系統)。',
-          en: 'Full-stack website development (booking system, e-commerce platform, brand image website, event pages, CMS system)',
+          en: 'Full-stack website development, including booking systems, e-commerce platforms, corporate branding websites, event pages, and CMS.',
           ja: 'Webサイトのフルスタック開発（予約システム、ECプラットフォーム、ブランドイメージサイト、イベントページ、CMSシステム）',
         },
       ],
       achievements: [
         {
-          'zh-TW': '完成知名醫療中心官網前台、後台及預約系統開發並且上線。',
-          en: 'Completed the development of the website, CMS system, and reservation system for a well-known medical center and launched it online.',
-          ja: '医療センターの公式サイト、CMSシステム、予約システムの開発を完了し、オンラインで公開',
-        },
-        {
-          'zh-TW': '建立各專案的開發環境(Docker)。',
-          en: 'Established development environment (Docker) for various projects',
-          ja: '各プロジェクトの開発環境（Docker）を構築',
+          'zh-TW': '建立各專案的開發環境(Docker)，實現標準化開發環境。',
+          en: 'Established standardized Docker-based development environments for all projects, ensuring consistency and simplifying onboarding.',
+          ja: '各プロジェクトの開発環境（Docker）を構築し、開発環境の標準化を実現。',
         },
       ],
     },
