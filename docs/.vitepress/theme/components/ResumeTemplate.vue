@@ -93,9 +93,9 @@
                 </div>
               </section>
 
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 education-languages-grid">
                 <section>
-                  <h2 class="text-lg font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
+                  <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
                     {{ t('sections.education') }}
                   </h2>
                   <div class="space-y-4">
@@ -115,7 +115,7 @@
                 </section>
 
                 <section>
-                  <h2 class="text-lg font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
+                  <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
                     {{ t('sections.languages') }}
                   </h2>
                   <div class="space-y-1">
@@ -132,7 +132,7 @@
               </div>
 
               <section>
-                <h2 class="text-lg font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
+                <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
                   {{ t('sections.skills') }}
                 </h2>
                 <div class="flex flex-wrap gap-2 mt-4">
@@ -351,6 +351,12 @@ const props = defineProps({
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 0.75rem !important;
+  }
+  
+  .pdf-content .education-languages-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
   }
   
   .pdf-content .resume-container,
