@@ -18,9 +18,9 @@ export const personalDataRaw = {
   },
   website: 'https://me.bibiota.com',
   summary: {
-    'zh-TW': '擁有四年開發經驗的非本科網頁後端工程師。轉職初期，僅用半年時間學會了前後端框架、容器化技術。投入職場後，也能夠迅速熟悉各種專案與技術，成為公司即戰力。目前專職於後端，主要擔任公司特定產品線的負責人，主導技術規劃、開發、維護、優化等工作，同時熱衷分享知識、導入自動化工具、協助團隊使用AI工具。',
-    en: 'Backend engineer with 4 years experience from non-technical background. Learned frontend/backend frameworks and containerization in 6 months during career transition. Quickly adapts to diverse projects and technologies, becoming an immediate asset. Currently specializes in backend development, leading specific product lines and handling technical planning, development, maintenance, and optimization while promoting knowledge sharing, automation tools, and AI adoption.',
-    ja: '非IT系出身で4年間の開発経験を持つWebバックエンドエンジニア。転職初期、わずか6ヶ月でフロントエンド・バックエンドフレームワーク、コンテナ化技術を習得。実務に入ってからも、様々なプロジェクトや技術に迅速に適応し、即戦力として貢献してまいりました。現在はバックエンドに専念し、特定プロダクトラインの責任者として技術企画、開発、保守、最適化を主導しながら、知識共有、自動化ツールの導入、チームのAIツール活用支援に積極的に取り組んでいる。',
+    'zh-TW': '擁有四年旅遊電商開發經驗的Node.js/NestJS & PHP後端工程師。能夠迅速熟悉各種專案與技術，擅長Issue tracking、分析系統架構、效能優化、版本升級。現職擔任公司特定產品線的負責人，主導技術規劃、開發、維護、優化等工作，同時熱衷分享技術知識、導入自動化工具、協助團隊使用AI工具(Claude Code, AI Code Review)。',
+    en: 'Node.js/NestJS & PHP Backend Engineer with 4 years of experience in travel e-commerce. Proven ability to rapidly adapt to new projects and technologies. Skilled in issue tracking, system architecture analysis, performance optimization, and version upgrades. Currently serving as the technical lead for specific product lines, driving technical planning, development, maintenance, and optimization. Passionate about knowledge sharing, implementing automation workflows, and enabling team adoption of AI tools (Claude Code, AI Code Review).',
+    ja: '旅行系Eコマースで4年の開発経験を持つ、Node.js/NestJS & PHPバックエンドエンジニア。新しいプロジェクトや技術への迅速な適応を得意とし、課題追跡、システムアーキテクチャ分析、パフォーマンス最適化、バージョンアップグレードに精通している。現在は特定プロダクトラインの技術責任者として、技術設計、開発、保守、最適化を主導。また、技術ナレッジの共有や自動化ツールの導入、AIツール（Claude Code, AI Code Review）を活用したチームの生産性向上にも意欲的に取り組んでいる。'
   },
 
   skills: [
