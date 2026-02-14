@@ -8,7 +8,7 @@
     <!-- 一般頁面佈局 -->
     <div v-else>
       <div class="flex justify-center">
-        <Layout class=".page_content" />
+        <Layout />
       </div>
       <Footer />
     </div>
@@ -28,7 +28,7 @@ export default {
     const { theme, frontmatter, page } = useData();
     
     const isResumePage = computed(() => {
-      return frontmatter.value.layout === 'resume' || page.value.relativePath.includes('resume')
+      return page.value.relativePath.includes('resume')
     })
     
     return {

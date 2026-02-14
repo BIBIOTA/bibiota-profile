@@ -9,13 +9,13 @@
         >
       </figure>
     </div>
-    <div class="flex flex-col justify-around lg:w-2/3 md:w-2/3 sm:1/2 p-3 sm:p-5">
-      <h1 class="text-2xl md:text-3xl font-medium pb-2 text-center md:text-left">
+    <div class="flex flex-col justify-center lg:w-2/3 md:w-2/3 sm:1/2 p-3 sm:p-5">
+      <h1 class="text-2xl md:text-3xl font-medium pb-2 text-center md:text-left" style="margin: 0; padding-top: 0; border-top: none; letter-spacing: normal;">
         YUKI OTA
       </h1>
-      <h2 class="pb-4 text-sm md:text-base lg:text-lg text-center md:text-left">
-        Backend Engineer | Backpacker | Hiker | Runner 
-      </h2>
+      <p class="pb-4 text-sm md:text-base lg:text-lg font-semibold text-center md:text-left" style="margin: 0;">
+        Backend Engineer | Backpacker | Hiker | Runner
+      </p>
       <div class="text-sm md:text-base text-center md:text-left">
         更多關於我的資訊，歡迎到以下連結，或查看「<a class="text-indigo-600" href="/resume">Resume</a>」
       </div>
