@@ -3,6 +3,7 @@ node_modules
 docs/.vitepress/dist
 /*.md
 !README.md
+!CLAUDE.md
 yarn-error.log
 .claude/*
 openspec/*
