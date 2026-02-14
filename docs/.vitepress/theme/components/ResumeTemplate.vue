@@ -216,6 +216,7 @@ const props = defineProps({
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    font-optical-sizing: none !important;
   }
 
   .resume-page {

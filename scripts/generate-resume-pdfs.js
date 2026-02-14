@@ -58,6 +58,9 @@ async function generatePdfs() {
       await page.goto(url, { waitUntil: 'networkidle' });
       await page.waitForSelector('.pdf-content', { state: 'visible' });
 
+      // Disable optical sizing to ensure consistent rendering across platforms
+      await page.addStyleTag({ content: '* { font-optical-sizing: none !important; }' });
+
       // Inject language-specific spacing overrides
       if (LANG_PRINT_CSS[lang.code]) {
         await page.addStyleTag({ content: LANG_PRINT_CSS[lang.code] });
