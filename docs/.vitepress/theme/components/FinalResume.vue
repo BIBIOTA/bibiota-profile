@@ -375,10 +375,11 @@ onUnmounted(() => {
     margin: 0 !important;
     padding: 0 !important;
   }
-  
+
   @page {
     size: A4;
     margin: 5mm;
   }
+
 }
 </style>

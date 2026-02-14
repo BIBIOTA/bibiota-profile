@@ -276,20 +276,20 @@ const props = defineProps({
   
   .pdf-content .text-sm {
     font-size: 0.75rem !important;
-    line-height: 1.4 !important;
+    line-height: var(--print-lh-sm, 1.4) !important;
   }
-  
+
   .pdf-content .text-xs {
     font-size: 0.65rem !important;
-    line-height: 1.3 !important;
+    line-height: var(--print-lh-xs, 1.3) !important;
   }
-  
+
   .pdf-content .leading-loose {
-    line-height: 1.6 !important;
+    line-height: var(--print-lh-loose, 1.6) !important;
   }
-  
+
   .pdf-content .leading-relaxed {
-    line-height: 1.5 !important;
+    line-height: var(--print-lh-relaxed, 1.5) !important;
   }
   
   .pdf-content .py-4 {
@@ -298,8 +298,8 @@ const props = defineProps({
   }
   
   .pdf-content .py-6 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+    padding-top: var(--print-py-6, 1rem) !important;
+    padding-bottom: var(--print-py-6, 1rem) !important;
   }
   
   .pdf-content .px-4 {
@@ -308,15 +308,15 @@ const props = defineProps({
   }
   
   .pdf-content .space-y-8 > * + * {
-    margin-top: 1.25rem !important;
+    margin-top: var(--print-gap-8, 1.25rem) !important;
   }
-  
+
   .pdf-content .space-y-6 > * + * {
-    margin-top: 1rem !important;
+    margin-top: var(--print-gap-6, 1rem) !important;
   }
-  
+
   .pdf-content .space-y-4 > * + * {
-    margin-top: 0.75rem !important;
+    margin-top: var(--print-gap-4, 0.75rem) !important;
   }
   
   .pdf-content .space-y-3 > * + * {
@@ -379,6 +379,7 @@ const props = defineProps({
     font-size: 1em;
     line-height: 1.4;
   }
+
 
   /* Max height to prevent overflow beyond A4 */
   .pdf-content {
