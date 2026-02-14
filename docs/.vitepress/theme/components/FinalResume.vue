@@ -123,12 +123,14 @@
       
     </template>
   </Layout>
-  <ResumeTemplate
-    class="print:block hidden"
-    :personalData="personalData"
-    :shouldShowPhone="shouldShowPhone"
-    :t="t"
-  />
+  <div :lang="currentLocale">
+    <ResumeTemplate
+      class="print:block hidden"
+      :personalData="personalData"
+      :shouldShowPhone="shouldShowPhone"
+      :t="t"
+    />
+  </div>
 </template>
 
 <script setup>

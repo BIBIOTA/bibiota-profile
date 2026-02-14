@@ -363,5 +363,38 @@ const props = defineProps({
   .pdf-content section {
     page-break-inside: avoid !important;
   }
+
+  /* Language-adaptive CSS */
+  [lang="en"] .pdf-content {
+    font-size: 0.9em;
+    line-height: 1.3;
+  }
+
+  [lang="ja"] .pdf-content {
+    font-size: 0.95em;
+    line-height: 1.35;
+  }
+
+  [lang="zh-TW"] .pdf-content {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  /* Max height to prevent overflow beyond A4 */
+  .pdf-content {
+    max-height: 287mm;
+    overflow: hidden;
+  }
+
+  /* Flexible spacing */
+  .pdf-content .space-y-8 > * + * {
+    margin-top: clamp(0.75rem, 1.5vh, 1.25rem) !important;
+  }
+
+  /* Prevent page break inside experience items */
+  .pdf-content .experience-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
 }
 </style>
