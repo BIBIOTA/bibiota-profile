@@ -6,9 +6,8 @@ import './styles/index.postcss'
 import './styles/global.sass'
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
   Layout: Layout,
-  NotFound: () => 'Not Found',
 
   enhanceApp({ app, router, siteData }) {
     app.component('ZoomImg', ZoomImg)

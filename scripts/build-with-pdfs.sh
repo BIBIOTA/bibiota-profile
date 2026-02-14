@@ -5,7 +5,7 @@ echo "==> Building VitePress site..."
 npx vitepress build docs
 
 echo "==> Starting preview server on port 8080..."
-npx vitepress serve docs --port 8080 &
+npx vitepress preview docs --port 8080 &
 SERVER_PID=$!
 
 echo "==> Waiting for server to be ready..."

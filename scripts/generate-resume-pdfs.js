@@ -1,7 +1,10 @@
-const { chromium } = require('playwright');
-const { PDFDocument } = require('pdf-lib');
-const fs = require('fs');
-const path = require('path');
+import { chromium } from 'playwright';
+import { PDFDocument } from 'pdf-lib';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
 const OUTPUT_DIR = process.env.OUTPUT_DIR

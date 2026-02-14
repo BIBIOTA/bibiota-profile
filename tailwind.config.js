@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
 		'./docs/.vitepress/**/*.{js,ts,vue}',
 		'./docs/**/*.md',
   ],
-  options: {
-    safelist: ['html', 'body'],
-  },
+  safelist: ['html', 'body'],
   theme: {
     extend: {},
   },

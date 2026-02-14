@@ -1,13 +1,13 @@
+import { defineConfig } from 'vitepress'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 import {
-  getTechPosts,
-  getTravelPosts,
-  getRunningPosts,
   getMetaData,
   getTitle,
   getDescription,
 } from './loadData'
 
-export default {
+export default defineConfig({
   title: getTitle(),
   description: getDescription(),
   locales: {
@@ -15,9 +15,6 @@ export default {
   },
   head: getMetaData(),
   themeConfig: {
-    techPosts: getTechPosts(),
-    travelPosts: getTravelPosts(),
-    // runningPosts: getRunningPosts(),
     title: "Yuki Ota's profile",
     nav: [
       { text: 'Resume', link: '/resume'  },
@@ -30,8 +27,8 @@ export default {
     css: {
       postcss: {
           plugins: [
-            require('tailwindcss'),
-            require('autoprefixer'),
+            tailwindcss(),
+            autoprefixer(),
           ]
       }
     },
@@ -39,6 +36,5 @@ export default {
       __VUE_PROD_DEVTOOLS__: false
     }
   },
-  theme: './theme/index.js',
   appearance: false,
-}
+})
