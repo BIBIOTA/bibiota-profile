@@ -3,3 +3,8 @@ docs/.vitepress/dist
 /*.md
 !README.md
 yarn-error.log
+.claude/*
+openspec/*
+docs/public/pdf/*.pdf
+.vercel
+.env*.local
