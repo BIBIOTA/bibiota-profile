@@ -58,6 +58,10 @@ async function generatePdfs() {
       await page.goto(url, { waitUntil: 'networkidle' });
       await page.waitForSelector('.pdf-content', { state: 'visible' });
 
+      // Load web fonts for consistent rendering across platforms
+      await page.addStyleTag({ url: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap' });
+      await page.evaluate(() => document.fonts.ready);
+
       // Disable optical sizing to ensure consistent rendering across platforms
       await page.addStyleTag({ content: '* { font-optical-sizing: none !important; }' });
 
