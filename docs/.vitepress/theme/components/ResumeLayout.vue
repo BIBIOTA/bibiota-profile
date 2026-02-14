@@ -10,7 +10,7 @@ import FinalResume from './FinalResume.vue'
 
 <style>
 html, body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans', sans-serif;
   line-height: 1.6;
   background-color: #f4f5f7 !important;
   color: #1f2937 !important;
