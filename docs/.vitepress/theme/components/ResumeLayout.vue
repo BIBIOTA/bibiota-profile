@@ -9,8 +9,10 @@ import FinalResume from './FinalResume.vue'
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
 html, body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans TC', 'Noto Sans JP', 'Noto Sans', sans-serif;
+  font-family: Inter, 'Noto Sans TC', 'Noto Sans JP', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
   line-height: 1.6;
   background-color: #f4f5f7 !important;
   color: #1f2937 !important;
