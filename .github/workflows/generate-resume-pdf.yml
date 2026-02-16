@@ -3,16 +3,6 @@ name: Build and Deploy
 on:
   push:
     branches: [master, main]
-    paths:
-      - 'docs/.vitepress/theme/components/PersonalData.js'
-      - 'docs/.vitepress/theme/components/ResumeTemplate.vue'
-      - 'docs/.vitepress/theme/components/ResumeLayout.vue'
-      - 'docs/.vitepress/theme/components/FinalResume.vue'
-      - 'docs/.vitepress/config.js'
-      - 'docs/.vitepress/loadData.js'
-      - 'docs/public/**'
-      - 'scripts/generate-resume-pdfs.js'
-      - '.github/workflows/generate-resume-pdf.yml'
   workflow_dispatch:
 
 jobs:
