@@ -48,46 +48,94 @@
                   {{ t('sections.experience') }}
                 </h2>
                 <div class="space-y-4">
-                  <div 
-                    v-for="(job, index) in personalData.experience" 
+                  <div
+                    v-for="(job, index) in personalData.experience"
                     :key="index"
                     class="relative pl-6 border-l-2 border-gray-200"
                   >
                     <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-1.5 top-0"></div>
                     <div>
-                      <h3 class="text-lg font-semibold text-gray-900">{{ job.position }}</h3>
-                      <p class="text-base text-indigo-600 font-medium">{{ job.company }}</p>
-                      <p class="text-xs text-gray-600">{{ job.duration }} • {{ job.location }}</p>
-                      
-                      <div class="mt-3">
-                        <h4 class="text-sm font-medium text-gray-900 mb-2">
-                          {{ t('sections.responsibilities') }}
-                        </h4>
-                        <ul class="space-y-1">
-                          <li 
-                            v-for="(resp, idx) in job.responsibilities" 
-                            :key="idx"
-                            class="text-gray-700 text-xs leading-loose"
-                          >
-                            • {{ resp }}
-                          </li>
-                        </ul>
-                      </div>
+                      <!-- Nested positions (e.g. AsiaYo with multiple roles) -->
+                      <template v-if="job.positions">
+                        <p class="text-base text-indigo-600 font-medium">{{ job.company }}</p>
+                        <p class="text-xs text-gray-600">{{ job.duration }} • {{ job.location }}</p>
 
-                      <div v-if="job.achievements && job.achievements.length > 0" class="mt-4">
-                        <h4 class="text-sm font-medium text-gray-900 mb-2">
-                          {{ t('sections.achievements') }}
-                        </h4>
-                        <ul class="space-y-1">
-                          <li 
-                            v-for="(achievement, idx) in job.achievements" 
-                            :key="idx"
-                            class="text-indigo-700 text-xs leading-loose"
-                          >
-                            ★ {{ achievement }}
-                          </li>
-                        </ul>
-                      </div>
+                        <div
+                          v-for="(pos, posIdx) in job.positions"
+                          :key="posIdx"
+                          :class="posIdx > 0 ? 'mt-3 pt-3 border-t border-gray-100' : 'mt-2'"
+                        >
+                          <h3 class="text-lg font-semibold text-gray-900">{{ pos.position }}</h3>
+                          <p class="text-xs text-gray-500">{{ pos.duration }}</p>
+
+                          <div class="mt-2">
+                            <h4 class="text-sm font-medium text-gray-900 mb-2">
+                              {{ t('sections.responsibilities') }}
+                            </h4>
+                            <ul class="space-y-1">
+                              <li
+                                v-for="(resp, idx) in pos.responsibilities"
+                                :key="idx"
+                                class="text-gray-700 text-xs leading-loose"
+                              >
+                                • {{ resp }}
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div v-if="pos.achievements && pos.achievements.length > 0" class="mt-3">
+                            <h4 class="text-sm font-medium text-gray-900 mb-2">
+                              {{ t('sections.achievements') }}
+                            </h4>
+                            <ul class="space-y-1">
+                              <li
+                                v-for="(achievement, idx) in pos.achievements"
+                                :key="idx"
+                                class="text-indigo-700 text-xs leading-loose"
+                              >
+                                ★ {{ achievement }}
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </template>
+
+                      <!-- Flat position (backward compatible) -->
+                      <template v-else>
+                        <h3 class="text-lg font-semibold text-gray-900">{{ job.position }}</h3>
+                        <p class="text-base text-indigo-600 font-medium">{{ job.company }}</p>
+                        <p class="text-xs text-gray-600">{{ job.duration }} • {{ job.location }}</p>
+
+                        <div class="mt-3">
+                          <h4 class="text-sm font-medium text-gray-900 mb-2">
+                            {{ t('sections.responsibilities') }}
+                          </h4>
+                          <ul class="space-y-1">
+                            <li
+                              v-for="(resp, idx) in job.responsibilities"
+                              :key="idx"
+                              class="text-gray-700 text-xs leading-loose"
+                            >
+                              • {{ resp }}
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div v-if="job.achievements && job.achievements.length > 0" class="mt-4">
+                          <h4 class="text-sm font-medium text-gray-900 mb-2">
+                            {{ t('sections.achievements') }}
+                          </h4>
+                          <ul class="space-y-1">
+                            <li
+                              v-for="(achievement, idx) in job.achievements"
+                              :key="idx"
+                              class="text-indigo-700 text-xs leading-loose"
+                            >
+                              ★ {{ achievement }}
+                            </li>
+                          </ul>
+                        </div>
+                      </template>
                     </div>
                   </div>
                 </div>

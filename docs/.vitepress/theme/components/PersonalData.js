@@ -5,9 +5,9 @@ export const personalDataRaw = {
     ja: '太田裕揮',
   },
   title: {
-    'zh-TW': '後端工程師',
-    en: 'Backend Engineer',
-    ja: 'バックエンドエンジニア',
+    'zh-TW': '資深後端工程師',
+    en: 'Senior Backend Engineer',
+    ja: 'シニアバックエンドエンジニア',
   },
   email: 'yukiotataitien@gmail.com',
   phone: import.meta.env.VITE_PHONE_NUMBER || '+886-XXX-XXX-XXX',
@@ -98,11 +98,6 @@ export const personalDataRaw = {
 
   experience: [
     {
-      position: {
-        'zh-TW': '後端工程師 (PHP / Laravel, Vue.js)',
-        en: 'Backend Engineer (PHP / Laravel, Vue.js)',
-        ja: 'バックエンドエンジニア (PHP / Laravel, Vue.js)',
-      },
       company: {
         'zh-TW': 'AsiaYo',
         en: 'AsiaYo',
@@ -119,59 +114,99 @@ export const personalDataRaw = {
         ja: '台湾、台北市（リモート）',
       },
       current: true,
-      responsibilities: [
+      positions: [
         {
-          'zh-TW': '旅遊電商後端服務開發，包括： 客端、後台、旅宿端、B2B系統以及部分後台前端頁面開發。',
-            en: 'Travel EC backend service development, including: customer, admin, accommodation, B2B, and admin frontend pages development.',
-            ja: 'トラベルECにおける、顧客向け、管理者向け、宿泊施設向け、B2B向けシステムおよび一部の管理者向けページのフロントエンド開発。',
+          position: {
+            'zh-TW': '資深後端工程師 (PHP / Laravel, Vue.js)',
+            en: 'Senior Backend Engineer (PHP / Laravel, Vue.js)',
+            ja: 'シニアバックエンドエンジニア (PHP / Laravel, Vue.js)',
+          },
+          duration: {
+            'zh-TW': '2025.02 - 目前',
+            en: '2025.02 - Present',
+            ja: '2025年2月 - 現在',
+          },
+          responsibilities: [
+            {
+              'zh-TW': '負責郵輪商品線、高鐵商品線的系統分析、新需求可行性及開發時程評估及維護。',
+              en: 'Conduct system analysis, feasibility assessments, development timeline evaluations, and maintenance for cruise and THSR product lines.',
+              ja: 'クルーズ商品ラインおよび台湾新幹線商品ラインにおけるシステム分析、新要件の実現可能性評価、開発スケジュールの策定、保守を担当。',
+            },
+            {
+              'zh-TW': '管理2~3位負責產品線後端。',
+              en: 'Lead and manage a team of 2-3 backend engineers responsible for specific product lines.',
+              ja: 'プロダクトラインのバックエンドエンジニア2〜3名のマネジメントを担当。',
+            },
+          ],
+          achievements: [
+            {
+              'zh-TW': '推動Claude Code導入，建立公司使用的Claude Code Skills & Commands，加速團隊開發效率。',
+              en: 'Drove adoption of Claude Code, established company-wide Claude Code Skills & Commands, accelerating team development efficiency.',
+              ja: 'Claude Codeの導入を推進し、社内向けClaude Code Skills & Commandsを構築、チームの開発効率を向上。',
+            },
+            {
+              'zh-TW': '導入Spec-Driven Development（SDD），以規格文件驅動開發流程，提升需求溝通效率與開發品質。',
+              en: 'Introduced Spec-Driven Development (SDD), driving development through specification documents to improve requirements communication and development quality.',
+              ja: 'Spec-Driven Development（SDD）を導入し、仕様書駆動の開発プロセスを構築、要件コミュニケーションの効率と開発品質を向上。',
+            },
+          ],
         },
         {
-          'zh-TW': '負責多個產品線的系統分析、新需求可行性及開發時程評估 (2024.11~)。',
-          en: 'Conduct system analysis, feasibility assessments, and development timeline evaluations for multiple product lines (Nov. 2024 - Present).',
-          ja: '複数のプロダクトラインにおけるシステム分析、新要件の実現可能性評価、および開発スケジュールの策定を担当 (2024.11~)。',
+          position: {
+            'zh-TW': '後端工程師 (PHP / Laravel, Vue.js)',
+            en: 'Backend Engineer (PHP / Laravel, Vue.js)',
+            ja: 'バックエンドエンジニア (PHP / Laravel, Vue.js)',
+          },
+          duration: {
+            'zh-TW': '2022.02 - 2025.01',
+            en: '2022.02 - 2025.01',
+            ja: '2022年2月 - 2025年1月',
+          },
+          responsibilities: [
+            {
+              'zh-TW': '旅遊電商後端服務開發，包括： 客端、後台、旅宿端、B2B系統以及部分後台前端頁面開發。',
+              en: 'Travel EC backend service development, including: customer, admin, accommodation, B2B, and admin frontend pages development.',
+              ja: 'トラベルECにおける、顧客向け、管理者向け、宿泊施設向け、B2B向けシステムおよび一部の管理者向けページのフロントエンド開発。',
+            },
+          ],
+          achievements: [
+            {
+              'zh-TW': '本地開發環境優化、偵錯機制改善、完善開發文件，提升開發效率及產品穩定性。',
+              en: 'Enhanced development efficiency and product stability by optimizing the local environment, improving the debugging mechanism, and creating documentation.',
+              ja: 'ローカル開発環境の最適化、デバッグ機能の改善、開発ドキュメントの整備により、開発効率とシステム安定性の向上に貢献。',
+            },
+            {
+              'zh-TW': '導入自動化腳本及工具，提升開發體驗。',
+              en: 'Improved the overall development experience by implementing automated scripts and tools.',
+              ja: '自動化スクリプトとツールの導入。開発体験の向上。',
+            },
+            {
+              'zh-TW': '協助擴充產品線，從訂房平台擴大到提供團體旅遊、郵輪、高鐵票、旅遊行程等服務。',
+              en: 'Assisted product line expansion, from hotel booking platform to group tours, cruises, high-speed rail tickets, and travel packages.',
+              ja: 'プロダクトライン拡張を支援、ホテル予約プラットフォームから団体旅行、クルーズ、高速鉄道チケット、旅行パッケージまで拡大。',
+            },
+            {
+              'zh-TW': '獨自完成後端系統版本升級(PHP 7.1 ~ PHP 8.2、Laravel 6 ~ Laravel 11.x)。',
+              en: 'Independently managed and executed the backend system upgrade from PHP 7.1 to 8.2 and Laravel 6 to 11.x.',
+              ja: '独自でシステムバージョンアップを実現（PHP 7.1からPHP 8.2、Laravel 6からLaravel 11.x）。',
+            },
+            {
+              'zh-TW': '完成提供給公司與合作旅行社的第三方CRM服務串接，增加公司產品收入。',
+              en: 'Successfully integrated a 3rd party CRM service for the company and partner travel agencies, resulting in increased product revenue.',
+              ja: '自社および提携旅行会社向けのサードパーティCRMサービス連携を主導し、プロダクト収益の増加に貢献。',
+            },
+            {
+              'zh-TW': '實現部分舊有頁面前後端分離，成功降低後端維運成本及提升開發效率。',
+              en: 'Achieved partial frontend/backend separation, successfully reducing operational costs and improving development efficiency.',
+              ja: '一部ページのフロントエンド/バックエンドの分離を実現し、バックエンド運用コストの削減と開発効率の向上を実現。',
+            },
+            {
+              'zh-TW': '獨自完成Legacy PHP服務轉移到現有Laravel服務，減少公司維運成本及提升開發效率。',
+              en: 'Successfully migrated a legacy PHP service to Laravel service, reducing operational costs and boosting development efficiency.',
+              ja: 'レガシーPHPで構築されたサービスを既存のLaravelフレームワークへ移行し、運用コストの削減と開発効率の向上を実現。',
+            },
+          ],
         },
-        {
-          'zh-TW': '管理2~3位負責產品線後端 (2024.11~)。',
-          en: 'Lead and manage a team of 2-3 backend engineers responsible for specific product lines (Nov. 2024 - Present).',
-          ja: 'プロダクトラインのバックエンドエンジニア2〜3名のマネジメントを担当 (2024.11~)。',
-        }
-      ],
-      achievements: [
-        {
-          'zh-TW': '本地開發環境優化、偵錯機制改善、完善開發文件、協助團隊導入AI工具。提升開發效率及產品穩定性 (2022~)。',
-          en: 'Enhanced development efficiency and product stability by optimizing the local environment, improving the debugging mechanism, creating documentation, and assisting the team in adopting AI tools (2022~).',
-          ja: 'ローカル開発環境の最適化、デバッグ機能の改善、開発ドキュメントの最適化、チームへのAIツール導入を支援し、開発効率とシステム安定性の向上に貢献（2022～）。',
-        },
-        {
-          'zh-TW': '導入自動化腳本及工具，提升開發體驗 (2022~)。',
-          en: 'Improved the overall development experience by implementing automated scripts and tools (2022~).',
-          ja: '自動化スクリプトとツールの導入。開発体験の向上（2022～）。',
-        },
-        {
-          'zh-TW': '協助擴充產品線，從訂房平台擴大到提供團體旅遊、郵輪、高鐵票、旅遊行程等服務 (2023~)。',
-          en: 'Assisted product line expansion, from hotel booking platform to group tours, cruises, high-speed rail tickets, and travel packages (2023~).',
-          ja: 'プロダクトライン拡張を支援、ホテル予約プラットフォームから団体旅行、クルーズ、高速鉄道チケット、旅行パッケージまで拡大（2023～）。',
-        },
-        {
-          'zh-TW': '獨自完成後端系統版本升級(PHP 7.1 ~ PHP 8.2、Laravel 6 ~ Laravel 11.x) (2022~2024)。',
-          en: 'Independently managed and executed the backend system upgrade from PHP 7.1 to 8.2 and Laravel 6 to 11.x (2022-2024).',
-          ja: '独自でシステムバージョンアップを実現（PHP 7.1からPHP 8.2、Laravel 6からLaravel 11.x）（2022～2024）',
-        },
-        {
-          'zh-TW': '完成提供給公司與合作旅行社的第三方CRM服務串接，增加公司產品收入(2024)。',
-          en: 'Successfully integrated a 3rd party CRM service for the company and partner travel agencies, resulting in increased product revenue (2024).',
-          ja: '自社および提携旅行会社向けのサードパーティCRMサービス連携を主導し、プロダクト収益の増加に貢献（2024）。',
-        },
-        {
-          'zh-TW': '實現部分舊有頁面前後端分離，成功降低後端維運成本及提升開發效率 (2022~)。',
-          en: 'Achieved partial frontend/backend separation, successfully reducing operational costs and improving development efficiency (2022~).',
-          ja: '一部ページのフロントエンド/バックエンドの分離を実現し、バックエンド運用コストの削減と開発効率の向上を実現（2022～）。',
-        },
-        {
-          'zh-TW': '獨自完成Legacy PHP服務轉移到現有Laravel服務，減少公司維運成本及提升開發效率 (2022)。',
-          en: 'Successfully migrated a legacy PHP service to Laravel service, reducing operational costs and boosting development efficiency (2022).',
-          ja: 'レガシーPHPで構築されたサービスを既存のLaravelフレームワークへ移行し、運用コストの削減と開発効率の向上を実現（2022）。',
-        }
       ],
     },
     {

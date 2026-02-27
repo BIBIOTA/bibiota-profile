@@ -224,12 +224,24 @@ const personalData = computed(() => {
       level: lang.level[localeKey]
     })),
     experience: personalDataRaw.experience.map(exp => ({
-      position: exp.position[localeKey],
+      ...(exp.position ? { position: exp.position[localeKey] } : {}),
       company: exp.company[localeKey],
       duration: exp.duration[localeKey],
       location: exp.location[localeKey],
-      responsibilities: exp.responsibilities.map(resp => resp[localeKey]),
-      achievements: exp.achievements ? exp.achievements.map(ach => ach[localeKey]) : []
+      ...(exp.responsibilities ? {
+        responsibilities: exp.responsibilities.map(resp => resp[localeKey]),
+      } : {}),
+      ...(exp.achievements ? {
+        achievements: exp.achievements.map(ach => ach[localeKey]),
+      } : {}),
+      ...(exp.positions ? {
+        positions: exp.positions.map(pos => ({
+          position: pos.position[localeKey],
+          duration: pos.duration[localeKey],
+          responsibilities: pos.responsibilities.map(resp => resp[localeKey]),
+          achievements: pos.achievements ? pos.achievements.map(ach => ach[localeKey]) : [],
+        })),
+      } : {}),
     })),
     education: personalDataRaw.education.map(edu => ({
       degree: edu.degree[localeKey],
