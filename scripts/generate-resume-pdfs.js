@@ -21,24 +21,35 @@ const LANGUAGES = [
 const LANG_PRINT_CSS = {
   'zh-TW': `
 :root {
-  --print-lh-loose: 1.9;
-  --print-lh-relaxed: 1.7;
-  --print-lh-xs: 1.6;
-  --print-lh-sm: 1.6;
-  --print-gap-8: 0.875rem;
-  --print-gap-4: 0.5rem;
-  --print-py-6: 0.75rem;
+  --print-lh-loose: 1.5;
+  --print-lh-relaxed: 1.4;
+  --print-lh-xs: 1.35;
+  --print-lh-sm: 1.4;
+  --print-gap-8: 0.625rem;
+  --print-gap-4: 0.375rem;
+  --print-py-6: 0.5rem;
 }
 `,
   'ja': `
 :root {
-  --print-lh-loose: 1.75;
-  --print-lh-relaxed: 1.55;
-  --print-lh-xs: 1.45;
-  --print-lh-sm: 1.5;
-  --print-gap-8: 0.75rem;
-  --print-gap-4: 0.375rem;
-  --print-py-6: 0.75rem;
+  --print-lh-loose: 1.35;
+  --print-lh-relaxed: 1.3;
+  --print-lh-xs: 1.25;
+  --print-lh-sm: 1.3;
+  --print-gap-8: 0.4rem;
+  --print-gap-4: 0.2rem;
+  --print-py-6: 0.4rem;
+}
+`,
+  'en': `
+:root {
+  --print-lh-loose: 1.3;
+  --print-lh-relaxed: 1.25;
+  --print-lh-xs: 1.2;
+  --print-lh-sm: 1.25;
+  --print-gap-8: 0.375rem;
+  --print-gap-4: 0.2rem;
+  --print-py-6: 0.375rem;
 }
 `,
 };

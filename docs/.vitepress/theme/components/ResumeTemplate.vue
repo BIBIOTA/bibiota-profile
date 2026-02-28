@@ -325,20 +325,20 @@ const props = defineProps({
   
   .pdf-content .text-sm {
     font-size: 0.75rem !important;
-    line-height: var(--print-lh-sm, 1.4) !important;
+    line-height: var(--print-lh-sm, 1.3) !important;
   }
 
   .pdf-content .text-xs {
     font-size: 0.65rem !important;
-    line-height: var(--print-lh-xs, 1.3) !important;
+    line-height: var(--print-lh-xs, 1.25) !important;
   }
 
   .pdf-content .leading-loose {
-    line-height: var(--print-lh-loose, 1.6) !important;
+    line-height: var(--print-lh-loose, 1.5) !important;
   }
 
   .pdf-content .leading-relaxed {
-    line-height: var(--print-lh-relaxed, 1.5) !important;
+    line-height: var(--print-lh-relaxed, 1.35) !important;
   }
   
   .pdf-content .py-4 {
@@ -415,13 +415,13 @@ const props = defineProps({
 
   /* Language-adaptive CSS */
   [lang="en"] .pdf-content {
-    font-size: 0.9em;
-    line-height: 1.3;
+    font-size: 0.82em;
+    line-height: 1.2;
   }
 
   [lang="ja"] .pdf-content {
-    font-size: 0.95em;
-    line-height: 1.35;
+    font-size: 0.9em;
+    line-height: 1.25;
   }
 
   [lang="zh-TW"] .pdf-content {

@@ -171,16 +171,6 @@ export const personalDataRaw = {
           ],
           achievements: [
             {
-              'zh-TW': '本地開發環境優化、偵錯機制改善、完善開發文件，提升開發效率及產品穩定性。',
-              en: 'Enhanced development efficiency and product stability by optimizing the local environment, improving the debugging mechanism, and creating documentation.',
-              ja: 'ローカル開発環境の最適化、デバッグ機能の改善、開発ドキュメントの整備により、開発効率とシステム安定性の向上に貢献。',
-            },
-            {
-              'zh-TW': '導入自動化腳本及工具，提升開發體驗。',
-              en: 'Improved the overall development experience by implementing automated scripts and tools.',
-              ja: '自動化スクリプトとツールの導入。開発体験の向上。',
-            },
-            {
               'zh-TW': '協助擴充產品線，從訂房平台擴大到提供團體旅遊、郵輪、高鐵票、旅遊行程等服務。',
               en: 'Assisted product line expansion, from hotel booking platform to group tours, cruises, high-speed rail tickets, and travel packages.',
               ja: 'プロダクトライン拡張を支援、ホテル予約プラットフォームから団体旅行、クルーズ、高速鉄道チケット、旅行パッケージまで拡大。',
@@ -196,14 +186,9 @@ export const personalDataRaw = {
               ja: '自社および提携旅行会社向けのサードパーティCRMサービス連携を主導し、プロダクト収益の増加に貢献。',
             },
             {
-              'zh-TW': '實現部分舊有頁面前後端分離，成功降低後端維運成本及提升開發效率。',
-              en: 'Achieved partial frontend/backend separation, successfully reducing operational costs and improving development efficiency.',
-              ja: '一部ページのフロントエンド/バックエンドの分離を実現し、バックエンド運用コストの削減と開発効率の向上を実現。',
-            },
-            {
-              'zh-TW': '獨自完成Legacy PHP服務轉移到現有Laravel服務，減少公司維運成本及提升開發效率。',
-              en: 'Successfully migrated a legacy PHP service to Laravel service, reducing operational costs and boosting development efficiency.',
-              ja: 'レガシーPHPで構築されたサービスを既存のLaravelフレームワークへ移行し、運用コストの削減と開発効率の向上を実現。',
+              'zh-TW': '完成遺留系統現代化遷移（前後端分離、Legacy PHP 服務轉移至 Laravel），降低維運成本並提升開發效率。',
+              en: 'Modernized legacy systems through frontend/backend separation and PHP-to-Laravel migration, reducing operational costs and improving development efficiency.',
+              ja: 'レガシーシステムの現代化（フロントエンド/バックエンド分離、レガシーPHPからLaravelへの移行）を完遂し、運用コストの削減と開発効率の向上を実現。',
             },
           ],
         },
