@@ -31,6 +31,7 @@ export const personalDataRaw = {
     'GraphQL/REST API',
     'Docker',
     'CI/CD Pipeline',
+    'Claude Code',
     'Issue & Log Tracking',
     'System Analysis',
     'Scrum Master',
