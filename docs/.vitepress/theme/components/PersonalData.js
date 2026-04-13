@@ -142,7 +142,7 @@ export const personalDataRaw = {
           achievements: [
             {
               'zh-TW': '推動Claude Code導入，建立公司使用的Claude Code Skills，加速團隊開發效率200%、搜尋API效能提升10倍、部署時間降低50%。',
-              en: 'Drove adoption of Claude Code, established company-wide Claude Code Skills, accelerating team development efficiency by 200%, improving search API performance by 10x, and reducing deployment time by 50%.',
+              en: 'Led Claude Code adoption; built company-wide Skills, boosting team efficiency 200%, search API performance 10×, and cutting deployment time 50%.',
               ja: 'Claude Codeの導入を推進し、社内向けClaude Code Skillsを構築。チームの開発効率を200%向上、検索APIパフォーマンスを10倍改善、デプロイ時間を50%削減。',
             },
             {
