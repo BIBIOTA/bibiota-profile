@@ -1,4 +1,11 @@
 {
   "ignoreCommand": "exit 0",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/resume.html",
+      "destination": "/resume",
+      "permanent": true
+    }
+  ]
 }
