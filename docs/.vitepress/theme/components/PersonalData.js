@@ -117,9 +117,9 @@ export const personalDataRaw = {
       positions: [
         {
           position: {
-            'zh-TW': '資深後端工程師 (PHP / Laravel, Vue.js)',
-            en: 'Senior Backend Engineer (PHP / Laravel, Vue.js)',
-            ja: 'シニアバックエンドエンジニア (PHP / Laravel, Vue.js)',
+            'zh-TW': '資深後端工程師 (Tech Lead)  (PHP / Laravel, Vue.js)',
+            en: 'Senior Backend Engineer (Tech Lead) (PHP / Laravel, Vue.js)',
+            ja: 'シニアバックエンドエンジニア (Tech Lead)  (PHP / Laravel, Vue.js)',
           },
           duration: {
             'zh-TW': '2025.02 - 目前',
