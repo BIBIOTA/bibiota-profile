@@ -18,9 +18,9 @@ export const personalDataRaw = {
   },
   website: 'https://me.bibiota.com',
   summary: {
-    'zh-TW': '擁有四年旅遊電商開發經驗的Node.js/NestJS & PHP後端工程師。能夠迅速熟悉各種專案與技術，擅長Issue tracking、分析系統架構、效能優化、版本升級。現職擔任公司特定產品線的負責人，主導技術規劃、開發、維護、優化等工作，同時熱衷分享技術知識、導入自動化工具、協助團隊使用AI工具(Claude Code, AI Code Review)。',
-    en: 'Node.js/NestJS & PHP Backend Engineer with 4 years of experience in travel e-commerce. Proven ability to rapidly adapt to new projects and technologies. Skilled in issue tracking, system architecture analysis, performance optimization, and version upgrades. Currently serving as the technical lead for specific product lines, driving technical planning, development, maintenance, and optimization. Passionate about knowledge sharing, implementing automation workflows, and enabling team adoption of AI tools (Claude Code, AI Code Review).',
-    ja: '旅行系Eコマースで4年の開発経験を持つ、Node.js/NestJS & PHPバックエンドエンジニア。新しいプロジェクトや技術への迅速な適応を得意とし、課題追跡、システムアーキテクチャ分析、パフォーマンス最適化、バージョンアップグレードに精通している。現在は特定プロダクトラインの技術責任者として、技術設計、開発、保守、最適化を主導。また、技術ナレッジの共有や自動化ツールの導入、AIツール（Claude Code, AI Code Review）を活用したチームの生産性向上にも意欲的に取り組んでいる。'
+    'zh-TW': '擁有四年旅遊電商開發經驗的Node.js/NestJS & PHP後端工程師。能夠迅速熟悉各種專案與技術，擅長Issue tracking、分析系統架構、效能優化、版本升級。擔任公司特定產品線的負責人，主導技術規劃、開發、維護、優化等工作，同時熱衷分享技術知識、導入自動化工具、協助團隊使用AI工具(Claude Code, AI Code Review)。',
+    en: 'Node.js/NestJS & PHP Backend Engineer with 4 years of experience in travel e-commerce. Proven ability to rapidly adapt to new projects and technologies. Skilled in issue tracking, system architecture analysis, performance optimization, and version upgrades. Served as the technical lead for specific product lines, driving technical planning, development, maintenance, and optimization. Passionate about knowledge sharing, implementing automation workflows, and enabling team adoption of AI tools (Claude Code, AI Code Review).',
+    ja: '旅行系Eコマースで4年の開発経験を持つ、Node.js/NestJS & PHPバックエンドエンジニア。新しいプロジェクトや技術への迅速な適応を得意とし、課題追跡、システムアーキテクチャ分析、パフォーマンス最適化、バージョンアップグレードに精通している。特定プロダクトラインの技術責任者として、技術設計、開発、保守、最適化を主導。また、技術ナレッジの共有や自動化ツールの導入、AIツール（Claude Code, AI Code Review）を活用したチームの生産性向上にも意欲的に取り組んでいる。'
   },
 
   skills: [
@@ -104,16 +104,16 @@ export const personalDataRaw = {
         ja: 'AsiaYo',
       },
       duration: {
-        'zh-TW': '2022.02 - 目前',
-        en: '2022.02 - Present',
-        ja: '2022年2月 - 現在',
+        'zh-TW': '2022.02 - 2026.04',
+        en: '2022.02 - 2026.04',
+        ja: '2022年2月 - 2026年4月',
       },
       location: {
         'zh-TW': '台灣，台北市 (全遠端)',
         en: 'Taipei, Taiwan (Remote)',
         ja: '台湾、台北市（リモート）',
       },
-      current: true,
+      current: false,
       positions: [
         {
           position: {
@@ -122,9 +122,9 @@ export const personalDataRaw = {
             ja: 'シニアバックエンドエンジニア (Tech Lead)  (PHP / Laravel, Vue.js)',
           },
           duration: {
-            'zh-TW': '2025.02 - 目前',
-            en: '2025.02 - Present',
-            ja: '2025年2月 - 現在',
+            'zh-TW': '2025.02 - 2026.04',
+            en: '2025.02 - 2026.04',
+            ja: '2025年2月 - 2026年4月',
           },
           responsibilities: [
             {

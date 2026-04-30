@@ -60,6 +60,9 @@ export default defineConfig({
     ]
   },
   vite: {
+    server: {
+      allowedHosts: ['yukimac-mini.echo-mercat.ts.net'],
+    },
     css: {
       postcss: {
           plugins: [
