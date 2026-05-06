@@ -63,7 +63,7 @@ Generated PDFs are saved to `docs/public/pdf/`.
 
 - **CI fails with "PDF has N pages"**: Resume content for that language is too long. Reduce content or adjust print CSS in `ResumeTemplate.vue`.
 - **Playwright browser not found**: Run `npx playwright install chromium`.
-- **Port 8080 occupied**: Free the port with `lsof -ti:8080 | xargs kill` before running the preview server.
+- **Port 8088 occupied**: Free the port with `lsof -ti:8088 | xargs kill` before running the preview server.
 
 #### License
 

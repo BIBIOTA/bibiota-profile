@@ -18,14 +18,15 @@ export const personalDataRaw = {
   },
   website: 'https://me.bibiota.com',
   summary: {
-    'zh-TW': '擁有四年旅遊電商開發經驗的Node.js/NestJS & PHP後端工程師。能夠迅速熟悉各種專案與技術，擅長Issue tracking、分析系統架構、效能優化、版本升級。擔任公司特定產品線的負責人，主導技術規劃、開發、維護、優化等工作，同時熱衷分享技術知識、導入自動化工具、協助團隊使用AI工具(Claude Code, AI Code Review)。',
-    en: 'Node.js/NestJS & PHP Backend Engineer with 4 years of experience in travel e-commerce. Proven ability to rapidly adapt to new projects and technologies. Skilled in issue tracking, system architecture analysis, performance optimization, and version upgrades. Served as the technical lead for specific product lines, driving technical planning, development, maintenance, and optimization. Passionate about knowledge sharing, implementing automation workflows, and enabling team adoption of AI tools (Claude Code, AI Code Review).',
-    ja: '旅行系Eコマースで4年の開発経験を持つ、Node.js/NestJS & PHPバックエンドエンジニア。新しいプロジェクトや技術への迅速な適応を得意とし、課題追跡、システムアーキテクチャ分析、パフォーマンス最適化、バージョンアップグレードに精通している。特定プロダクトラインの技術責任者として、技術設計、開発、保守、最適化を主導。また、技術ナレッジの共有や自動化ツールの導入、AIツール（Claude Code, AI Code Review）を活用したチームの生産性向上にも意欲的に取り組んでいる。'
+    'zh-TW': '5 年軟體開發經驗，專精 PHP/Laravel、Node.js/NestJS 大型系統架構規劃、效能優化與版本升級。4 年旅遊電商，2 年 Tech Lead，主導公司主力產品線系統規劃，具備 2~4 人後端小團隊管理經驗。熱衷於開發體驗優化及 AI 賦能、AI 工具導入。',
+    en: 'Backend engineer with 5 years of software development experience, specializing in large-scale system architecture, performance optimization, and version upgrades with PHP/Laravel and Node.js/NestJS. 4 years in travel e-commerce and 2 years as Tech Lead, driving system planning for the company\'s flagship product lines, with experience managing small backend teams of 2–4 engineers. Passionate about improving developer experience and enabling teams through AI adoption and tooling.',
+    ja: 'ソフトウェア開発5年のバックエンドエンジニア。PHP/Laravel、Node.js/NestJSによる大規模システム設計、性能最適化、バージョンアップグレードを得意とする。旅行系EC4年、Tech Lead 2年として主力プロダクトラインの設計を主導、2〜4名のチームマネジメント経験あり。開発体験の改善とAI活用・ツール導入に情熱を注ぐ。'
   },
 
   skills: [
     'PHP/Laravel',
     'Node.js/NestJs',
+    'Golang',
     'MySQL/MongoDB',
     'Redis',
     'GraphQL/REST API',
@@ -117,9 +118,9 @@ export const personalDataRaw = {
       positions: [
         {
           position: {
-            'zh-TW': '資深後端工程師 (Tech Lead)  (PHP / Laravel, Vue.js)',
-            en: 'Senior Backend Engineer (Tech Lead) (PHP / Laravel, Vue.js)',
-            ja: 'シニアバックエンドエンジニア (Tech Lead)  (PHP / Laravel, Vue.js)',
+            'zh-TW': '資深後端工程師 (Tech Lead)  (PHP / Laravel, Golang, Vue.js)',
+            en: 'Senior Backend Engineer (Tech Lead) (PHP / Laravel,Golang, Vue.js)',
+            ja: 'シニアバックエンドエンジニア (Tech Lead)  (PHP / Laravel, Golang, Vue.js)',
           },
           duration: {
             'zh-TW': '2025.02 - 2026.04',
@@ -133,9 +134,9 @@ export const personalDataRaw = {
               ja: 'クルーズ商品ラインおよび台湾新幹線商品ラインにおけるシステム分析、新要件の実現可能性評価、開発スケジュールの策定、保守を担当。',
             },
             {
-              'zh-TW': '管理2~3位負責產品線後端。',
-              en: 'Lead and manage a team of 2-3 backend engineers responsible for specific product lines.',
-              ja: 'プロダクトラインのバックエンドエンジニア2〜3名のマネジメントを担当。',
+              'zh-TW': '管理 2~4 位產品線後端工程師，負責任務分配、Code Review、技術指導。',
+              en: 'Manage 2-4 backend engineers on the product line, handling task allocation, code review, and technical mentorship.',
+              ja: 'プロダクトラインのバックエンド2〜4名をマネジメントし、タスク配分・コードレビュー・技術指導を担当。',
             },
           ],
           achievements: [
@@ -153,9 +154,9 @@ export const personalDataRaw = {
         },
         {
           position: {
-            'zh-TW': '後端工程師 (PHP / Laravel, Vue.js)',
-            en: 'Backend Engineer (PHP / Laravel, Vue.js)',
-            ja: 'バックエンドエンジニア (PHP / Laravel, Vue.js)',
+            'zh-TW': '後端工程師',
+            en: 'Backend Engineer',
+            ja: 'バックエンドエンジニア',
           },
           duration: {
             'zh-TW': '2022.02 - 2025.01',
@@ -189,6 +190,11 @@ export const personalDataRaw = {
               'zh-TW': '完成遺留系統現代化遷移（前後端分離、Legacy PHP 服務轉移至 Laravel），降低維運成本並提升開發效率。',
               en: 'Modernized legacy systems through frontend/backend separation and PHP-to-Laravel migration, reducing operational costs and improving development efficiency.',
               ja: 'レガシーシステムの現代化（フロントエンド/バックエンド分離、レガシーPHPからLaravelへの移行）を完遂し、運用コストの削減と開発効率の向上を実現。',
+            },
+            {
+              'zh-TW': '本地開發環境優化（Docker、pre-commit、CI/CD 腳本）。',
+              en: 'Optimized local development environment (Docker, pre-commit hooks, CI/CD scripts).',
+              ja: 'ローカル開発環境の最適化（Docker、pre-commit、CI/CDスクリプト）。',
             },
           ],
         },

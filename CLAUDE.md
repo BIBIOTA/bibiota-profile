@@ -57,7 +57,7 @@ npm run docs:dev          # 啟動開發伺服器（http://localhost:5173）
 npm run docs:build        # 建置靜態網站 → docs/.vitepress/dist/
 
 # 預覽
-npm run docs:serve        # 預覽建置結果（port 8080）
+npm run docs:serve        # 預覽建置結果（port 8088）
 
 # 建置並產生 PDF
 npm run build:pdf         # 建置網站 + 產生履歷 PDF
@@ -85,7 +85,7 @@ VITE_PHONE_NUMBER    # 履歷用電話號碼（敏感資訊）
 
 當 `PersonalData.js` 或 `ResumeTemplate.vue` 在 master 分支有變更時，GitHub Actions 會：
 1. 建置 VitePress 網站
-2. 啟動預覽伺服器（port 8080）
+2. 啟動預覽伺服器（port 8088）
 3. 透過 Playwright 渲染履歷頁面 → 產生 3 份 PDF（zh-TW、en、ja）
 4. 驗證每份 PDF 恰好為 1 頁
 5. 部署至 Vercel
