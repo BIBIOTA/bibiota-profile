@@ -9,7 +9,7 @@
         {{ moment(frontmatter.date).format('YYYY-MM-DD') }}
       </div>
     </div>
-    <div class="p-2">
+    <div v-if="frontmatter.avatar" class="p-2">
       <figure>
         <ZoomImg :src="withBase(frontmatter.avatar)" :alt="frontmatter.title" />
       </figure>

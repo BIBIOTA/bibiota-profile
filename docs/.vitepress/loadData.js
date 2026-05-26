@@ -61,17 +61,27 @@ export function getMetaData() {
 
 function loadDataFromDirectory(directory, asFeed) {
   const currentDir = path.resolve(__dirname, `../../docs/${directory}/posts`)
-  fs.watch(currentDir, (eventType, filename) => {
-    console.log(`Directory changed : ${directory} - ${filename}`)
-    const configFilePath = path.resolve(__dirname, '../config.js')
-    const time = new Date()
-
+  if (process.argv.includes('dev')) {
     try {
-      fs.utimesSync(configFilePath, time, time)
+      const watcher = fs.watch(currentDir, (eventType, filename) => {
+        console.log(`Directory changed : ${directory} - ${filename}`)
+        const configFilePath = path.resolve(__dirname, '../config.js')
+        const time = new Date()
+
+        try {
+          fs.utimesSync(configFilePath, time, time)
+        } catch (err) {
+          fs.closeSync(fs.openSync(filename, 'w'))
+        }
+      })
+
+      watcher.on('error', (err) => {
+        console.warn(`Unable to watch ${directory} posts: ${err.message}`)
+      })
     } catch (err) {
-      fs.closeSync(fs.openSync(filename, 'w'))
+      console.warn(`Unable to watch ${directory} posts: ${err.message}`)
     }
-  })
+  }
   return loadArticlesFromDirectory(currentDir, asFeed)
 }
 
