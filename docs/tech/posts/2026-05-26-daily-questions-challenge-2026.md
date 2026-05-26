@@ -1,26 +1,25 @@
 ---
 layout: doc
-title: "[Daily Questions Challenge] 2026 軟體後端面試題目準備與回顧"
-description: 2026 軟體後端面試題目準備與每日問題整理
+title: "[Daily Questions Challenge 00] 2026 軟體後端面試題目準備與回顧"
+description: 以每日一題的方式整理面試問題。
 date: 2026-05-26
 pinned: true
 tags:
-  - Interview
   - Backend
-  - Daily Questions Challenge
+  - Interview
 head:
   - - meta
     - property: og:title
-      content: "[Daily Questions Challenge] 2026 軟體後端面試題目準備與回顧"
+      content: "[Daily Questions Challenge 00] 2026 軟體後端面試題目準備與回顧"
   - - meta
     - property: og:description
-      content: 2026 軟體後端面試題目準備與每日問題整理
+      content: 以每日一題的方式整理面試問題。
   - - meta
     - name: twitter:title
-      content: "[Daily Questions Challenge] 2026 軟體後端面試題目準備與回顧"
+      content: "[Daily Questions Challenge 00] 2026 軟體後端面試題目準備與回顧"
   - - meta
     - name: twitter:description
-      content: 2026 軟體後端面試題目準備與每日問題整理
+      content: 以每日一題的方式整理面試問題。
 ---
 
 <script setup>

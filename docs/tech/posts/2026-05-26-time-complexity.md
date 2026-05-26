@@ -1,25 +1,24 @@
 ---
 layout: doc
-title: 解釋時間複雜度 (Time Complexity)
-description: 以後端與 Python 開發情境整理 Big O 時間複雜度
+title: "[Daily Questions Challenge 01] 解釋時間複雜度 (Time Complexity)"
+description: 解釋時間複雜度及常見的 Big O
 date: 2026-05-26
 tags:
   - Algorithm
-  - Time Complexity
-  - Interview
+  - Python
 head:
   - - meta
     - property: og:title
-      content: 解釋時間複雜度 (Time Complexity)
+      content: "[Daily Questions Challenge 01] 解釋時間複雜度 (Time Complexity)"
   - - meta
     - property: og:description
-      content: 以後端與 Python 開發情境整理 Big O 時間複雜度
+      content: 解釋時間複雜度及常見的 Big O
   - - meta
     - name: twitter:title
-      content: 解釋時間複雜度 (Time Complexity)
+      content: "[Daily Questions Challenge 01] 解釋時間複雜度 (Time Complexity)"
   - - meta
     - name: twitter:description
-      content: 以後端與 Python 開發情境整理 Big O 時間複雜度
+      content: 解釋時間複雜度及常見的 Big O
 ---
 
 <script setup>
