@@ -33,7 +33,7 @@ head:
 <ScrollToTopBtn />
 
 ## 前言
-在[上一篇的文章中](../posts/2022-07-05-heroku.md)介紹了如何在Heroku將自己的前端專案部署上線，這一篇將會介紹另外一個最近找到的好用平台[Vercel](https://vercel.com/)。
+在[上一篇的文章中](./2022-07-05-heroku.md)介紹了如何在Heroku將自己的前端專案部署上線，這一篇將會介紹另外一個最近找到的好用平台[Vercel](https://vercel.com/)。
 
 ## 為何選擇Vercel
 會選擇Verel的原因，就是簡單方便 XD
