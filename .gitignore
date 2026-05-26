@@ -11,3 +11,4 @@ openspec/*
 docs/public/pdf/*.pdf
 .vercel
 .env*.local
+.worktrees/
