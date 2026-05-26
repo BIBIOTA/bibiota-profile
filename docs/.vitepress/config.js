@@ -11,6 +11,9 @@ import {
 const siteUrl = 'https://me.bibiota.com'
 
 export default defineConfig({
+  ignoreDeadLinks: [
+    /^http:\/\/localhost/,
+  ],
   title: getTitle(),
   description: getDescription(),
   locales: {
