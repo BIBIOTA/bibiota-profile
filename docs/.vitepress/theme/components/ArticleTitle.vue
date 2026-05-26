@@ -2,7 +2,7 @@
   <div>
     <div class="border-2 rounded-md m-2">
       <h1
-        v-html="frontmatter.title"
+        v-html="formattedTitle"
         class="article_title"
       />
       <div class="article_date">
@@ -27,6 +27,11 @@ export default {
       frontmatter,
       moment,
     }
+  },
+  computed: {
+    formattedTitle() {
+      return this.frontmatter.title.replace(/^(\[.+?\])\s+/, '$1<br>')
+    },
   },
   methods: {
     withBase,
