@@ -86,6 +86,7 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
         href: `posts/${file.replace(/\.md$/, '.html')}`,
         date: formatDate(data.date),
         avatar: data.avatar,
+        pinned: data.pinned === true,
         excerpt,
         tags
       }
@@ -96,7 +97,13 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
       }
       return post
     })
-    .sort((a, b) => b.date.time - a.date.time)
+    .sort((a, b) => {
+      if (a.pinned !== b.pinned) {
+        return a.pinned ? -1 : 1
+      }
+
+      return b.date.time - a.date.time
+    })
 }
 
 function formatDate(date) {
