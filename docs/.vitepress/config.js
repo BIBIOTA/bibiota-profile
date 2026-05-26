@@ -54,7 +54,7 @@ export default defineConfig({
     title: "Yuki Ota's profile",
     nav: [
       { text: 'Resume', link: '/resume'  },
-      // { text: 'Tech', link: '/tech/'  },
+      { text: 'Tech', link: '/tech/'  },
       // { text: 'Travel', link: '/travel/' },
       // { text: 'Running', link: '/running/' }
     ]
