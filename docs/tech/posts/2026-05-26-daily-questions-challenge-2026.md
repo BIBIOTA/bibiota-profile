@@ -3,7 +3,6 @@ layout: doc
 title: "[Daily Questions Challenge] 2026 軟體後端面試題目準備與回顧"
 description: 2026 軟體後端面試題目準備與每日問題整理
 date: 2026-05-26
-avatar: /avatar.jpeg
 pinned: true
 tags:
   - Interview

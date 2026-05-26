@@ -17,7 +17,7 @@ export default {
   setup() {
     const { theme } = useData();
     const { path } = useRoute();
-    const articleTitle = 'Tech Articles';
+    const articleTitle = "Yuki's Blog";
 
     return {
       articleTitle,

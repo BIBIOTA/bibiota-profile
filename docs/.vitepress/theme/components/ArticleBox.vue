@@ -5,7 +5,7 @@
       v-for="(article, i) in articles" :key="`article_${i}`"
     >
       <a :href="article.href">
-        <figure class="flex items-center min-h-256">
+        <figure v-if="article.avatar" class="flex items-center min-h-256">
           <img :src="article.avatar" alt="">
         </figure>
         <div>

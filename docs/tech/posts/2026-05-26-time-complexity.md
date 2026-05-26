@@ -3,7 +3,6 @@ layout: doc
 title: 解釋時間複雜度 (Time Complexity)
 description: 以後端與 Python 開發情境整理 Big O 時間複雜度
 date: 2026-05-26
-avatar: /avatar.jpeg
 tags:
   - Algorithm
   - Time Complexity

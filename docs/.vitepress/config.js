@@ -5,6 +5,7 @@ import {
   getMetaData,
   getTitle,
   getDescription,
+  getTechPosts,
 } from './loadData'
 
 const siteUrl = 'https://me.bibiota.com'
@@ -52,9 +53,10 @@ export default defineConfig({
   },
   themeConfig: {
     title: "Yuki Ota's profile",
+    techPosts: getTechPosts(),
     nav: [
       { text: 'Resume', link: '/resume'  },
-      { text: 'Tech', link: '/tech/'  },
+      { text: 'Blog', link: '/tech/'  },
       // { text: 'Travel', link: '/travel/' },
       // { text: 'Running', link: '/running/' }
     ]

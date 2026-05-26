@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Tech Articles
+title: Yuki's Blog
 description: BiBiOTA的技術文章
 head:
   - - meta
     - property: og:title
-      content: Tech Articles
+      content: Yuki's Blog
   - - meta
     - property: og:description
       content: BiBiOTA的技術文章
   - - meta
     - name: twitter:title
-      content: Tech Articles
+      content: Yuki's Blog
   - - meta
     - name: twitter:description
       content: BiBiOTA的技術文章
