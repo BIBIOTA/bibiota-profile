@@ -1,8 +1,8 @@
 <template>
-  <div class="rounded-2xl px-6 py-4" style="background:#F7F7FA">
+  <div class="rounded-2xl px-4 py-3" style="background:#F7F7FA">
     <template v-for="(article, i) in articles" :key="`article_${i}`">
       <a :href="article.href" class="block no-underline">
-        <div class="flex items-center gap-4 bg-white rounded-xl py-4">
+        <div class="flex items-center gap-4 bg-white rounded-xl py-5 px-4">
 
           <!-- Thumbnail -->
           <div
@@ -65,11 +65,9 @@
       </a>
 
       <!-- Divider (between rows, not after last) -->
-      <div
-        v-if="i < articles.length - 1"
-        class="w-full"
-        style="height:1px;background:#E6E6EB"
-      />
+      <div v-if="i < articles.length - 1" class="py-2 mx-4">
+        <div style="height:1px;background:#E6E6EB" />
+      </div>
     </template>
   </div>
 </template>
