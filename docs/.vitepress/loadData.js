@@ -90,7 +90,7 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
     .readdirSync(currentDir)
     .map((file) => {
       const src = fs.readFileSync(path.join(currentDir, file), 'utf-8')
-      const { data, excerpt, tags } = matter(src, { excerpt: true })
+      const { data, excerpt } = matter(src, { excerpt: true })
       const post = {
         title: data.title,
         href: `posts/${file.replace(/\.md$/, '.html')}`,
@@ -99,7 +99,7 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
         description: data.description || '',
         pinned: data.pinned === true,
         excerpt,
-        tags
+        tags: data.tags || []
       }
       if (asFeed) {
         // only attach these when building the RSS feed to avoid bloating the
