@@ -18,7 +18,7 @@ export const personalDataRaw = {
   },
   website: 'https://me.bibiota.com',
   summary: {
-    'zh-TW': '5 年軟體開發經驗，專精 PHP/Laravel、Node.js/NestJS 大型系統架構規劃、效能優化與版本升級。4 年旅遊電商，2 年 Tech Lead，主導公司主力產品線系統規劃，具備 2~4 人後端小團隊管理經驗。熱衷於開發體驗優化及 AI 賦能、AI 工具導入。',
+    'zh-TW': '5 年軟體開發經驗，專精 PHP/Laravel、Node.js/NestJS 大型系統架構規劃、效能優化與版本升級。4 年旅遊電商，1 年 Tech Lead，主導公司主力產品線系統規劃，具備 2~4 人後端小團隊管理經驗。熱衷於開發體驗優化及 AI 賦能、AI 工具導入。',
     en: 'Backend engineer with 5 years of software development experience, specializing in large-scale system architecture, performance optimization, and version upgrades with PHP/Laravel and Node.js/NestJS. 4 years in travel e-commerce and 2 years as Tech Lead, driving system planning for the company\'s flagship product lines, with experience managing small backend teams of 2–4 engineers. Passionate about improving developer experience and enabling teams through AI adoption and tooling.',
     ja: 'ソフトウェア開発5年のバックエンドエンジニア。PHP/Laravel、Node.js/NestJSによる大規模システム設計、性能最適化、バージョンアップグレードを得意とする。旅行系EC4年、Tech Lead 2年として主力プロダクトラインの設計を主導、2〜4名のチームマネジメント経験あり。開発体験の改善とAI活用・ツール導入に情熱を注ぐ。'
   },
