@@ -35,6 +35,8 @@ export default {
             date: post.date,
             href: post.href,
             avatar: post.avatar,
+            description: post.description,
+            tags: post.tags || [],
           });
         });
       }
