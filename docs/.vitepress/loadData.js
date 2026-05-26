@@ -96,6 +96,7 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
         href: `posts/${file.replace(/\.md$/, '.html')}`,
         date: formatDate(data.date),
         avatar: data.avatar,
+        description: data.description || '',
         pinned: data.pinned === true,
         excerpt,
         tags
