@@ -98,7 +98,7 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
         avatar: data.avatar,
         description: data.description || '',
         pinned: data.pinned === true,
-        excerpt,
+        excerpt: sanitizeExcerpt(excerpt),
         tags: data.tags || []
       }
       if (asFeed) {
@@ -115,6 +115,14 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
 
       return b.date.time - a.date.time
     })
+}
+
+function sanitizeExcerpt(excerpt = '') {
+  return excerpt
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<\/?[A-Z][A-Za-z0-9]*(?:\s[^>]*)?\/?>/g, '')
+    .replace(/<\/script/gi, '<\\/script')
 }
 
 function formatDate(date) {
