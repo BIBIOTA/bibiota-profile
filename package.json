@@ -1,7 +1,7 @@
 {
-  "name": "bibiota-profile",
+  "name": "bibiota-site",
   "version": "1.0.0",
-  "description": "Yuki Ota's profile",
+  "description": "Yuki Ota's website, resume, portfolio, and blog",
   "type": "module",
   "main": "index.js",
   "author": "BiBiOTA",

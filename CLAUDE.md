@@ -2,7 +2,7 @@
 
 ## 專案概述
 
-太田裕揮（Yuki Ota）的個人履歷與作品集網站。使用 VitePress + Vue 3 + Tailwind CSS 建構，部署於 Vercel。
+`bibiota-site` 是太田裕揮（Yuki Ota）的個人網站，包含履歷、作品集與部落格。使用 VitePress + Vue 3 + Tailwind CSS 建構，部署於 Vercel。
 
 線上網站：https://me.bibiota.com/
 

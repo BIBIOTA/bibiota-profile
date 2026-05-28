@@ -1,10 +1,10 @@
-### Yuki Ota's profile
+### bibiota-site
 
 ![vue.js](https://img.shields.io/badge/vue.js-%5E3.5-blue)
 ![vitepress](https://img.shields.io/badge/vitepress-%5E1.6.4-blue)
 ![tailwindcss](https://img.shields.io/badge/tailwindcss-%5E3.4-blue)
 
-Personal portfolio and resume website for Yuki Ota (太田裕揮). [Live Site](https://me.bibiota.com/)
+Personal website, resume, portfolio, and blog for Yuki Ota (太田裕揮). [Live Site](https://me.bibiota.com/)
 
 #### Features
 
