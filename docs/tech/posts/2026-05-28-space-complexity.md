@@ -41,8 +41,6 @@ head:
 
 在實務與面試場合中，我們通常所說的空間複雜度，指的是**輔助空間（Auxiliary Space）**，也就是**不含輸入資料本身**、演算法額外佔用的記憶體大小。
 
----
-
 ## 時間複雜度與空間複雜度的相同之處
 
 在工程上，兩者同樣使用 **Big O 符號（O）** 來表示，遵循同一套數學標準。
@@ -52,16 +50,12 @@ head:
 
 **O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)**
 
----
-
 ## 時間複雜度與空間複雜度的相異之處
 
 ### 崩潰的邊界不同：Timeout vs. OOM
 
 - **時間複雜度（太慢）：** 若時間複雜度過高（例如 O(n²)），系統通常表現為「卡頓」或 API 請求超時（Timeout）。這雖然影響使用者體驗，但伺服器本身通常仍能繼續運行。
 - **空間複雜度（太耗記憶體）：** 若空間複雜度過高，系統會直接觸及物理記憶體的上限，引發 **OOM（Out of Memory）崩潰**。在高併發場景（如搶票、報名系統）中，若每個 Request 都頻繁配置大型陣列，瞬間湧入的流量可能讓 Process 記憶體瞬間耗盡，導致整台伺服器當機。
-
----
 
 ## 常見空間複雜度等級
 
@@ -70,8 +64,6 @@ head:
 **O(1) < O(log n) < O(n) < O(n²)**
 
 > 更高的空間複雜度如 O(2ⁿ)、O(n!)，通常程式在資料量達到那個量級之前就會引發 OOM 崩潰，實務上極少遇到，因此不在此討論。
-
----
 
 ### 1. O(1)：常數空間（Constant Space）
 
@@ -87,8 +79,6 @@ def get_sum(items):
         total += item
     return total
 ```
-
----
 
 ### 2. O(log n)：對數空間（Logarithmic Space）
 
@@ -111,8 +101,6 @@ def binary_search_recursive(sorted_list, target, left, right):
         return binary_search_recursive(sorted_list, target, left, mid - 1)
 ```
 
----
-
 ### 3. O(n)：線性空間（Linear Space）
 
 輸入資料量有 n 筆，程式就需要額外配置 n 個單位的記憶體。消耗的記憶體隨資料量等比例增長。
@@ -128,8 +116,6 @@ def clone_users(users):
         copied_users.append(user.copy())
     return copied_users
 ```
-
----
 
 ### 4. O(n²)：平方空間（Quadratic Space）
 
@@ -147,8 +133,6 @@ def create_matrix(n):
         matrix.append(row)
     return matrix
 ```
-
----
 
 ## 總結：空間與時間的取捨
 
@@ -169,8 +153,6 @@ def create_matrix(n):
 提升時間效率，通常需要犧牲空間；而節省空間，則往往需要以重複計算來換取。這個取捨（trade-off）是演算法設計中的核心思考之一。
 
 在理解時間複雜度與空間複雜度之後，開發時便能更有意識地思考：**如何在空間與時間中找到良好的平衡點，並在效能與成本之間做出合理的取捨。**
-
----
 
 ## 參考
 
