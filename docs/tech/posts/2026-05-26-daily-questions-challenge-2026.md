@@ -65,3 +65,4 @@ head:
 ### 測試
 
 - [什麼是黑箱測試、白箱測試?](./2026-05-30-black-box-white-box-testing.md)
+- [軟體開發中評估測試指標的方法](./2026-05-31-evaluating-testing-metrics.md)
