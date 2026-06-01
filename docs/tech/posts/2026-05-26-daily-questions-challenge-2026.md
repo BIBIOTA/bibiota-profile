@@ -57,6 +57,7 @@ head:
 ### Backend
 
 - [說明 JWT token](./2026-05-27-jwt-token.md)
+- [資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)](./2026-06-01-race-condition-atomic-update-lock.md)
 
 ### 軟體工程
 
