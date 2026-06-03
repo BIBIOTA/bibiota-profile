@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 09] 使用 Message Queue 處理高併發下的排隊機制"
 description: 介紹如何透過 Message Queue 的生產者與消費者模型，解決高併發場景下的效能瓶頸，實現削峰填谷與將並行轉為串行。
 date: 2026-06-03
+avatar: /daily-questions-challenge.png
 tags:
   - Backend
   - System Design

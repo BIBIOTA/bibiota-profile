@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 06] 軟體開發中評估測試指標的方法"
 description: 介紹軟體開發中常用的測試指標評估方法，包含測試覆蓋率、缺陷逃逸率與 Issue Severity 分級。
 date: 2026-05-31
+avatar: /daily-questions-challenge.png
 tags:
   - Engineering
   - Testing

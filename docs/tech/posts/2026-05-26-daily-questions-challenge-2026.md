@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 00] 2026 軟體後端面試題目準備與回顧"
 description: 以每日一題的方式整理面試問題。
 date: 2026-05-26
+avatar: /daily-questions-challenge.png
 pinned: true
 tags:
   - Backend

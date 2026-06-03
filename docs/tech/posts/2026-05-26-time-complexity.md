@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 01] 解釋時間複雜度 (Time Complexity)"
 description: 解釋時間複雜度及常見的 Big O
 date: 2026-05-26
+avatar: /daily-questions-challenge.png
 tags:
   - Algorithm
   - Python

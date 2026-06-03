@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 08] 使用 Redis 分布式鎖避免 Race Condition"
 description: 說明如何使用 Redis 分布式鎖（Distributed Lock）避免多服務架構中的 Race Condition，包含取得鎖、設定過期時間、釋放鎖的核心機制，以及 Lock Renewal 與 Fencing Token 的進階解法。
 date: 2026-06-02
+avatar: /daily-questions-challenge.png
 tags:
   - Backend
   - Redis

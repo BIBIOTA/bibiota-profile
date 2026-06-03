@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 05] 什麼是黑箱測試、白箱測試?"
 description: 介紹黑箱測試與白箱測試的核心概念、執行角色與應用情境。
 date: 2026-05-30
+avatar: /daily-questions-challenge.png
 tags:
   - Engineering
   - Testing

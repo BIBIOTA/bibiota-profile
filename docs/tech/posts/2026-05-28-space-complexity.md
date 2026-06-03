@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 03] 解釋空間複雜度 (Space Complexity)"
 description: 解釋空間複雜度及常見的 Big O
 date: 2026-05-28
+avatar: /daily-questions-challenge.png
 tags:
   - Algorithm
   - Python

@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 07] 資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)"
 description: 介紹資料庫層級避免 Race Condition 的三種策略：Atomic Update、悲觀鎖與樂觀鎖，以及欄位型別設計的防禦機制。
 date: 2026-06-01
+avatar: /daily-questions-challenge.png
 tags:
   - Backend
   - Database

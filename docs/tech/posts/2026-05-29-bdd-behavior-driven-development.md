@@ -3,6 +3,7 @@ layout: doc
 title: "[Daily Questions Challenge 04] BDD (Behavior-Driven Development)"
 description: 介紹行為驅動開發（BDD）的核心概念、Given/When/Then 格式，以及與 TDD、SDD 的比較與整合方式。
 date: 2026-05-29
+avatar: /daily-questions-challenge.png
 tags:
   - Engineering
 head:
