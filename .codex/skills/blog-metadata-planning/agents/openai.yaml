@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Metadata Planning"
+  short_description: "Plan blog article metadata and index placement."
+  default_prompt: "Plan metadata for a blog article."

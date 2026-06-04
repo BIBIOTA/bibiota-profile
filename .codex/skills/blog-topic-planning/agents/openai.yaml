@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Topic Planning"
+  short_description: "Plan and confirm a blog article direction."
+  default_prompt: "Plan a new blog article topic."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Research Writing"
+  short_description: "Research sources and draft a blog article."
+  default_prompt: "Research and draft a blog article."

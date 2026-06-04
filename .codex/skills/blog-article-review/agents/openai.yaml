@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Article Review"
+  short_description: "Review a drafted blog article before publishing."
+  default_prompt: "Review a drafted blog article."
