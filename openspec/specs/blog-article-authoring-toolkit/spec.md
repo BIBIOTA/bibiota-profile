@@ -1,5 +1,8 @@
-## ADDED Requirements
+# blog-article-authoring-toolkit Specification
 
+## Purpose
+TBD - created by archiving change add-article-authoring-toolkit. Update Purpose after archive.
+## Requirements
 ### Requirement: Topic planning Skill
 The system SHALL provide a `blog-topic-planning` Skill that turns a user-provided article topic into a confirmed article brief before metadata or drafting begins.
 
@@ -73,3 +76,4 @@ The system SHALL make each article workflow Skill independently runnable through
 #### Scenario: Next Skill requires user confirmation
 - **WHEN** a Skill completes its stage
 - **THEN** it asks whether to continue to the next Skill and does not invoke the next Skill automatically
+
