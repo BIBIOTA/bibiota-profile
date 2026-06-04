@@ -74,7 +74,12 @@ export default defineConfig({
             tailwindcss(),
             autoprefixer(),
           ]
-      }
+      },
+      preprocessorOptions: {
+        sass: {
+          api: 'modern',
+        },
+      },
     },
     define: {
       __VUE_PROD_DEVTOOLS__: false
