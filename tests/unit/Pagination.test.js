@@ -37,10 +37,8 @@ describe('Pagination', () => {
     const wrapper = mount(Pagination, {
       props: { currentPage: 2, totalPages: 3 },
     })
-    const activeBtn = wrapper.find('[data-testid="page-btn-2"]')
-    const style = activeBtn.attributes('style') || ''
-    const classes = activeBtn.classes().join(' ')
-    expect(style.includes('334DCC') || classes.includes('active')).toBe(true)
+    expect(wrapper.find('[data-testid="page-btn-2"][data-active="true"]').exists()).toBe(true)
+    expect(wrapper.find('[data-testid="page-btn-1"][data-active="true"]').exists()).toBe(false)
   })
 
   it('emits change with target page when page button clicked', async () => {
