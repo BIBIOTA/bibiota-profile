@@ -107,6 +107,15 @@ TCP 與 UDP 的差異是後端面試的常見題目，下一篇文章將會詳�
 
 TCP/IP 採用較精簡的四層架構，把 OSI 的七層合併為四層：
 
+```mermaid
+block-beta
+  columns 2
+  A["應用層\nApplication"]         B["OSI 5～7 層\nHTTP, DNS, SMTP"]
+  C["傳輸層\nTransport"]           D["OSI 第 4 層\nTCP, UDP"]
+  E["網路層\nInternet"]            F["OSI 第 3 層\nIP, ICMP"]
+  G["網路存取層\nNetwork Access"]  H["OSI 1～2 層\nEthernet, Wi-Fi"]
+```
+
 | TCP/IP 四層 | 對應 OSI 層級 | 常見協定 |
 |---|---|---|
 | 應用層（Application） | 第 5～7 層 | HTTP、DNS、SMTP、FTP |
