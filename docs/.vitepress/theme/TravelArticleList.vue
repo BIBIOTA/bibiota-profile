@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-[760px] max-w-full">
     <Title :text="articleTitle" />
     <ArticleBox :articles="articles" />
   </div>
