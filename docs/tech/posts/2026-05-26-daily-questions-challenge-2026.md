@@ -61,13 +61,8 @@ head:
 - [資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)](./2026-06-01-race-condition-atomic-update-lock.md)
 - [使用 Redis 分布式鎖避免 Race Condition](./2026-06-02-redis-distributed-lock.md)
 - [使用 Message Queue 處理高併發下的排隊機制](./2026-06-03-message-queue.md)
-- [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
-
-### Network
-
-- [網際網路通訊協定的分層設計](./2026-06-06-network-protocol-layers.md)
-- [比較 TCP 與 UDP：可靠傳輸與快速傳輸的取捨](./2026-06-07-tcp-udp.md)
 - [淺談 WebRTC](./2026-06-04-webrtc.md)
+- [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
 
 ### 軟體工程
 
