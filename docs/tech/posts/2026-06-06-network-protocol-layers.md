@@ -49,6 +49,18 @@ OSI 是由 ISO（國際標準化組織）於 1984 年制定的標準參考模型
 
 以下從使用者最直接接觸的應用層（第 7 層）開始，往下介紹到實體層（第 1 層）。
 
+```mermaid
+block-beta
+  columns 1
+  L7["7｜應用層 Application Layer　　HTTP / HTTPS / FTP / SMTP / DNS"]
+  L6["6｜表徵層 Presentation Layer　 TLS / JPEG / ASCII"]
+  L5["5｜會談層 Session Layer"]
+  L4["4｜傳輸層 Transport Layer　　　TCP / UDP"]
+  L3["3｜網路層 Network Layer　　　　IP / ICMP"]
+  L2["2｜資料連結層 Data Link Layer　 Ethernet / Wi-Fi"]
+  L1["1｜實體層 Physical Layer　　　　Hub / 光纖"]
+```
+
 ### 第 7 層：應用層（Application Layer）
 
 核心功能：為應用程式提供網路服務與溝通介面，定義資料的格式與請求規則。
