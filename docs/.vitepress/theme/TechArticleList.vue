@@ -1,7 +1,7 @@
 <template>
   <div>
     <Title :text="articleTitle" />
-    <ArticleBox :articles="paginatedArticles" />
+    <ArticleBox :articles="paginatedArticles" :min-items="articleBoxMinItems" />
     <Pagination
       :current-page="currentPage"
       :total-pages="totalPages"
@@ -59,6 +59,9 @@ export default {
     },
     totalPages() {
       return Math.max(1, Math.ceil(this.articles.length / PAGE_SIZE))
+    },
+    articleBoxMinItems() {
+      return this.totalPages > 1 ? PAGE_SIZE : 0
     },
     currentPage() {
       if (this.page < 1 || isNaN(this.page)) return 1
