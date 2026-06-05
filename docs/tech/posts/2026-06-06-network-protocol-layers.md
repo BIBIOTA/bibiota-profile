@@ -54,7 +54,7 @@ block-beta
   columns 1
   L7["7｜應用層 Application Layer　　HTTP / HTTPS / FTP / SMTP / DNS"]
   L6["6｜表徵層 Presentation Layer　 TLS / JPEG / ASCII"]
-  L5["5｜會談層 Session Layer"]
+  L5["5｜會談層 Session Layer　　　NetBIOS / RPC"]
   L4["4｜傳輸層 Transport Layer　　　TCP / UDP"]
   L3["3｜網路層 Network Layer　　　　IP / ICMP"]
   L2["2｜資料連結層 Data Link Layer　 Ethernet / Wi-Fi"]
@@ -136,7 +136,7 @@ block-beta
 
 網路通訊協定採用分層設計，是為了將複雜問題拆解成可獨立開發與維護的子任務。OSI 提供了清晰的理論框架，TCP/IP 四層架構則是實際驅動現代網際網路的協定組。
 
-下一篇文章將聚焦在傳輸層的兩個核心協定：[TCP 與 UDP 的差異與適用場景](./2026-06-07-tcp-udp.md)。
+下一篇文章將聚焦在傳輸層的兩個核心協定：TCP 與 UDP 的差異與適用場景。
 
 ## 參考
 
