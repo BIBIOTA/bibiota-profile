@@ -101,6 +101,31 @@ describe('TechArticleList - article slicing', () => {
   })
 })
 
+describe('TechArticleList - SSR safety', () => {
+  it('SSR build does not access window', async () => {
+    setMockPosts(makePosts(5))
+    const originalLocation = window.location
+    Object.defineProperty(window, 'location', {
+      value: undefined,
+      writable: true,
+      configurable: true,
+    })
+    let mounted = false
+    try {
+      const wrapper = mount(TechArticleList)
+      mounted = true
+      expect(wrapper.vm.$data.page).toBe(1)
+    } finally {
+      Object.defineProperty(window, 'location', {
+        value: originalLocation,
+        writable: true,
+        configurable: true,
+      })
+    }
+    expect(mounted).toBe(true)
+  })
+})
+
 describe('TechArticleList - handlePageChange', () => {
   it('User clicks a page button', async () => {
     setMockPosts(makePosts(17))

@@ -40,6 +40,7 @@ export default {
     }
   },
   mounted() {
+    if (typeof window === 'undefined' || !window.location) return
     const params = new URLSearchParams(window.location.search)
     const raw = parseInt(params.get('page'), 10)
     this.page = isNaN(raw) ? 1 : raw
