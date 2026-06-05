@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import {
@@ -10,7 +11,7 @@ import {
 
 const siteUrl = 'https://me.bibiota.com'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   ignoreDeadLinks: [
     /^http:\/\/localhost/,
   ],
@@ -85,5 +86,6 @@ export default defineConfig({
       __VUE_PROD_DEVTOOLS__: false
     }
   },
+  mermaid: {},
   appearance: false,
-})
+}))
