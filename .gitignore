@@ -8,6 +8,7 @@ docs/.vitepress/cache
 yarn-error.log
 .claude/*
 openspec/*
+!openspec/changes/
 docs/public/pdf/*.pdf
 .vercel
 .env*.local
