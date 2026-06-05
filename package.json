@@ -8,13 +8,17 @@
   "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.50.0",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/test-utils": "^2.4.11",
     "autoprefixer": "^10.4.24",
+    "jsdom": "^29.1.1",
     "mermaid": "^11.15.0",
     "pdf-lib": "^1.17.1",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.4.19",
     "vitepress": "^1.6.4",
     "vitepress-plugin-mermaid": "^2.0.17",
+    "vitest": "^4.1.8",
     "vue": "^3.5.28",
     "wait-on": "^8.0.0"
   },
@@ -22,7 +26,9 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress preview docs --port 8088",
-    "build:pdf": "bash scripts/build-with-pdfs.sh"
+    "build:pdf": "bash scripts/build-with-pdfs.sh",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "axios": "^1.13.5",
