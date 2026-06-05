@@ -62,6 +62,7 @@ head:
 - [使用 Redis 分布式鎖避免 Race Condition](./2026-06-02-redis-distributed-lock.md)
 - [使用 Message Queue 處理高併發下的排隊機制](./2026-06-03-message-queue.md)
 - [淺談 WebRTC](./2026-06-04-webrtc.md)
+- [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
 
 ### 軟體工程
 
