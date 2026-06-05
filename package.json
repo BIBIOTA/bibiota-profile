@@ -11,6 +11,7 @@
     "@vitejs/plugin-vue": "^6.0.7",
     "@vue/test-utils": "^2.4.11",
     "autoprefixer": "^10.4.24",
+    "esbuild": "^0.28.0",
     "jsdom": "^29.1.1",
     "mermaid": "^11.15.0",
     "pdf-lib": "^1.17.1",
