@@ -51,14 +51,14 @@ OSI 是由 ISO（國際標準化組織）於 1984 年制定的標準參考模型
 
 ```mermaid
 block-beta
-  columns 1
-  L7["7｜應用層 Application Layer　　HTTP / HTTPS / FTP / SMTP / DNS"]
-  L6["6｜表徵層 Presentation Layer　 TLS / JPEG / ASCII"]
-  L5["5｜會談層 Session Layer　　　NetBIOS / RPC"]
-  L4["4｜傳輸層 Transport Layer　　　TCP / UDP"]
-  L3["3｜網路層 Network Layer　　　　IP / ICMP"]
-  L2["2｜資料連結層 Data Link Layer　 Ethernet / Wi-Fi"]
-  L1["1｜實體層 Physical Layer　　　　Hub / 光纖"]
+  columns 2
+  L7n["7｜應用層\nApplication Layer"] L7p["HTTP / HTTPS / FTP / SMTP / DNS"]
+  L6n["6｜表徵層\nPresentation Layer"] L6p["TLS / JPEG / ASCII"]
+  L5n["5｜會談層\nSession Layer"] L5p["NetBIOS / RPC"]
+  L4n["4｜傳輸層\nTransport Layer"] L4p["TCP / UDP"]
+  L3n["3｜網路層\nNetwork Layer"] L3p["IP / ICMP"]
+  L2n["2｜資料連結層\nData Link Layer"] L2p["Ethernet / Wi-Fi"]
+  L1n["1｜實體層\nPhysical Layer"] L1p["Hub / 光纖"]
 ```
 
 ### 第 7 層：應用層（Application Layer）
