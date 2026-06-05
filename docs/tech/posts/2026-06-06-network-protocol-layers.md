@@ -49,18 +49,6 @@ OSI 是由 ISO（國際標準化組織）於 1984 年制定的標準參考模型
 
 以下從使用者最直接接觸的應用層（第 7 層）開始，往下介紹到實體層（第 1 層）。
 
-```mermaid
-block-beta
-  columns 2
-  L7n["7｜應用層\nApplication Layer"] L7p["HTTP / HTTPS / FTP / SMTP / DNS"]
-  L6n["6｜表徵層\nPresentation Layer"] L6p["TLS / JPEG / ASCII"]
-  L5n["5｜會談層\nSession Layer"] L5p["NetBIOS / RPC"]
-  L4n["4｜傳輸層\nTransport Layer"] L4p["TCP / UDP"]
-  L3n["3｜網路層\nNetwork Layer"] L3p["IP / ICMP"]
-  L2n["2｜資料連結層\nData Link Layer"] L2p["Ethernet / Wi-Fi"]
-  L1n["1｜實體層\nPhysical Layer"] L1p["Hub / 光纖"]
-```
-
 ### 第 7 層：應用層（Application Layer）
 
 核心功能：為應用程式提供網路服務與溝通介面，定義資料的格式與請求規則。
@@ -106,15 +94,6 @@ TCP 與 UDP 的差異是後端面試的常見題目，下一篇文章將會詳�
 **TCP/IP** 的全名是 Transmission Control Protocol / Internet Protocol，源自 1970 年代美國國防部高等研究計劃署（DARPA）為 ARPANET 所開發的協定組，是現今網際網路實際運行的基礎。
 
 TCP/IP 採用較精簡的四層架構，把 OSI 的七層合併為四層：
-
-```mermaid
-block-beta
-  columns 2
-  A["應用層\nApplication"]         B["OSI 5～7 層\nHTTP, DNS, SMTP"]
-  C["傳輸層\nTransport"]           D["OSI 第 4 層\nTCP, UDP"]
-  E["網路層\nInternet"]            F["OSI 第 3 層\nIP, ICMP"]
-  G["網路存取層\nNetwork Access"]  H["OSI 1～2 層\nEthernet, Wi-Fi"]
-```
 
 | TCP/IP 四層 | 對應 OSI 層級 | 常見協定 |
 |---|---|---|
