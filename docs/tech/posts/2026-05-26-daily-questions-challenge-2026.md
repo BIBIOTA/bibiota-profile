@@ -67,6 +67,7 @@ head:
 ### Network
 
 - [網際網路通訊協定的分層設計](./2026-06-06-network-protocol-layers.md)
+- [比較 TCP 與 UDP：可靠傳輸與快速傳輸的取捨](./2026-06-07-tcp-udp.md)
 
 ### 軟體工程
 
