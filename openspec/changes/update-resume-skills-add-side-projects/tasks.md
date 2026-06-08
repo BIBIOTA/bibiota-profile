@@ -64,5 +64,5 @@
 
 ## Optional artifacts
 
-- [ ] PlantUML diagrams (spec-driven-dev:writing-uml)
+- [ ] PlantUML diagrams (spec-driven-dev:writing-uml) deferred: 設計階段明確不選（無複雜流程/狀態機，改選 Figma）
 - [x] Figma designs (spec-driven-dev:writing-figma) — 底部三欄佈局 + Side Projects section，需沿用現有 indigo 色系設計風格，不更動整體配色
