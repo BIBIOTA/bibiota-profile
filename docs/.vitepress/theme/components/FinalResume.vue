@@ -251,6 +251,12 @@ const personalData = computed(() => {
       institution: edu.institution[localeKey],
       duration: edu.duration,
       location: edu.location[localeKey]
+    })),
+    sideProjects: personalDataRaw.sideProjects.map(p => ({
+      name: p.name,
+      description: p.description[localeKey],
+      github: p.github,
+      url: p.url,
     }))
   }
 })
