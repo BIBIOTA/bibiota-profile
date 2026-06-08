@@ -83,7 +83,7 @@
                             </ul>
                           </div>
 
-                          <div v-if="pos.achievements && pos.achievements.length > 0" class="mt-3">
+                          <div v-if="pos.achievements && pos.achievements.length > 0" class="mt-3 job-achievements">
                             <h4 class="text-sm font-medium text-gray-900 mb-2">
                               {{ t('sections.achievements') }}
                             </h4>
@@ -121,7 +121,7 @@
                           </ul>
                         </div>
 
-                        <div v-if="job.achievements && job.achievements.length > 0" class="mt-4">
+                        <div v-if="job.achievements && job.achievements.length > 0" class="mt-4 job-achievements">
                           <h4 class="text-sm font-medium text-gray-900 mb-2">
                             {{ t('sections.achievements') }}
                           </h4>
@@ -185,7 +185,7 @@
                   <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
                     {{ t('sections.skills') }}
                   </h2>
-                  <div class="flex flex-wrap gap-2 mt-4">
+                  <div class="flex flex-wrap gap-2 mt-2">
                     <span
                       v-for="skill in personalData.skills"
                       :key="skill"
@@ -434,23 +434,30 @@ const props = defineProps({
   .pdf-content .education-languages-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 2rem !important;
+    gap: 1.5rem !important;
+    align-items: start !important;
   }
 
   .pdf-content .skills-side-projects-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 1.5rem !important;
-  }
-
-  /* Compact Side Projects for PDF: each project on one line */
-  .pdf-content .side-project-item {
     display: flex !important;
     flex-direction: row !important;
-    align-items: center !important;
-    flex-wrap: nowrap !important;
+    gap: 1.5rem !important;
+    align-items: flex-start !important;
+  }
+
+  .pdf-content .skills-side-projects-grid > section {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    width: 50% !important;
+  }
+
+  /* Side Projects for PDF: name row + description below */
+  .pdf-content .side-project-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
     gap: 0 !important;
-    margin-top: 0.15rem !important;
+    margin-top: 0.1rem !important;
   }
 
   .pdf-content .side-project-name-row {
@@ -461,31 +468,27 @@ const props = defineProps({
   }
 
   .pdf-content .side-project-name-row::after {
-    content: " —" !important;
-    font-size: 0.6rem !important;
-    color: #4b5563 !important;
-    margin: 0 0.2rem !important;
+    content: none !important;
   }
 
   .pdf-content .side-project-desc {
-    flex: 1 !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    font-size: 0.6rem !important;
-    line-height: 1.2 !important;
-    margin-top: 0 !important;
+    font-size: 0.75rem !important;
+    line-height: 1.15 !important;
+    margin-top: 0.03rem !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    color: #4b5563 !important;
   }
 
   .pdf-content .side-project-item .w-4.h-4 {
-    width: 0.45rem !important;
-    height: 0.45rem !important;
+    width: 0.6rem !important;
+    height: 0.6rem !important;
     flex-shrink: 0 !important;
   }
 
   .pdf-content .side-project-name-row .text-sm {
-    font-size: 0.65rem !important;
+    font-size: 0.75rem !important;
     line-height: 1.2 !important;
   }
 
@@ -501,18 +504,15 @@ const props = defineProps({
     margin-top: 0.2rem !important;
   }
 
-  .pdf-content .skills-side-projects-grid .mt-4 {
-    margin-top: 0.25rem !important;
-  }
-
+  .pdf-content .education-languages-grid h2,
   .pdf-content .skills-side-projects-grid h2 {
     font-size: 0.95rem !important;
-    margin-bottom: 0.1rem !important;
+    margin-bottom: 0.25rem !important;
     padding-bottom: 0 !important;
   }
 
   .pdf-content .education-languages-grid + .skills-side-projects-grid {
-    margin-top: 0 !important;
+    margin-top: 0.35rem !important;
   }
 
   .pdf-content .skills-side-projects-grid section {
@@ -548,9 +548,10 @@ const props = defineProps({
     overflow: hidden;
   }
 
-  /* Flexible spacing */
-  .pdf-content .space-y-8 > * + * {
-    margin-top: clamp(0.75rem, 1.5vh, 1.25rem) !important;
+  /* Achievements block: tighter top gap from responsibilities, wider bottom gap to next section */
+  .pdf-content .job-achievements {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.55rem !important;
   }
 
   /* Prevent page break inside experience items */

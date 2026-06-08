@@ -48,9 +48,9 @@ export const personalDataRaw = {
     {
       name: 'job-scraper',
       description: {
-        'zh-TW': '整合各大求職平台（如 104、LinkedIn）職缺的 CLI，可搭配 AI Agent 使用',
-        en: 'CLI integrating job listings from major platforms (e.g. 104, LinkedIn), compatible with AI Agent workflows',
-        ja: '104やLinkedInなど主要求人プラットフォームの求人を統合するCLI、AI Agentと連携可能',
+        'zh-TW': '整合各大求職平台職缺的 CLI，可搭配 AI Agent 使用',
+        en: 'CLI integrating job listings from major platforms, compatible with AI Agent workflows',
+        ja: '主要求人プラットフォームの求人を統合するCLI、AI Agentと連携可能',
       },
       github: 'https://github.com/BIBIOTA/job-scraper',
       url: null,
