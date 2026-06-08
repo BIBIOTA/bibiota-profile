@@ -21,35 +21,35 @@ const LANGUAGES = [
 const LANG_PRINT_CSS = {
   'zh-TW': `
 :root {
-  --print-lh-loose: 1.5;
-  --print-lh-relaxed: 1.4;
-  --print-lh-xs: 1.35;
-  --print-lh-sm: 1.4;
-  --print-gap-8: 0.625rem;
-  --print-gap-4: 0.375rem;
-  --print-py-6: 0.5rem;
+  --print-lh-loose: 1.35;
+  --print-lh-relaxed: 1.25;
+  --print-lh-xs: 1.25;
+  --print-lh-sm: 1.3;
+  --print-gap-8: 0.45rem;
+  --print-gap-4: 0.25rem;
+  --print-py-6: 0.4rem;
 }
 `,
   'ja': `
 :root {
-  --print-lh-loose: 1.35;
-  --print-lh-relaxed: 1.3;
-  --print-lh-xs: 1.25;
-  --print-lh-sm: 1.3;
-  --print-gap-8: 0.4rem;
-  --print-gap-4: 0.2rem;
-  --print-py-6: 0.4rem;
+  --print-lh-loose: 1.2;
+  --print-lh-relaxed: 1.15;
+  --print-lh-xs: 1.15;
+  --print-lh-sm: 1.2;
+  --print-gap-8: 0.3rem;
+  --print-gap-4: 0.15rem;
+  --print-py-6: 0.3rem;
 }
 `,
   'en': `
 :root {
-  --print-lh-loose: 1.3;
-  --print-lh-relaxed: 1.25;
-  --print-lh-xs: 1.2;
-  --print-lh-sm: 1.25;
-  --print-gap-8: 0.375rem;
-  --print-gap-4: 0.2rem;
-  --print-py-6: 0.375rem;
+  --print-lh-loose: 1.2;
+  --print-lh-relaxed: 1.15;
+  --print-lh-xs: 1.15;
+  --print-lh-sm: 1.2;
+  --print-gap-8: 0.3rem;
+  --print-gap-4: 0.15rem;
+  --print-py-6: 0.3rem;
 }
 `,
 };

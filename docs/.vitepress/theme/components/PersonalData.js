@@ -18,9 +18,9 @@ export const personalDataRaw = {
   },
   website: 'https://me.bibiota.com',
   summary: {
-    'zh-TW': '5 年軟體開發經驗，專精 PHP/Laravel、Node.js/NestJS 大型系統架構規劃、效能優化與版本升級。4 年旅遊電商，1 年 Tech Lead，主導公司主力產品線系統規劃，具備 2~4 人後端小團隊管理經驗。熱衷於開發體驗優化及 AI 賦能、AI 工具導入。',
-    en: 'Backend engineer with 5 years of software development experience, specializing in large-scale system architecture, performance optimization, and version upgrades with PHP/Laravel and Node.js/NestJS. 4 years in travel e-commerce and 2 years as Tech Lead, driving system planning for the company\'s flagship product lines, with experience managing small backend teams of 2–4 engineers. Passionate about improving developer experience and enabling teams through AI adoption and tooling.',
-    ja: 'ソフトウェア開発5年のバックエンドエンジニア。PHP/Laravel、Node.js/NestJSによる大規模システム設計、性能最適化、バージョンアップグレードを得意とする。旅行系EC4年、Tech Lead 2年として主力プロダクトラインの設計を主導、2〜4名のチームマネジメント経験あり。開発体験の改善とAI活用・ツール導入に情熱を注ぐ。'
+    'zh-TW': '5 年網頁軟體開發經驗，專精 PHP/Laravel、Node.js/NestJS 大型系統架構規劃、效能優化與版本升級，亦具備 Python、Golang 等後端語言開發能力。4 年旅遊電商，1 年 Tech Lead，主導公司主力產品線系統規劃，具備 2~4 人後端小團隊管理經驗。團隊導入 AI Workflow、Spec-Driven Development。',
+    en: 'Backend engineer with 5 years of web software development experience, specializing in large-scale system architecture, performance optimization, and version upgrades with PHP/Laravel and Node.js/NestJS, with additional backend capabilities in Python and Golang. 4 years in travel e-commerce and 1 year as Tech Lead, driving system planning for the company\'s flagship product lines, with experience managing small backend teams of 2–4 engineers. Introduced AI Workflow and Spec-Driven Development to the team.',
+    ja: 'Webソフトウェア開発5年のバックエンドエンジニア。PHP/Laravel、Node.js/NestJSによる大規模システム設計、性能最適化、バージョンアップグレードを得意とし、PythonやGolangなど他のバックエンド言語も扱える。旅行系EC4年、Tech Lead 1年として主力プロダクトラインの設計を主導、2〜4名のチームマネジメント経験あり。チームへのAI WorkflowおよびSpec-Driven Developmentの導入を推進。'
   },
 
   skills: [
@@ -141,9 +141,14 @@ export const personalDataRaw = {
           ],
           achievements: [
             {
-              'zh-TW': '推動Claude Code導入，建立公司使用的Claude Code Skills，加速團隊開發效率200%、搜尋API效能提升10倍、部署時間降低50%。',
-              en: 'Led Claude Code adoption; built company-wide Skills, improving team efficiency 200%, search API 10×, deploy time −50%.',
-              ja: 'Claude Codeの導入を推進し、社内向けClaude Code Skillsを構築。チームの開発効率を200%向上、検索APIパフォーマンスを10倍改善、デプロイ時間を50%削減。',
+              'zh-TW': '推動 Claude Code 導入，建立後端團隊共享的 AI Workflow，加速開發效率 2x。',
+              en: 'Led Claude Code adoption, established a shared AI Workflow for the backend team, and accelerated development efficiency by 2x.',
+              ja: 'Claude Codeの導入を推進し、バックエンドチーム共有のAI Workflowを構築し、開発効率を2倍向上。',
+            },
+            {
+              'zh-TW': '優化 CI/CD 單元測試流程，部署時間減少 50%。',
+              en: 'Optimized CI/CD unit testing pipeline, reducing deployment time by 50%.',
+              ja: 'CI/CD単体テストフローを最適化し、デプロイ時間を50%削減。',
             },
             {
               'zh-TW': '導入Spec-Driven Development（SDD），以規格文件驅動開發流程，提升需求溝通效率與開發品質。',

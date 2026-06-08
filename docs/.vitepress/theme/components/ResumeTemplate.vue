@@ -425,8 +425,8 @@ const props = defineProps({
   }
 
   [lang="zh-TW"] .pdf-content {
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 0.92em;
+    line-height: 1.25;
   }
 
 
