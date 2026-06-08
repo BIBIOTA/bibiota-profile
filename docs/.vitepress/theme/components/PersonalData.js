@@ -24,15 +24,12 @@ export const personalDataRaw = {
   },
 
   skills: [
-    'PHP/Laravel',
-    'Node.js/NestJs',
-    'Golang',
     'MySQL/MongoDB',
     'Redis',
     'GraphQL/REST API',
     'Docker',
     'CI/CD Pipeline',
-    'Claude Code',
+    'Claude/Codex',
     'Issue & Log Tracking',
     'System Analysis',
   ],
