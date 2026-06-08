@@ -201,8 +201,8 @@
                     {{ t('sections.sideProjects') }}
                   </h2>
                   <div class="space-y-2 mt-2">
-                    <div v-for="project in personalData.sideProjects" :key="project.name">
-                      <div class="flex items-center gap-2">
+                    <div v-for="project in personalData.sideProjects" :key="project.name" class="side-project-item">
+                      <div class="flex items-center gap-2 side-project-name-row">
                         <span class="text-sm font-semibold text-gray-900">{{ project.name }}</span>
                         <a :href="project.github" target="_blank" rel="noopener noreferrer">
                           <img :src="withBase('/github.svg')" class="w-4 h-4 inline-block" alt="GitHub" />
@@ -211,7 +211,7 @@
                           <img :src="withBase('/website.svg')" class="w-4 h-4 inline-block" alt="Website" />
                         </a>
                       </div>
-                      <p class="text-xs text-gray-600">{{ project.description }}</p>
+                      <p class="text-xs text-gray-600 side-project-desc">{{ project.description }}</p>
                     </div>
                   </div>
                   <div class="flex justify-end mt-3">
@@ -440,7 +440,84 @@ const props = defineProps({
   .pdf-content .skills-side-projects-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    gap: 2rem !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Compact Side Projects for PDF: each project on one line */
+  .pdf-content .side-project-item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+    margin-top: 0.15rem !important;
+  }
+
+  .pdf-content .side-project-name-row {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.15rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .pdf-content .side-project-name-row::after {
+    content: " —" !important;
+    font-size: 0.6rem !important;
+    color: #4b5563 !important;
+    margin: 0 0.2rem !important;
+  }
+
+  .pdf-content .side-project-desc {
+    flex: 1 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: 0.6rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+  }
+
+  .pdf-content .side-project-item .w-4.h-4 {
+    width: 0.45rem !important;
+    height: 0.45rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .pdf-content .side-project-name-row .text-sm {
+    font-size: 0.65rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .pdf-content .skills-side-projects-grid .space-y-2 {
+    margin-top: 0.2rem !important;
+  }
+
+  .pdf-content .skills-side-projects-grid .space-y-2 > * + * {
+    margin-top: 0 !important;
+  }
+
+  .pdf-content .skills-side-projects-grid .mt-3 {
+    margin-top: 0.2rem !important;
+  }
+
+  .pdf-content .skills-side-projects-grid .mt-4 {
+    margin-top: 0.25rem !important;
+  }
+
+  .pdf-content .skills-side-projects-grid h2 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.1rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  .pdf-content .education-languages-grid + .skills-side-projects-grid {
+    margin-top: 0 !important;
+  }
+
+  .pdf-content .skills-side-projects-grid section {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
   }
   
   .pdf-content .resume-container,
