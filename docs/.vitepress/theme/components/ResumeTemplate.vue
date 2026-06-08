@@ -179,20 +179,49 @@
                 </section>
               </div>
 
-              <section>
-                <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
-                  {{ t('sections.skills') }}
-                </h2>
-                <div class="flex flex-wrap gap-2 mt-4">
-                  <span 
-                    v-for="skill in personalData.skills" 
-                    :key="skill"
-                    class="inline-block bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full"
-                  >
-                    {{ skill }}
-                  </span>
-                </div>
-              </section>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 skills-side-projects-grid">
+                <!-- Left col: Skills -->
+                <section>
+                  <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
+                    {{ t('sections.skills') }}
+                  </h2>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      v-for="skill in personalData.skills"
+                      :key="skill"
+                      class="inline-block bg-indigo-100 text-indigo-800 text-xs font-medium px-3 py-1 rounded-full"
+                    >
+                      {{ skill }}
+                    </span>
+                  </div>
+                </section>
+                <!-- Right col: Side Projects -->
+                <section>
+                  <h2 class="text-xl font-bold text-gray-900 mb-2 border-b-2 border-indigo-500 pb-1">
+                    {{ t('sections.sideProjects') }}
+                  </h2>
+                  <div class="space-y-2 mt-2">
+                    <div v-for="project in personalData.sideProjects" :key="project.name">
+                      <div class="flex items-center gap-2">
+                        <span class="text-sm font-semibold text-gray-900">{{ project.name }}</span>
+                        <a :href="project.github" target="_blank" rel="noopener noreferrer">
+                          <img :src="withBase('/github.svg')" class="w-4 h-4 inline-block" alt="GitHub" />
+                        </a>
+                        <a v-if="project.url" :href="project.url" target="_blank" rel="noopener noreferrer">
+                          <img :src="withBase('/website.svg')" class="w-4 h-4 inline-block" alt="Website" />
+                        </a>
+                      </div>
+                      <p class="text-xs text-gray-600">{{ project.description }}</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-end mt-3">
+                    <a href="https://github.com/BIBIOTA" target="_blank" rel="noopener noreferrer"
+                       class="text-xs text-indigo-600 hover:underline">
+                      more →
+                    </a>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
@@ -403,6 +432,12 @@ const props = defineProps({
   }
   
   .pdf-content .education-languages-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .pdf-content .skills-side-projects-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     gap: 2rem !important;
