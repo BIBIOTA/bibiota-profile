@@ -42,8 +42,8 @@
   - Independence: serial
   - status: not_started
 
-- [ ] 3.3 新增網站 icon inline SVG
-  - Acceptance: WHEN `url` 不為 null 的 Side Project 渲染時 THEN 顯示 external-link 樣式的 inline SVG icon，視覺大小與 github icon 一致
+- [ ] 3.3 新增 website.svg 至 public 並在 Side Projects 中引用
+  - Acceptance: WHEN `url` 不為 null 的 Side Project 渲染時 THEN 顯示 `<img :src="withBase('/website.svg')" class="w-4 h-4 inline-block" />` icon，視覺大小與 GitHub icon（`/github.svg` w-4 h-4）對齊；`docs/public/website.svg` 檔案已存在
   - Depends on: -
   - Independence: independent
   - status: not_started

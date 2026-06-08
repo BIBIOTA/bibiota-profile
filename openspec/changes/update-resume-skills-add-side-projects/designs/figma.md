@@ -15,7 +15,16 @@
 ## Shared Components Used
 - `Section Header`（existing）— 沿用 text-xl Bold + indigo-500 border-b-2 底線樣式
 - `Skill Chip`（existing）— indigo-100 背景 + indigo-800 文字，圓角 pill
-- `Side Project Card`（new）— 新增至設計系統；包含專案名稱（Semi Bold 13px）+ GitHub 徽章 + 選用網站徽章 + 描述文字（12px gray-600）
+- `Side Project Card`（new）— 新增至設計系統；包含專案名稱（Semi Bold 13px）+ GitHub icon + 選用網站 icon + 描述文字（12px gray-600）
+
+## Icons
+
+| Icon | 來源檔案 | 用途 | 顏色 |
+|---|---|---|---|
+| GitHub | `docs/public/github.svg`（現有）| 每個專案的 GitHub 連結 | black `fill="#000000"` |
+| Website | `docs/public/website.svg`（新增）| `url` 非 null 的專案網站連結 | black `stroke="#000000"`，viewBox `9 9 110 110`（對齊 GitHub icon 視覺大小） |
+
+兩個 icon 在實作中均以 `<img :src="withBase('/xxx.svg')" class="w-4 h-4 inline-block" />` 方式引用，大小 16×16（`w-4 h-4`）。
 
 ## 佈局說明
 
