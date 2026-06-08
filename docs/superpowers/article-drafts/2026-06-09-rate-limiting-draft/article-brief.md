@@ -23,7 +23,7 @@ Daily Questions Challenge — Backend 分類（DQC-15）
 ## Scope
 
 1. 為何需要 Rate Limiting（防止濫用、保護下游服務穩定性）
-2. 四種主流演算法比較：
+2. 五種主流演算法比較：
    - Fixed Window Counter
    - Sliding Window Log / Sliding Window Counter
    - Token Bucket
