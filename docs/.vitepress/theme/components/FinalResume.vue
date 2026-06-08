@@ -151,6 +151,7 @@ const translations = {
     'sections.education': '教育背景',
     'sections.skills': '專業技能',
     'sections.languages': '語言能力',
+    'sections.sideProjects': 'Side Projects',
     'actions.print': '列印履歷',
     'actions.downloadPDF': '下載PDF'
   },
@@ -162,6 +163,7 @@ const translations = {
     'sections.education': 'Education',
     'sections.skills': 'Skills',
     'sections.languages': 'Languages',
+    'sections.sideProjects': 'Side Projects',
     'actions.print': 'Print Resume',
     'actions.downloadPDF': 'Download PDF'
   },
@@ -173,6 +175,7 @@ const translations = {
     'sections.education': '学歴',
     'sections.skills': 'スキル',
     'sections.languages': '言語能力',
+    'sections.sideProjects': 'Side Projects',
     'actions.print': '履歴書印刷',
     'actions.downloadPDF': 'PDFダウンロード'
   }
@@ -248,6 +251,12 @@ const personalData = computed(() => {
       institution: edu.institution[localeKey],
       duration: edu.duration,
       location: edu.location[localeKey]
+    })),
+    sideProjects: personalDataRaw.sideProjects.map(p => ({
+      name: p.name,
+      description: p.description[localeKey],
+      github: p.github,
+      url: p.url,
     }))
   }
 })

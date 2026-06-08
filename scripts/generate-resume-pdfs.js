@@ -30,18 +30,22 @@ const LANG_PRINT_CSS = {
   --print-py-6: 0.4rem;
 }
 `,
-  'ja': `
+  'en': `
 :root {
-  --print-lh-loose: 1.2;
-  --print-lh-relaxed: 1.15;
-  --print-lh-xs: 1.15;
-  --print-lh-sm: 1.2;
-  --print-gap-8: 0.3rem;
-  --print-gap-4: 0.15rem;
-  --print-py-6: 0.3rem;
+  --print-lh-loose: 1.15;
+  --print-lh-relaxed: 1.1;
+  --print-lh-xs: 1.12;
+  --print-lh-sm: 1.12;
+  --print-gap-8: 0.15rem;
+  --print-gap-4: 0.1rem;
+  --print-py-6: 0.2rem;
+}
+.pdf-content {
+  font-size: 0.75em !important;
+  line-height: 1.15 !important;
 }
 `,
-  'en': `
+  'ja': `
 :root {
   --print-lh-loose: 1.2;
   --print-lh-relaxed: 1.15;

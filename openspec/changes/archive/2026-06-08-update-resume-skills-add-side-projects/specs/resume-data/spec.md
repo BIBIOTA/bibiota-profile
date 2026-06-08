@@ -1,4 +1,4 @@
-## MODIFIED Requirements
+## ADDED Requirements
 
 ### Requirement: 專業技能標籤應反映目前主力技術
 The system SHALL render only currently relevant skill tags; deprecated technologies SHALL be removed and AI tooling SHALL use updated naming.

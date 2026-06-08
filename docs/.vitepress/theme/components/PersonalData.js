@@ -24,17 +24,47 @@ export const personalDataRaw = {
   },
 
   skills: [
-    'PHP/Laravel',
-    'Node.js/NestJs',
-    'Golang',
     'MySQL/MongoDB',
     'Redis',
     'GraphQL/REST API',
     'Docker',
     'CI/CD Pipeline',
-    'Claude Code',
+    'Claude/Codex',
     'Issue & Log Tracking',
     'System Analysis',
+  ],
+
+  sideProjects: [
+    {
+      name: 'yuki-marketplace',
+      description: {
+        'zh-TW': 'Claude Code / Codex plugin marketplace（包含工作流程）',
+        en: 'Claude Code / Codex plugin marketplace (including workflows)',
+        ja: 'Claude Code / Codex プラグインマーケットプレイス（ワークフロー含む）',
+      },
+      github: 'https://github.com/BIBIOTA/yuki-marketplace',
+      url: null,
+    },
+    {
+      name: 'job-scraper',
+      description: {
+        'zh-TW': '整合各大求職平台（如 104、LinkedIn）職缺的 CLI，可搭配 AI Agent 使用',
+        en: 'CLI integrating job listings from major platforms (e.g. 104, LinkedIn), compatible with AI Agent workflows',
+        ja: '104やLinkedInなど主要求人プラットフォームの求人を統合するCLI、AI Agentと連携可能',
+      },
+      github: 'https://github.com/BIBIOTA/job-scraper',
+      url: null,
+    },
+    {
+      name: 'tw-marathon-website',
+      description: {
+        'zh-TW': '台灣馬拉松賽事資訊整合平台',
+        en: 'Taiwan marathon race information aggregation platform',
+        ja: '台湾マラソン大会情報統合プラットフォーム',
+      },
+      github: 'https://github.com/BIBIOTA/tw-marathon-website',
+      url: 'https://marathontw-web.bibiota.com/',
+    },
   ],
 
   languages: [
