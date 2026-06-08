@@ -1,4 +1,4 @@
-## MODIFIED Requirements
+## ADDED Requirements
 
 ### Requirement: 履歷底部佈局應改為 2×2 格線
 The system SHALL render the resume bottom section as a 2×2 grid: Row 1 (Education + Languages), Row 2 (Skills + Side Projects), replacing the previous 2-column + full-width-skills layout.
