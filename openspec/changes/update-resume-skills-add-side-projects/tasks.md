@@ -30,8 +30,8 @@
 
 ## 3. 呈現層（ResumeTemplate.vue）
 
-- [ ] 3.1 底部格線改三欄
-  - Acceptance: WHEN 網頁版顯示 THEN 學歷、語言能力、專業技能三區塊以 3 欄格線並排呈現（原 2 欄改為 3 欄）；WHEN PDF 列印時 THEN print CSS 中 `education-languages-grid` 套用 `grid-template-columns: 1fr 1fr 1fr`
+- [ ] 3.1 底部格線改 2×2
+  - Acceptance: WHEN 網頁版顯示 THEN 底部呈現兩列：Row1（學歷 + 語言能力，各佔 50%）、Row2（專業技能 + Side Projects，各佔 50%）；WHEN PDF 列印時 THEN 兩個 grid 均套用 `grid-template-columns: 1fr 1fr`；現有獨立全寬 Skills section 移除，Skills chips 移入 Row2 左欄
   - Depends on: 1.1
   - Independence: serial
   - status: not_started
