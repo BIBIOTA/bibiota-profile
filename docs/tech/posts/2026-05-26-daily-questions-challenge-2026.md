@@ -63,6 +63,7 @@ head:
 - [使用 Message Queue 處理高併發下的排隊機制](./2026-06-03-message-queue.md)
 - [淺談 WebRTC](./2026-06-04-webrtc.md)
 - [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
+- [如何設計 Rate Limiting（速率限制）](./2026-06-09-rate-limiting.md)
 
 ### Network
 
