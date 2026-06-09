@@ -58,12 +58,16 @@ head:
 ### Backend
 
 - [說明 JWT token](./2026-05-27-jwt-token.md)
-- [資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)](./2026-06-01-race-condition-atomic-update-lock.md)
 - [使用 Redis 分布式鎖避免 Race Condition](./2026-06-02-redis-distributed-lock.md)
 - [使用 Message Queue 處理高併發下的排隊機制](./2026-06-03-message-queue.md)
 - [淺談 WebRTC](./2026-06-04-webrtc.md)
 - [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
 - [如何設計 Rate Limiting（速率限制）](./2026-06-09-rate-limiting.md)
+
+### Database
+
+- [資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)](./2026-06-01-race-condition-atomic-update-lock.md)
+- [資料庫的 Transaction Isolation Level](./2026-06-10-transaction-isolation-level.md)
 
 ### Network
 
