@@ -68,6 +68,7 @@ head:
 
 - [資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)](./2026-06-01-race-condition-atomic-update-lock.md)
 - [資料庫的 Transaction Isolation Level](./2026-06-10-transaction-isolation-level.md)
+- [資料庫讀寫分離：Primary、Replica 與一致性取捨](./2026-06-11-database-read-write-splitting.md)
 
 ### Network
 
