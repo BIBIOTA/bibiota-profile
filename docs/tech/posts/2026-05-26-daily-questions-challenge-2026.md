@@ -71,6 +71,7 @@ head:
 - [資料庫讀寫分離：Primary、Replica 與一致性取捨](./2026-06-11-database-read-write-splitting.md)
 - [資料庫 ACID 是什麼？](./2026-06-12-database-acid.md)
 - [Index 是如何加速查詢？](./2026-06-13-database-index.md)
+- [資料庫正規化（Database Normalization）](./2026-06-14-database-normalization.md)
 
 ### Network
 
