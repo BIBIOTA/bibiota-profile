@@ -90,3 +90,4 @@ head:
 ### AI Engineering
 
 - [什麼是 Harness Engineering ?](./2026-06-08-harness-engineering.md)
+- [如何設計LLM Prompt](./2026-06-15-llm-prompt-design.md)
