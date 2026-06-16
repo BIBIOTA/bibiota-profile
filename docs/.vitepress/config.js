@@ -15,6 +15,7 @@ export default withMermaid(defineConfig({
   ignoreDeadLinks: [
     /^http:\/\/localhost/,
   ],
+  srcExclude: ['superpowers/**'],
   title: getTitle(),
   description: getDescription(),
   locales: {
