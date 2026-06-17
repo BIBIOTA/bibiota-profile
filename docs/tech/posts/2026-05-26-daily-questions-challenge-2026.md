@@ -92,3 +92,4 @@ head:
 - [什麼是 Harness Engineering ?](./2026-06-08-harness-engineering.md)
 - [如何設計LLM Prompt](./2026-06-15-llm-prompt-design.md)
 - [LLM API 串接與處理](./2026-06-16-llm-api-best-practices.md)
+- [RAG (Retrieval-Augmented Generation) 架構設計](./2026-06-17-rag-architecture.md)
