@@ -64,6 +64,10 @@ head:
 - [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
 - [如何設計 Rate Limiting（速率限制）](./2026-06-09-rate-limiting.md)
 
+### Caching
+
+- [Redis 快取設計：四種讀寫模式與一致性取捨](./2026-06-18-redis-cache-patterns.md)
+
 ### Database
 
 - [資料庫層級避免 Race Condition 的方法 (Atomic Update、Lock、欄位型別防禦)](./2026-06-01-race-condition-atomic-update-lock.md)
