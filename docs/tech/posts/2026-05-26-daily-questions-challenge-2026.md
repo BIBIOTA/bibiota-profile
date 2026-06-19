@@ -63,6 +63,7 @@ head:
 - [淺談 WebRTC](./2026-06-04-webrtc.md)
 - [解釋 Laravel Eloquent Polymorphic Model](./2026-06-05-laravel-eloquent-polymorphic-model.md)
 - [如何設計 Rate Limiting（速率限制）](./2026-06-09-rate-limiting.md)
+- [Dead Letter Queue（DLQ）：訊息處理失敗後的機制設計](./2026-06-19-dead-letter-queue.md)
 
 ### Caching
 
