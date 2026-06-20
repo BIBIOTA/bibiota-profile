@@ -78,6 +78,10 @@ head:
 - [Index 是如何加速查詢？](./2026-06-13-database-index.md)
 - [資料庫正規化（Database Normalization）](./2026-06-14-database-normalization.md)
 
+### API 設計
+
+- [REST 與 GraphQL：適用場景與設計取捨](./2026-06-20-rest-vs-graphql.md)
+
 ### Network
 
 - [網際網路通訊協定的分層設計](./2026-06-06-network-protocol-layers.md)
