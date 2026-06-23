@@ -78,6 +78,7 @@ head:
 - [資料庫 ACID 是什麼？](./2026-06-12-database-acid.md)
 - [Index 是如何加速查詢？](./2026-06-13-database-index.md)
 - [資料庫正規化（Database Normalization）](./2026-06-14-database-normalization.md)
+- [Slow Query 排查的方法](./2026-06-23-slow-query.md)
 
 ### API 設計
 
