@@ -94,6 +94,7 @@ head:
 ### 軟體工程
 
 - [解釋 BDD (Behavior-Driven Development)](./2026-05-29-bdd-behavior-driven-development.md)
+- [OOP 與 FP：物件導向與函數式程式設計的深入對比](./2026-06-26-oop-vs-fp.md)
 
 ### 測試
 
