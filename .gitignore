@@ -7,6 +7,8 @@ docs/.vitepress/cache
 !CLAUDE.md
 yarn-error.log
 .claude/*
+!.claude/skills/
+!.claude/skills/**
 openspec/*
 !openspec/changes/
 docs/public/pdf/*.pdf
