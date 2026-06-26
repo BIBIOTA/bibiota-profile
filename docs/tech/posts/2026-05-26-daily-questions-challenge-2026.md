@@ -66,6 +66,7 @@ head:
 - [Dead Letter Queue（DLQ）：訊息處理失敗後的機制設計](./2026-06-19-dead-letter-queue.md)
 - [微服務資料一致性：2PC、Saga Pattern 與 Outbox Pattern](./2026-06-21-microservices-data-consistency.md)
 - [Circuit Breaker Pattern：微服務故障隔離的設計模式](./2026-06-24-circuit-breaker-pattern.md)
+- [MQ 水平擴展機制與避免重複消費的設計](./2026-06-27-mq-horizontal-scaling-idempotency.md)
 
 ### Caching
 
