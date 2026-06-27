@@ -109,3 +109,7 @@ head:
 - [LLM API 串接與處理](./2026-06-16-llm-api-best-practices.md)
 - [RAG (Retrieval-Augmented Generation) 架構設計](./2026-06-17-rag-architecture.md)
 - [Vector Database 原理與選型](./2026-06-22-vector-database.md)
+
+### 資安
+
+- [OWASP Top 10 簡介（2025 版）](./2026-06-28-owasp-top-10.md)
