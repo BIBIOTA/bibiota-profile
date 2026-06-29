@@ -109,6 +109,7 @@ head:
 - [LLM API 串接與處理](./2026-06-16-llm-api-best-practices.md)
 - [RAG (Retrieval-Augmented Generation) 架構設計](./2026-06-17-rag-architecture.md)
 - [Vector Database 原理與選型](./2026-06-22-vector-database.md)
+- [Prompt Engineering vs RAG vs Fine-tuning：如何選擇 LLM 應用策略](./2026-06-29-prompt-engineering-vs-rag-vs-fine-tuning.md)
 
 ### 資安
 
