@@ -67,6 +67,7 @@ head:
 - [微服務資料一致性：2PC、Saga Pattern 與 Outbox Pattern](./2026-06-21-microservices-data-consistency.md)
 - [Circuit Breaker Pattern：微服務故障隔離的設計模式](./2026-06-24-circuit-breaker-pattern.md)
 - [MQ 水平擴展機制與避免重複消費的設計](./2026-06-27-mq-horizontal-scaling-idempotency.md)
+- [RabbitMQ vs Kafka：如何選擇適合的訊息佇列？](./2026-06-30-rabbitmq-vs-kafka.md)
 
 ### Caching
 
