@@ -54,6 +54,7 @@ head:
 
 - [解釋時間複雜度 (Time Complexity)](./2026-05-26-time-complexity.md)
 - [解釋空間複雜度 (Space Complexity)](./2026-05-28-space-complexity.md)
+- [演算法常見解題 Pattern 總覽](./2026-07-01-algorithm-patterns.md)
 
 ### Backend
 
