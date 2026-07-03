@@ -73,6 +73,7 @@ head:
 - [MQ 水平擴展機制與避免重複消費的設計](./2026-06-27-mq-horizontal-scaling-idempotency.md)
 - [RabbitMQ vs Kafka：如何選擇適合的訊息佇列？](./2026-06-30-rabbitmq-vs-kafka.md)
 - [Kafka 擴充 Partition 的雷點](./2026-07-02-kafka-partition-pitfalls.md)
+- [Kafka 如何保證訊息不遺失](./2026-07-03-kafka-message-durability.md)
 
 ### Caching
 
