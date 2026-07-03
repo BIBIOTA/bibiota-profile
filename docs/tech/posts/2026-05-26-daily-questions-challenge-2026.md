@@ -74,6 +74,7 @@ head:
 - [RabbitMQ vs Kafka：如何選擇適合的訊息佇列？](./2026-06-30-rabbitmq-vs-kafka.md)
 - [Kafka 擴充 Partition 的雷點](./2026-07-02-kafka-partition-pitfalls.md)
 - [Kafka 如何保證訊息不遺失](./2026-07-03-kafka-message-durability.md)
+- [訊息傳遞語義總覽：At-most-once、At-least-once、Exactly-once](./2026-07-04-mq-delivery-semantics.md)
 
 ### Caching
 
