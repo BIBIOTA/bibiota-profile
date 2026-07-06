@@ -76,6 +76,7 @@ head:
 - [Kafka 如何保證訊息不遺失](./2026-07-03-kafka-message-durability.md)
 - [訊息傳遞語義總覽：At-most-once、At-least-once、Exactly-once](./2026-07-04-mq-delivery-semantics.md)
 - [Consumer Lag 監控與 Backpressure：消費速度跟不上生產速度時怎麼辦？](./2026-07-05-mq-consumer-lag-backpressure.md)
+- [Event-Driven Architecture：Choreography 與 Orchestration 的設計取捨](./2026-07-06-event-driven-choreography-vs-orchestration.md)
 
 ### Caching
 
