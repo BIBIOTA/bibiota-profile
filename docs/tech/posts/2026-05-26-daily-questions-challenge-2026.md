@@ -102,6 +102,10 @@ head:
 - [網際網路通訊協定的分層設計](./2026-06-06-network-protocol-layers.md)
 - [比較 TCP 與 UDP：可靠傳輸與快速傳輸的取捨](./2026-06-07-tcp-udp.md)
 
+### System Design
+
+- [雲端部署基礎架構：VPC、Subnet、Security Group 與 Load Balancer 各自解決什麼問題？](./2026-07-08-cloud-deployment-basics.md)
+
 ### 軟體工程
 
 - [解釋 BDD (Behavior-Driven Development)](./2026-05-29-bdd-behavior-driven-development.md)
