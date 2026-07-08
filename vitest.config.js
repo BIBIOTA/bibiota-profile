@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig, configDefaults } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -10,6 +10,8 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
+    // 排除暫存 git worktree 內的過期測試副本
+    exclude: [...configDefaults.exclude, '**/.claude/**'],
   },
   resolve: {
     alias: {
