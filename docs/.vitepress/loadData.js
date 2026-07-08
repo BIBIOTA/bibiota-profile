@@ -117,58 +117,6 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
     })
 }
 
-export function getTechSearchIndex() {
-  const currentDir = path.resolve(__dirname, `../../docs/tech/posts`)
-  return fs
-    .readdirSync(currentDir)
-    .filter((file) => file.endsWith('.md'))
-    .map((file) => {
-      const src = fs.readFileSync(path.join(currentDir, file), 'utf-8')
-      const { data, content } = matter(src)
-      return {
-        title: data.title,
-        description: data.description || '',
-        href: `posts/${file.replace(/\.md$/, '.html')}`,
-        avatar: data.avatar || null,
-        date: formatDate(data.date),
-        tags: data.tags || [],
-        content: stripMarkdown(content),
-      }
-    })
-    .sort((a, b) => b.date.time - a.date.time)
-}
-
-export function writeTechSearchIndex(outDir) {
-  const index = getTechSearchIndex()
-  const outPath = path.join(outDir, 'tech-search-index.json')
-  fs.writeFileSync(outPath, JSON.stringify(index))
-  return { outPath, index }
-}
-
-export function stripMarkdown(md = '') {
-  return md
-    // fenced code blocks (``` or ~~~) including their content
-    .replace(/```[\s\S]*?```/g, ' ')
-    .replace(/~~~[\s\S]*?~~~/g, ' ')
-    // images: drop entirely
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
-    // links: keep the visible text, drop the URL
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
-    // inline code: keep content, drop the backticks
-    .replace(/`+/g, '')
-    // HTML tags
-    .replace(/<[^>]+>/g, ' ')
-    // line-start markers: headings, blockquotes, list bullets
-    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
-    .replace(/^\s{0,3}>+\s?/gm, '')
-    .replace(/^\s{0,3}(?:[-*+]|\d+\.)\s+/gm, '')
-    // emphasis / strikethrough symbols
-    .replace(/(\*\*|__|\*|_|~~)/g, '')
-    // collapse all whitespace runs
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
 function sanitizeExcerpt(excerpt = '') {
   return excerpt
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')

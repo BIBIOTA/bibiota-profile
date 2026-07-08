@@ -1,5 +1,3 @@
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import tailwindcss from 'tailwindcss'
@@ -9,26 +7,9 @@ import {
   getTitle,
   getDescription,
   getTechPosts,
-  writeTechSearchIndex,
 } from './loadData'
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const siteUrl = 'https://me.bibiota.com'
-
-// 於 dev 與 build 啟動時，把技術文章搜尋索引寫到 docs/public，
-// 供前端以 /tech-search-index.json 延遲載入。
-function techSearchIndexPlugin() {
-  return {
-    name: 'tech-search-index',
-    buildStart() {
-      try {
-        writeTechSearchIndex(path.resolve(__dirname, '../public'))
-      } catch (err) {
-        console.warn(`Unable to write tech search index: ${err.message}`)
-      }
-    },
-  }
-}
 
 export default withMermaid(defineConfig({
   ignoreDeadLinks: [
@@ -86,7 +67,6 @@ export default withMermaid(defineConfig({
     ]
   },
   vite: {
-    plugins: [techSearchIndexPlugin()],
     server: {
       allowedHosts: ['yukimac-mini.echo-mercat.ts.net'],
     },
