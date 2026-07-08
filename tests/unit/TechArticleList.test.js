@@ -1,4 +1,4 @@
-import { mount, flushPromises } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { nextTick } from 'vue'
 import TechArticleList from '@theme/TechArticleList.vue'
@@ -145,131 +145,53 @@ describe('TechArticleList - handlePageChange', () => {
   })
 })
 
-function makeIndex() {
+function makeMetaPosts() {
   return [
-    { title: 'Kubernetes 入門', description: '容器編排', href: 'posts/k8s.html', avatar: null, date: { time: 5 }, tags: [], content: '這是一篇關於叢集的文章' },
-    { title: 'Docker 筆記', description: '搭配 kubernetes 使用', href: 'posts/docker.html', avatar: null, date: { time: 4 }, tags: [], content: '容器化流程' },
-    { title: 'CI/CD 流程', description: '自動化部署', href: 'posts/cicd.html', avatar: null, date: { time: 3 }, tags: [], content: '在 Kubernetes 上滾動更新' },
-    { title: 'Redis 快取', description: '記憶體資料庫', href: 'posts/redis.html', avatar: null, date: { time: 2 }, tags: [], content: '鍵值儲存' },
+    { title: 'Kubernetes 入門', description: '容器編排', href: 'posts/k8s.html', avatar: null, date: { time: 5 }, tags: [], excerpt: '' },
+    { title: 'Docker 筆記', description: '搭配 kubernetes 使用', href: 'posts/docker.html', avatar: null, date: { time: 4 }, tags: [], excerpt: '' },
+    { title: 'Redis 快取', description: '記憶體資料庫', href: 'posts/redis.html', avatar: null, date: { time: 3 }, tags: [], excerpt: '這篇內文提到 kubernetes 但標題與描述沒有' },
+    { title: 'CI/CD 流程', description: '自動化部署', href: 'posts/cicd.html', avatar: null, date: { time: 2 }, tags: [], excerpt: '' },
   ]
 }
 
-function mockFetchResolved(index) {
-  const fn = vi.fn().mockResolvedValue({ ok: true, json: async () => index })
-  global.fetch = fn
-  return fn
-}
-
 describe('TechArticleList - 搜尋', () => {
-  it('初始載入不抓索引', async () => {
-    setMockPosts(makePosts(5))
-    const fetchSpy = mockFetchResolved(makeIndex())
-    const wrapper = mount(TechArticleList)
-    await nextTick()
-
-    expect(fetchSpy).not.toHaveBeenCalled()
-    expect(wrapper.vm.articles).toHaveLength(5)
-  })
-
-  it('延遲載入索引', async () => {
-    setMockPosts(makePosts(5))
-    const fetchSpy = mockFetchResolved(makeIndex())
-    const wrapper = mount(TechArticleList)
-    await nextTick()
-
-    const input = wrapper.find('[data-testid="article-search"]')
-    await input.trigger('focus')
-    await flushPromises()
-    await input.trigger('focus')
-    await flushPromises()
-
-    expect(fetchSpy).toHaveBeenCalledTimes(1)
-    expect(fetchSpy).toHaveBeenCalledWith('/tech-search-index.json')
-  })
-
   it('關鍵字為空', async () => {
-    setMockPosts(makePosts(5))
-    mockFetchResolved(makeIndex())
+    setMockPosts(makeMetaPosts())
     const wrapper = mount(TechArticleList)
     await nextTick()
 
-    await wrapper.vm.loadSearchIndex()
-    await flushPromises()
     wrapper.vm.query = '   '
     await nextTick()
 
-    expect(wrapper.vm.articles).toHaveLength(5)
+    expect(wrapper.vm.articles).toHaveLength(4)
   })
 
   it('關鍵字命中', async () => {
-    setMockPosts(makePosts(5))
-    mockFetchResolved(makeIndex())
+    setMockPosts(makeMetaPosts())
     const wrapper = mount(TechArticleList)
     await nextTick()
 
-    await wrapper.vm.loadSearchIndex()
-    await flushPromises()
-
     wrapper.vm.page = 2
-    // 大小寫無關：以大寫關鍵字比對小寫內文
+    // 大小寫無關：以大寫關鍵字比對小寫標題／描述
     wrapper.vm.query = 'KUBERNETES'
     await nextTick()
 
     const titles = wrapper.vm.articles.map((a) => a.title)
     expect(titles).toContain('Kubernetes 入門') // 標題命中
     expect(titles).toContain('Docker 筆記')     // 描述命中
-    expect(titles).toContain('CI/CD 流程')       // 內文命中
+    // 關鍵字僅在內文（excerpt）出現者不應命中
     expect(titles).not.toContain('Redis 快取')
-    expect(wrapper.vm.articles).toHaveLength(3)
+    expect(titles).not.toContain('CI/CD 流程')
+    expect(wrapper.vm.articles).toHaveLength(2)
     // 搜尋後分頁重設回第 1 頁
     expect(wrapper.vm.page).toBe(1)
   })
 
-  it('索引載入中就輸入', async () => {
-    setMockPosts(makePosts(5))
-    let resolveFetch
-    global.fetch = vi.fn(() => new Promise((r) => { resolveFetch = r }))
-    const wrapper = mount(TechArticleList)
-    await nextTick()
-
-    wrapper.vm.loadSearchIndex()
-    wrapper.vm.query = 'kubernetes'
-    await nextTick()
-
-    expect(wrapper.vm.indexLoading).toBe(true)
-    expect(wrapper.vm.isLoadingResults).toBe(true)
-
-    resolveFetch({ ok: true, json: async () => makeIndex() })
-    await flushPromises()
-
-    expect(wrapper.vm.indexLoading).toBe(false)
-    expect(wrapper.vm.articles).toHaveLength(3)
-  })
-
-  it('索引載入失敗', async () => {
-    setMockPosts(makePosts(5))
-    global.fetch = vi.fn().mockRejectedValue(new Error('network down'))
-    const wrapper = mount(TechArticleList)
-    await nextTick()
-
-    await wrapper.vm.loadSearchIndex()
-    await flushPromises()
-    wrapper.vm.query = 'kubernetes'
-    await nextTick()
-
-    expect(wrapper.vm.indexError).toBe(true)
-    // 回退到原本完整列表
-    expect(wrapper.vm.articles).toHaveLength(5)
-  })
-
   it('查無結果', async () => {
-    setMockPosts(makePosts(5))
-    mockFetchResolved(makeIndex())
+    setMockPosts(makeMetaPosts())
     const wrapper = mount(TechArticleList)
     await nextTick()
 
-    await wrapper.vm.loadSearchIndex()
-    await flushPromises()
     wrapper.vm.query = '完全不存在的關鍵字xyz'
     await nextTick()
 
