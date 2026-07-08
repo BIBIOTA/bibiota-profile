@@ -61,7 +61,8 @@ describe('getTechSearchIndex', () => {
       // content 為純文字化的完整內文
       expect(typeof item.content).toBe('string')
       expect(item.content).not.toContain('```')
-      expect(item.content).not.toContain('<')
+      // 無殘留 HTML 標籤（純數學比較的 < 屬正常文字，不在此限）
+      expect(item.content).not.toMatch(/<[a-zA-Z/][^>]*>/)
     }
   })
 })
