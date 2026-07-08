@@ -17,29 +17,12 @@
         class="w-full rounded-xl border pl-11 pr-4 py-3 text-sm outline-none transition-colors placeholder:text-[#9A9AA5] focus:border-[#B4232A]"
         style="background:#FFFFFF; border-color:#E2E2E8; color:#1A1A1F"
         :placeholder="searchPlaceholder"
-        @focus="loadSearchIndex"
         @input="onInput"
       />
     </div>
 
     <p
-      v-if="indexError && isSearching"
-      class="mb-3 text-sm"
-      style="color:#B4232A"
-    >
-      搜尋暫時無法使用，已顯示全部文章
-    </p>
-
-    <p
-      v-if="isLoadingResults"
-      class="py-8 text-center text-sm"
-      style="color:#6B6B76"
-    >
-      搜尋中…
-    </p>
-
-    <p
-      v-else-if="showNoResults"
+      v-if="showNoResults"
       class="py-8 text-center text-sm"
       style="color:#6B6B76"
     >
@@ -63,7 +46,6 @@ import Pagination from '@theme/components/Pagination.vue'
 import { useRoute, useData } from 'vitepress'
 
 const PAGE_SIZE = 10
-const SEARCH_INDEX_URL = '/tech-search-index.json'
 const DEBOUNCE_MS = 200
 
 function toArticle(item) {
@@ -87,7 +69,7 @@ export default {
     const { theme } = useData();
     const { path } = useRoute();
     const articleTitle = "Yuki's Blog";
-    const searchPlaceholder = '搜尋文章（標題、描述、內文）';
+    const searchPlaceholder = '搜尋文章（標題、描述）';
 
     return {
       articleTitle,
@@ -100,10 +82,6 @@ export default {
     return {
       page: 1,
       query: '',
-      searchIndex: null,
-      indexRequested: false,
-      indexLoading: false,
-      indexError: false,
     }
   },
   mounted() {
@@ -114,9 +92,8 @@ export default {
   },
   watch: {
     query() {
-      // 關鍵字變動時分頁重設回第 1 頁，並確保索引已載入
+      // 關鍵字變動時分頁重設回第 1 頁
       this.page = 1
-      this.loadSearchIndex()
     },
   },
   computed: {
@@ -130,35 +107,16 @@ export default {
     isSearching() {
       return this.normalizedQuery !== ''
     },
-    searchResults() {
-      if (!this.searchIndex) return []
-      const q = this.normalizedQuery
-      return this.searchIndex
-        .filter(item =>
-          (item.title || '').toLowerCase().includes(q) ||
-          (item.description || '').toLowerCase().includes(q) ||
-          (item.content || '').toLowerCase().includes(q)
-        )
-        .map(toArticle)
-    },
     articles() {
-      // 搜尋中且索引可用時顯示過濾結果；否則回退到完整列表
-      if (this.isSearching && this.searchIndex && !this.indexError) {
-        return this.searchResults
-      }
-      return this.baseArticles
-    },
-    isLoadingResults() {
-      return this.isSearching && this.indexLoading && !this.searchIndex
+      if (!this.isSearching) return this.baseArticles
+      const q = this.normalizedQuery
+      return this.baseArticles.filter(article =>
+        (article.title || '').toLowerCase().includes(q) ||
+        (article.description || '').toLowerCase().includes(q)
+      )
     },
     showNoResults() {
-      return (
-        this.isSearching &&
-        !this.indexLoading &&
-        !this.indexError &&
-        !!this.searchIndex &&
-        this.searchResults.length === 0
-      )
+      return this.isSearching && this.articles.length === 0
     },
     totalPages() {
       return Math.max(1, Math.ceil(this.articles.length / PAGE_SIZE))
@@ -177,26 +135,8 @@ export default {
     },
   },
   methods: {
-    async loadSearchIndex() {
-      if (this.indexRequested) return
-      if (typeof window === 'undefined') return
-      this.indexRequested = true
-      this.indexLoading = true
-      this.indexError = false
-      try {
-        const res = await fetch(SEARCH_INDEX_URL)
-        if (!res || !res.ok) throw new Error('failed to load search index')
-        this.searchIndex = await res.json()
-      } catch (err) {
-        this.indexError = true
-        this.searchIndex = null
-      } finally {
-        this.indexLoading = false
-      }
-    },
     onInput(event) {
       const value = event.target.value
-      this.loadSearchIndex()
       clearTimeout(this._debounceTimer)
       this._debounceTimer = setTimeout(() => {
         this.query = value
