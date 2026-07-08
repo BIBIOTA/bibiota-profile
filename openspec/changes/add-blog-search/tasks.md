@@ -70,19 +70,19 @@
   - Acceptance: WHEN 檢視程式碼 THEN `loadData.js` 不再有 `stripMarkdown()`/`getTechSearchIndex()`/`writeTechSearchIndex()` AND `config.js` 不再有索引 Vite `buildStart` 外掛 AND `.gitignore` 移除 `tech-search-index.json` 項目 AND `docs/public/tech-search-index.json` 不再產生
   - Depends on: -
   - Independence: serial
-  - status: not_started
+  - status: passing
 
-- [ ] 4.2 `TechArticleList.vue` 改為僅比對標題＋描述、直接篩選 `theme.techPosts`
+- [x] 4.2 `TechArticleList.vue` 改為僅比對標題＋描述、直接篩選 `theme.techPosts`
   - Acceptance: WHEN `query` 為空 THEN 顯示完整列表 AND WHEN `query` 有值 THEN 對 `theme.techPosts` 以 `title + description` 做大小寫無關子字串比對 AND 移除 fetch/延遲載入/載入中/載入失敗狀態 AND 關鍵字變動時分頁重設回第 1 頁 AND 查無結果顯示空狀態
   - Depends on: 4.1
   - Independence: serial
-  - status: not_started
+  - status: passing
 
-- [ ] 4.3 更新測試以符合新範圍
+- [x] 4.3 更新測試以符合新範圍
   - Acceptance: WHEN 執行測試 THEN 移除索引/fetch 相關測試（`loadData.test.js` 與元件的延遲載入/載入中/載入失敗案例）AND 保留並涵蓋空關鍵字、標題命中、描述命中、大小寫無關、查無結果、分頁重設第 1 頁 AND 全套測試通過
   - Depends on: 4.2
   - Independence: serial
-  - status: not_started
+  - status: passing
 
 ## Optional artifacts
 - [ ] PlantUML diagrams (spec-driven-dev:writing-uml)

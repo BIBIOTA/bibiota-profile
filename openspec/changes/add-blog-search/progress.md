@@ -71,3 +71,33 @@
   - `verification-report.md`：加註 SUPERSEDED。
 - Validation: `openspec validate add-blog-search --strict` → exit 0（valid）。
 - Next action: 使用者 review 更新後規格；核可後以 TDD 執行群組 4（移除索引基礎設施、元件改為 title+description、更新測試），再重跑 verification-before-completion。
+
+## Session 10 — 2026-07-08 01:20
+- Stage: TDD
+- Task: 4.1 移除全文索引基礎設施
+- Transition: not_started → in_progress
+- Next action: 刪除過時的 `loadData.test.js` 並移除 `loadData.js`/`config.js`/`.gitignore` 的索引相關程式碼。
+
+## Session 11 — 2026-07-08 01:26
+- Stage: TDD
+- Task: 4.1 移除全文索引基礎設施
+- Transition: in_progress → passing
+- Evidence:
+  - Commits: e3a84c4 feat: 移除全文索引基礎設施（純刪除任務，無 red phase；以刪除 `loadData.test.js` + 全套測試維持綠燈驗證）
+  - Tests: `vitest run` → 3 files / 28 passed
+- Next action: 進入任務 4.2，撰寫 `TechArticleList.vue` 改為 title+description 篩選的紅燈測試。
+
+## Session 12 — 2026-07-08 01:28
+- Stage: TDD
+- Task: 4.2 `TechArticleList.vue` 改為僅比對標題＋描述、直接篩選 `theme.techPosts`
+- Transition: not_started → in_progress
+- Next action: 改寫元件搜尋測試（title/description 命中、內文不命中、大小寫無關、關鍵字為空、查無結果、分頁重設），移除 fetch 相關案例，作為紅燈。
+
+## Session 13 — 2026-07-08 01:40
+- Stage: TDD
+- Task: 4.2 `TechArticleList.vue` 改為僅比對標題＋描述；4.3 更新測試以符合新範圍
+- Transition: in_progress → passing
+- Evidence:
+  - Commits: fb 紅燈「test: red - TechArticleList 改為 title+description 篩選」；357659f feat: green - TechArticleList 改為僅比對標題＋描述、直接篩選 techPosts
+  - Tests: `vitest run` → 3 files / 24 passed（含搜尋 3 案例：關鍵字為空、關鍵字命中含內文不命中與大小寫無關、查無結果）
+- Next action: 進入 `spec-driven-dev:verification-before-completion` 重新執行完成前驗證。
