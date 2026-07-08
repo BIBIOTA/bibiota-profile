@@ -58,6 +58,17 @@ const PAGE_SIZE = 10
 const SEARCH_INDEX_URL = '/tech-search-index.json'
 const DEBOUNCE_MS = 200
 
+function toArticle(item) {
+  return {
+    title: item.title,
+    date: item.date,
+    href: item.href,
+    avatar: item.avatar,
+    description: item.description,
+    tags: item.tags || [],
+  }
+}
+
 export default {
   components: {
     Title,
@@ -103,14 +114,7 @@ export default {
   computed: {
     baseArticles() {
       if (!this.theme.techPosts) return []
-      return this.theme.techPosts.map(post => ({
-        title: post.title,
-        date: post.date,
-        href: post.href,
-        avatar: post.avatar,
-        description: post.description,
-        tags: post.tags || [],
-      }))
+      return this.theme.techPosts.map(toArticle)
     },
     normalizedQuery() {
       return (this.query || '').trim().toLowerCase()
@@ -127,14 +131,7 @@ export default {
           (item.description || '').toLowerCase().includes(q) ||
           (item.content || '').toLowerCase().includes(q)
         )
-        .map(item => ({
-          title: item.title,
-          date: item.date,
-          href: item.href,
-          avatar: item.avatar,
-          description: item.description,
-          tags: item.tags || [],
-        }))
+        .map(toArticle)
     },
     articles() {
       // 搜尋中且索引可用時顯示過濾結果；否則回退到完整列表
