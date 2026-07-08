@@ -117,6 +117,30 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
     })
 }
 
+export function stripMarkdown(md = '') {
+  return md
+    // fenced code blocks (``` or ~~~) including their content
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/~~~[\s\S]*?~~~/g, ' ')
+    // images: drop entirely
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    // links: keep the visible text, drop the URL
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    // inline code: keep content, drop the backticks
+    .replace(/`+/g, '')
+    // HTML tags
+    .replace(/<[^>]+>/g, ' ')
+    // line-start markers: headings, blockquotes, list bullets
+    .replace(/^\s{0,3}#{1,6}\s+/gm, '')
+    .replace(/^\s{0,3}>+\s?/gm, '')
+    .replace(/^\s{0,3}(?:[-*+]|\d+\.)\s+/gm, '')
+    // emphasis / strikethrough symbols
+    .replace(/(\*\*|__|\*|_|~~)/g, '')
+    // collapse all whitespace runs
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function sanitizeExcerpt(excerpt = '') {
   return excerpt
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
