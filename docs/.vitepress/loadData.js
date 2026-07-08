@@ -117,6 +117,27 @@ function loadArticlesFromDirectory(currentDir, asFeed = false) {
     })
 }
 
+export function getTechSearchIndex() {
+  const currentDir = path.resolve(__dirname, `../../docs/tech/posts`)
+  return fs
+    .readdirSync(currentDir)
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => {
+      const src = fs.readFileSync(path.join(currentDir, file), 'utf-8')
+      const { data, content } = matter(src)
+      return {
+        title: data.title,
+        description: data.description || '',
+        href: `posts/${file.replace(/\.md$/, '.html')}`,
+        avatar: data.avatar || null,
+        date: formatDate(data.date),
+        tags: data.tags || [],
+        content: stripMarkdown(content),
+      }
+    })
+    .sort((a, b) => b.date.time - a.date.time)
+}
+
 export function stripMarkdown(md = '') {
   return md
     // fenced code blocks (``` or ~~~) including their content
