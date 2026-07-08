@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest'
-import { stripMarkdown, getTechSearchIndex } from '../../docs/.vitepress/loadData.js'
+import fs from 'node:fs'
+import os from 'node:os'
+import path from 'node:path'
+import {
+  stripMarkdown,
+  getTechSearchIndex,
+  writeTechSearchIndex,
+} from '../../docs/.vitepress/loadData.js'
 
 describe('stripMarkdown', () => {
   it('內文純文字化', () => {
@@ -64,5 +71,21 @@ describe('getTechSearchIndex', () => {
       // 無殘留 HTML 標籤（純數學比較的 < 屬正常文字，不在此限）
       expect(item.content).not.toMatch(/<[a-zA-Z/][^>]*>/)
     }
+  })
+})
+
+describe('writeTechSearchIndex', () => {
+  it('寫出索引檔', () => {
+    const outDir = fs.mkdtempSync(path.join(os.tmpdir(), 'search-index-'))
+    const { outPath } = writeTechSearchIndex(outDir)
+
+    expect(outPath).toBe(path.join(outDir, 'tech-search-index.json'))
+    expect(fs.existsSync(outPath)).toBe(true)
+
+    const written = JSON.parse(fs.readFileSync(outPath, 'utf-8'))
+    // 檔案內容與 getTechSearchIndex() 一致
+    expect(written).toEqual(getTechSearchIndex())
+
+    fs.rmSync(outDir, { recursive: true, force: true })
   })
 })
