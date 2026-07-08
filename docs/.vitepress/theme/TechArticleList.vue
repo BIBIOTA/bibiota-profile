@@ -2,12 +2,20 @@
   <div class="w-[760px] max-w-full">
     <Title :text="articleTitle" />
 
-    <div class="mb-4">
+    <div class="mb-4 relative">
+      <svg
+        class="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none"
+        width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="#9A9AA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      >
+        <circle cx="11" cy="11" r="7" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
       <input
         type="search"
         data-testid="article-search"
-        class="w-full rounded-xl px-4 py-3 text-sm outline-none"
-        style="background:#F7F7FA; color:#1A1A1F"
+        class="w-full rounded-xl border pl-11 pr-4 py-3 text-sm outline-none transition-colors placeholder:text-[#9A9AA5] focus:border-[#B4232A]"
+        style="background:#FFFFFF; border-color:#E2E2E8; color:#1A1A1F"
         :placeholder="searchPlaceholder"
         @focus="loadSearchIndex"
         @input="onInput"
