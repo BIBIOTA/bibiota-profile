@@ -138,6 +138,13 @@ export function getTechSearchIndex() {
     .sort((a, b) => b.date.time - a.date.time)
 }
 
+export function writeTechSearchIndex(outDir) {
+  const index = getTechSearchIndex()
+  const outPath = path.join(outDir, 'tech-search-index.json')
+  fs.writeFileSync(outPath, JSON.stringify(index))
+  return { outPath, index }
+}
+
 export function stripMarkdown(md = '') {
   return md
     // fenced code blocks (``` or ~~~) including their content

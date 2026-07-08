@@ -12,6 +12,7 @@ yarn-error.log
 openspec/*
 !openspec/changes/
 docs/public/pdf/*.pdf
+docs/public/tech-search-index.json
 .vercel
 .env*.local
 .worktrees/
