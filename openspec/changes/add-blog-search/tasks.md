@@ -66,7 +66,7 @@
 
 ## 4. 範圍調整：縮小為標題＋描述搜尋
 
-- [ ] 4.1 移除全文索引基礎設施
+- [x] 4.1 移除全文索引基礎設施
   - Acceptance: WHEN 檢視程式碼 THEN `loadData.js` 不再有 `stripMarkdown()`/`getTechSearchIndex()`/`writeTechSearchIndex()` AND `config.js` 不再有索引 Vite `buildStart` 外掛 AND `.gitignore` 移除 `tech-search-index.json` 項目 AND `docs/public/tech-search-index.json` 不再產生
   - Depends on: -
   - Independence: serial
