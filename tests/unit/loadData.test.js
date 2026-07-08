@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { stripMarkdown } from '../../docs/.vitepress/loadData.js'
+import { stripMarkdown, getTechSearchIndex } from '../../docs/.vitepress/loadData.js'
 
 describe('stripMarkdown', () => {
   it('內文純文字化', () => {
@@ -41,5 +41,27 @@ describe('stripMarkdown', () => {
     expect(text).toContain('引言區塊')
     // 無多餘連續空白
     expect(text).not.toMatch(/\s{2,}/)
+  })
+})
+
+describe('getTechSearchIndex', () => {
+  it('產生索引資料', () => {
+    const index = getTechSearchIndex()
+
+    expect(Array.isArray(index)).toBe(true)
+    expect(index.length).toBeGreaterThan(0)
+
+    for (const item of index) {
+      expect(typeof item.title).toBe('string')
+      expect(typeof item.description).toBe('string')
+      expect(item.href).toMatch(/^posts\/.*\.html$/)
+      expect(item).toHaveProperty('avatar')
+      expect(typeof item.date.time).toBe('number')
+      expect(Array.isArray(item.tags)).toBe(true)
+      // content 為純文字化的完整內文
+      expect(typeof item.content).toBe('string')
+      expect(item.content).not.toContain('```')
+      expect(item.content).not.toContain('<')
+    }
   })
 })
