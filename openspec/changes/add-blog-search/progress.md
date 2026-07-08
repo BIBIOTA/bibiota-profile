@@ -59,3 +59,15 @@
   - Commits: f4b7d8a feat: green - TechArticleList 內嵌搜尋欄與即時篩選；4416c06 test: 排除暫存 worktree 過期測試副本；93c7c9d refactor: 抽出 toArticle（紅燈 commit 於前）
   - Tests: `vitest run` → 4 files / 31 passed（含 7 個搜尋 scenario 測試）
 - Next action: 進入 `spec-driven-dev:verification-before-completion` 執行完成前驗證。
+
+## Session 9 — 2026-07-08 01:10（updating-spec）
+- Stage: updating-spec
+- Scope change requested: 搜尋比對範圍由「標題＋描述＋內文」縮小為「僅標題＋描述」（內文搜尋結果與使用者預期落差過大）。走「簡化」路線，移除整套全文索引基礎設施。
+- Artifacts updated:
+  - `specs/blog-search/spec.md`：改為 title+description，移除索引產生需求與 fetch 相關 scenario。
+  - `design.md`：新增「範圍變更紀錄」，方案改為直接篩選 `theme.techPosts`。
+  - `proposal.md`：更新 What Changes / Impact / 新增 Scope 變更段。
+  - `tasks.md`：群組 1–3 標記 superseded（保留歷史），新增群組 4（移除索引、改寫元件、更新測試）。
+  - `verification-report.md`：加註 SUPERSEDED。
+- Validation: `openspec validate add-blog-search --strict` → exit 0（valid）。
+- Next action: 使用者 review 更新後規格；核可後以 TDD 執行群組 4（移除索引基礎設施、元件改為 title+description、更新測試），再重跑 verification-before-completion。

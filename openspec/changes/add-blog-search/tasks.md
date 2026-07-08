@@ -1,6 +1,10 @@
 # Tasks: add-blog-search
 
-## 1. 索引產生（build/dev 時期）
+> **範圍變更（2026-07-08）**：搜尋比對範圍由「標題＋描述＋內文」縮小為「標題＋描述」。
+> 群組 1（索引產生）與群組 2 中的索引 fetch/載入相關 scenario 已 **superseded**，其實作於群組 4 移除。
+> 群組 1–3 保留為已完成工作的歷史紀錄；新工作見群組 4。
+
+## 1. 索引產生（build/dev 時期）— superseded（見群組 4，改為移除）
 
 - [x] 1.1 在 `loadData.js` 新增 `stripMarkdown()` helper
   - Acceptance: WHEN 傳入含程式碼區塊、HTML 標籤、markdown 語法符號與連結語法的內文字串 THEN 回傳去除上述語法、壓縮多餘空白後的純文字
@@ -59,6 +63,26 @@
   - Depends on: 2.4
   - Independence: serial
   - status: passing
+
+## 4. 範圍調整：縮小為標題＋描述搜尋
+
+- [ ] 4.1 移除全文索引基礎設施
+  - Acceptance: WHEN 檢視程式碼 THEN `loadData.js` 不再有 `stripMarkdown()`/`getTechSearchIndex()`/`writeTechSearchIndex()` AND `config.js` 不再有索引 Vite `buildStart` 外掛 AND `.gitignore` 移除 `tech-search-index.json` 項目 AND `docs/public/tech-search-index.json` 不再產生
+  - Depends on: -
+  - Independence: serial
+  - status: not_started
+
+- [ ] 4.2 `TechArticleList.vue` 改為僅比對標題＋描述、直接篩選 `theme.techPosts`
+  - Acceptance: WHEN `query` 為空 THEN 顯示完整列表 AND WHEN `query` 有值 THEN 對 `theme.techPosts` 以 `title + description` 做大小寫無關子字串比對 AND 移除 fetch/延遲載入/載入中/載入失敗狀態 AND 關鍵字變動時分頁重設回第 1 頁 AND 查無結果顯示空狀態
+  - Depends on: 4.1
+  - Independence: serial
+  - status: not_started
+
+- [ ] 4.3 更新測試以符合新範圍
+  - Acceptance: WHEN 執行測試 THEN 移除索引/fetch 相關測試（`loadData.test.js` 與元件的延遲載入/載入中/載入失敗案例）AND 保留並涵蓋空關鍵字、標題命中、描述命中、大小寫無關、查無結果、分頁重設第 1 頁 AND 全套測試通過
+  - Depends on: 4.2
+  - Independence: serial
+  - status: not_started
 
 ## Optional artifacts
 - [ ] PlantUML diagrams (spec-driven-dev:writing-uml)

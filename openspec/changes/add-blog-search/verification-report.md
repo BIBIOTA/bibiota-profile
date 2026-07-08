@@ -1,5 +1,9 @@
 # Verification Report: add-blog-search
 
+> **SUPERSEDED（2026-07-08）**：本報告對應「標題＋描述＋內文」的初版實作。
+> 之後範圍縮小為「標題＋描述」並移除全文索引，需重新執行 verification-before-completion；
+> 本報告保留為歷史紀錄。
+
 Date: 2026-07-08
 Verifier: claude-code (Opus 4.8)
 
