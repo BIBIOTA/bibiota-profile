@@ -9,6 +9,7 @@ Use this guide when planning, drafting, or reviewing bibiota-blog articles.
 - Personal context is allowed when it helps the reader understand the motivation.
 - Avoid exaggerated claims and vague motivational language.
 - Prefer short paragraphs and concrete examples.
+- Do not open or close an article with an interview scenario as the hook (e.g. 「面試被問到…」). Lead with the problem, a counter-intuitive pain point, or why the concept matters instead. This holds even for Daily Questions Challenge entries.
 
 ## Technical Article Shape
 
@@ -33,6 +34,8 @@ Daily Questions Challenge entries should:
 - Be grouped under the confirmed category in the pinned index.
 
 Do not guess the category if it is ambiguous.
+
+Even though the series is interview-preparation material, do not frame the article opening or closing around an interview scenario. Keep the interview context in the pinned index and tags; let the body stand on the concept itself.
 
 ## References
 

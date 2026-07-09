@@ -105,6 +105,7 @@ head:
 ### System Design
 
 - [雲端部署基礎架構：VPC、Subnet、Security Group 與 Load Balancer 各自解決什麼問題？](./2026-07-08-cloud-deployment-basics.md)
+- [部署邊界與責任：從三條線看懂 API / Worker / MQ / DB 的切分](./2026-07-09-deployment-boundaries.md)
 
 ### 軟體工程
 
