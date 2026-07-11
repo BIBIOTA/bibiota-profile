@@ -65,6 +65,7 @@ head:
 - [如何設計 Rate Limiting（速率限制）](./2026-06-09-rate-limiting.md)
 - [微服務資料一致性：2PC、Saga Pattern 與 Outbox Pattern](./2026-06-21-microservices-data-consistency.md)
 - [Circuit Breaker Pattern：微服務故障隔離的設計模式](./2026-06-24-circuit-breaker-pattern.md)
+- [Python asyncio 核心機制：Event Loop 與並發模型選型](./2026-07-11-python-asyncio-event-loop.md)
 
 ### Message Queue
 
